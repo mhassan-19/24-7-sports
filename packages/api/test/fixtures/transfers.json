@@ -1,0 +1,209 @@
+{
+ "data": [
+  {
+   "id": 40,
+   "player_id": 898,
+   "player_logo": "https://v3.appkora.com/storage/106972/aliou-dieng.png",
+   "player": "أليو ديانج",
+   "age": 29,
+   "position": null,
+   "price": "1.1M €",
+   "sport_id": 1,
+   "from_team": "مولودية الجزائر",
+   "from_team_id": 361,
+   "from_team_logo": "https://v3.appkora.com/storage/78271/mc-alger.png",
+   "to_team": "الأهلي",
+   "to_team_id": 1,
+   "to_team_logo": "https://v3.appkora.com/storage/126774/al-ahly.png",
+   "tournament_id": 1,
+   "tournament_service": 1,
+   "type": {
+    "name": "سنة واحدة"
+   }
+  },
+  {
+   "id": 38,
+   "player_id": 196,
+   "player_logo": "https://v3.appkora.com/storage/127897/01KGF27XH1TJ8W2ATHF9B9PM33.jfif",
+   "player": "مروان عثمان",
+   "age": 24,
+   "position": "رأس حربة",
+   "price": "0",
+   "sport_id": 1,
+   "from_team": "سيراميكا كليوباترا",
+   "from_team_id": 5,
+   "from_team_logo": "https://v3.appkora.com/storage/126737/ceramica-cleopatra.png",
+   "to_team": "الأهلي",
+   "to_team_id": 1,
+   "to_team_logo": "https://v3.appkora.com/storage/126774/al-ahly.png",
+   "tournament_id": null,
+   "tournament_service": null,
+   "type": {
+    "name": "إعارة"
+   }
+  },
+  {
+   "id": 37,
+   "player_id": 2,
+   "player_logo": "https://v3.appkora.com/storage/127638/01KG3P1TD7R4YHH980NPM2RXRS.JPG",
+   "player": "إمام عاشور",
+   "age": 28,
+   "position": null,
+   "price": "2.7M €",
+   "sport_id": 1,
+   "from_team": "ميدتجيلاند",
+   "from_team_id": 229,
+   "from_team_logo": "https://v3.appkora.com/storage/84507/fc-midtjylland.png",
+   "to_team": "الأهلي",
+   "to_team_id": 1,
+   "to_team_logo": "https://v3.appkora.com/storage/126774/al-ahly.png",
+   "tournament_id": 1,
+   "tournament_service": 1,
+   "type": {
+    "name": "سنة واحدة"
+   }
+  },
+  {
+   "id": 36,
+   "player_id": 1,
+   "player_logo": "https://v3.appkora.com/storage/128688/01KHTV7FTN6YCN5TNMWEWFX58M.png",
+   "player": "طاهر محمد",
+   "age": 29,
+   "position": null,
+   "price": "1.1M €",
+   "sport_id": 1,
+   "from_team": "المقاولون العرب",
+   "from_team_id": 4,
+   "from_team_logo": "https://v3.appkora.com/storage/126752/al-mokawloon.png",
+   "to_team": "الأهلي",
+   "to_team_id": 1,
+   "to_team_logo": "https://v3.appkora.com/storage/126774/al-ahly.png",
+   "tournament_id": 1,
+   "tournament_service": 1,
+   "type": {
+    "name": "سنة واحدة"
+   }
+  },
+  {
+   "id": 25,
+   "player_id": 1262,
+   "player_logo": "https://v3.appkora.com/storage/107116/mohamed-salah.png",
+   "player": "محمد صلاح",
+   "age": 34,
+   "position": "جناح أيمن",
+   "price": "42M €",
+   "sport_id": 1,
+   "from_team": "روما",
+   "from_team_id": 64,
+   "from_team_logo": "https://v3.appkora.com/storage/108820/roma.png",
+   "to_team": "ليفربول",
+   "to_team_id": 33,
+   "to_team_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+   "tournament_id": 3,
+   "tournament_service": 2,
+   "type": {
+    "name": "سنة واحدة"
+   }
+  },
+  {
+   "id": 18,
+   "player_id": 854,
+   "player_logo": "https://v3.appkora.com/storage/117519/01KF4GW08KK7751JAXWVF3KSTG.jpg",
+   "player": "أحمد ربيع",
+   "age": 0,
+   "position": "وسط ملعب",
+   "price": "غير معلن",
+   "sport_id": 1,
+   "from_team": "البنك الأهلي",
+   "from_team_id": 13,
+   "from_team_logo": "https://v3.appkora.com/storage/126745/national-bank-of-egypt.png",
+   "to_team": "الزمالك",
+   "to_team_id": 20,
+   "to_team_logo": "https://v3.appkora.com/storage/126735/zamalek.png",
+   "tournament_id": 1,
+   "tournament_service": 1,
+   "type": {
+    "name": "أربع سنوات"
+   }
+  },
+  {
+   "id": 17,
+   "player_id": 3241,
+   "player_logo": "https://v3.appkora.com/storage/106403/luis-diaz-1.png",
+   "player": "لويس دياز",
+   "age": 29,
+   "position": "مهاجم صريح",
+   "price": "€70.00m",
+   "sport_id": 1,
+   "from_team": "ليفربول",
+   "from_team_id": 33,
+   "from_team_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+   "to_team": "بايرن ميونخ",
+   "to_team_id": 85,
+   "to_team_logo": "https://v3.appkora.com/storage/106380/bayern-munchen.png",
+   "tournament_id": 3,
+   "tournament_service": 2,
+   "type": {
+    "name": "إعارة"
+   }
+  },
+  {
+   "id": 16,
+   "player_id": 1204,
+   "player_logo": "https://v3.appkora.com/storage/89987/jack-grealish.png",
+   "player": "جاك جريليش",
+   "age": 31,
+   "position": "مهاجم صريح",
+   "price": "0",
+   "sport_id": 1,
+   "from_team": "مانشستر سيتي",
+   "from_team_id": 34,
+   "from_team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+   "to_team": "إيفرتون",
+   "to_team_id": 30,
+   "to_team_logo": "https://v3.appkora.com/storage/89962/everton.png",
+   "tournament_id": 3,
+   "tournament_service": 2,
+   "type": {
+    "name": "إعارة"
+   }
+  }
+ ],
+ "links": {
+  "first": "https://testv3.appkora.com/api/transferes?page=1",
+  "last": "https://testv3.appkora.com/api/transferes?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "&laquo; Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://testv3.appkora.com/api/transferes?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next &raquo;",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://testv3.appkora.com/api/transferes",
+  "per_page": 20,
+  "to": 8,
+  "total": 8
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

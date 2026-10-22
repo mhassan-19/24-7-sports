@@ -1,0 +1,18 @@
+{
+ "data": {
+  "id": 3,
+  "title": "Premier league",
+  "description": "الدوري الإنجليزي الممتاز ‏ هو دوري كرة القدم للقسم الأول في إنجلترا وقد تم استخدام مسمى الدوري الممتاز في سنة 1992م. يتكون الدوري من 20 فريق",
+  "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+  "service_id": 2,
+  "sport_id": 1,
+  "competition_type": "league",
+  "is_active": true,
+  "is_started": true,
+  "has_tree": 0,
+  "has_group": 0,
+  "has_standing": 1,
+  "has_league_stage": 0,
+  "group_stage": []
+ }
+}

@@ -1,0 +1,5 @@
+pnpm-lock.yaml
+dist
+docs/phase-1/prototype
+docs/api/*.json
+packages/api/test/fixtures

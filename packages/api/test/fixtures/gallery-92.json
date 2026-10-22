@@ -1,0 +1,36 @@
+{
+ "data": {
+  "gallery_id": 92,
+  "images": [
+   "https://v3.appkora.com/storage/95030/66e7104e247e1.jpeg",
+   "https://v3.appkora.com/storage/95031/66e7104e29836.jpeg",
+   "https://v3.appkora.com/storage/95032/66e7104e2b1c1.jpeg",
+   "https://v3.appkora.com/storage/95033/66e7104e2c68c.jpeg",
+   "https://v3.appkora.com/storage/95034/66e7104e2dcf2.jpeg",
+   "https://v3.appkora.com/storage/95036/66e7104e2f3ab.jpeg",
+   "https://v3.appkora.com/storage/95037/66e7104e30424.jpeg",
+   "https://v3.appkora.com/storage/95038/66e7104e317f7.jpeg",
+   "https://v3.appkora.com/storage/95039/66e7104e32a90.jpeg",
+   "https://v3.appkora.com/storage/95040/66e7104e33b9f.jpeg",
+   "https://v3.appkora.com/storage/95041/66e7107918481.jpeg",
+   "https://v3.appkora.com/storage/95042/66e710791d609.jpeg",
+   "https://v3.appkora.com/storage/95043/66e710791f445.jpeg",
+   "https://v3.appkora.com/storage/95044/66e71079217f7.jpeg",
+   "https://v3.appkora.com/storage/95045/66e7107923a7c.jpeg",
+   "https://v3.appkora.com/storage/95047/66e7107925304.jpeg",
+   "https://v3.appkora.com/storage/95048/66e7107926a98.jpeg",
+   "https://v3.appkora.com/storage/95049/66e71079280ec.jpeg",
+   "https://v3.appkora.com/storage/95050/66e71079298dc.jpeg",
+   "https://v3.appkora.com/storage/95051/66e710792bb65.jpeg",
+   "https://v3.appkora.com/storage/95052/66e710924a21b.jpeg",
+   "https://v3.appkora.com/storage/95053/66e710924fe2b.jpeg",
+   "https://v3.appkora.com/storage/95054/66e7109251534.jpeg",
+   "https://v3.appkora.com/storage/95055/66e7109252d96.jpeg",
+   "https://v3.appkora.com/storage/95056/66e7109254f1b.jpeg"
+  ],
+  "created_at": "2026-01-12T21:56:13.000000Z",
+  "updated_at": "2026-01-12T21:56:13.000000Z"
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

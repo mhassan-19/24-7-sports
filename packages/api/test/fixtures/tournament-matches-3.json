@@ -1,0 +1,1447 @@
+{
+ "data": {
+  "data": [
+   {
+    "id": 223,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 40,
+     "logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+     "name": "وست هام يونايتد",
+     "title": "وست هام يونايتد",
+     "short_name": "West Ham",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 32,
+     "logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+     "name": "ليدز يونايتد",
+     "title": "ليدز يونايتد",
+     "short_name": "Leeds",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 222,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 39,
+     "logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+     "name": "توتنهام",
+     "title": "توتنهام",
+     "short_name": "Tottenham ",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 30,
+     "logo": "https://v3.appkora.com/storage/89962/everton.png",
+     "name": "إيفرتون",
+     "title": "إيفرتون",
+     "short_name": "Everton",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 221,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 38,
+     "logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+     "name": "سندرلاند",
+     "title": "سندرلاند",
+     "short_name": "Sunderland",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 28,
+     "logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+     "name": "تشيلسي",
+     "title": "تشيلسي",
+     "short_name": "Chelsea",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 220,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 37,
+     "logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+     "name": "نوتينجهام فورست",
+     "title": "نوتينجهام فورست",
+     "short_name": "Forest",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 22,
+     "logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+     "name": "بورنموث",
+     "title": "بورنموث",
+     "short_name": "Bournemouth",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 219,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 34,
+     "logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+     "name": "مانشستر سيتي",
+     "title": "مانشستر سيتي",
+     "short_name": "Man City",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 24,
+     "logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+     "name": "أستون فيلا",
+     "title": "أستون فيلا",
+     "short_name": "Aston Villa",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 218,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 33,
+     "logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+     "name": "ليفربول",
+     "title": "ليفربول",
+     "short_name": "Liverpool",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 25,
+     "logo": "https://v3.appkora.com/storage/89800/brentford.png",
+     "name": "برينتفورد",
+     "title": "برينتفورد",
+     "short_name": "Brentford",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 217,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 31,
+     "logo": "https://v3.appkora.com/storage/89992/fulham.png",
+     "name": "فولهام",
+     "title": "فولهام",
+     "short_name": "Fulham",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 36,
+     "logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+     "name": "نيوكاسل يونايتد",
+     "title": "نيوكاسل يونايتد",
+     "short_name": "Newcastle",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 216,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 29,
+     "logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+     "name": "كريستال بالاس",
+     "title": "كريستال بالاس",
+     "short_name": "Crystal Palace",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 23,
+     "logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+     "name": "أرسنال",
+     "title": "أرسنال",
+     "short_name": "Arsenal",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 215,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 27,
+     "logo": "https://v3.appkora.com/storage/89860/burnley.png",
+     "name": "بيرنلي",
+     "title": "بيرنلي",
+     "short_name": "Burnley",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 41,
+     "logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+     "name": "ولفرهامبتون",
+     "title": "ولفرهامبتون",
+     "short_name": "Wolves",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 214,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-24 18:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 26,
+     "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+     "name": "برايتون",
+     "title": "برايتون",
+     "short_name": "Brighton",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 35,
+     "logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+     "name": "مانشستر يونايتد",
+     "title": "مانشستر يونايتد",
+     "short_name": "Man Utd",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "18:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 233,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 41,
+     "logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+     "name": "ولفرهامبتون",
+     "title": "ولفرهامبتون",
+     "short_name": "Wolves",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 31,
+     "logo": "https://v3.appkora.com/storage/89992/fulham.png",
+     "name": "فولهام",
+     "title": "فولهام",
+     "short_name": "Fulham",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 232,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 36,
+     "logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+     "name": "نيوكاسل يونايتد",
+     "title": "نيوكاسل يونايتد",
+     "short_name": "Newcastle",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 40,
+     "logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+     "name": "وست هام يونايتد",
+     "title": "وست هام يونايتد",
+     "short_name": "West Ham",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 231,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 35,
+     "logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+     "name": "مانشستر يونايتد",
+     "title": "مانشستر يونايتد",
+     "short_name": "Man Utd",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 37,
+     "logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+     "name": "نوتينجهام فورست",
+     "title": "نوتينجهام فورست",
+     "short_name": "Forest",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 230,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 32,
+     "logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+     "name": "ليدز يونايتد",
+     "title": "ليدز يونايتد",
+     "short_name": "Leeds",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 26,
+     "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+     "name": "برايتون",
+     "title": "برايتون",
+     "short_name": "Brighton",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 229,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 30,
+     "logo": "https://v3.appkora.com/storage/89962/everton.png",
+     "name": "إيفرتون",
+     "title": "إيفرتون",
+     "short_name": "Everton",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 38,
+     "logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+     "name": "سندرلاند",
+     "title": "سندرلاند",
+     "short_name": "Sunderland",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 228,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 28,
+     "logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+     "name": "تشيلسي",
+     "title": "تشيلسي",
+     "short_name": "Chelsea",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 39,
+     "logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+     "name": "توتنهام",
+     "title": "توتنهام",
+     "short_name": "Tottenham ",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 227,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 25,
+     "logo": "https://v3.appkora.com/storage/89800/brentford.png",
+     "name": "برينتفورد",
+     "title": "برينتفورد",
+     "short_name": "Brentford",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 29,
+     "logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+     "name": "كريستال بالاس",
+     "title": "كريستال بالاس",
+     "short_name": "Crystal Palace",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 226,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 22,
+     "logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+     "name": "بورنموث",
+     "title": "بورنموث",
+     "short_name": "Bournemouth",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 34,
+     "logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+     "name": "مانشستر سيتي",
+     "title": "مانشستر سيتي",
+     "short_name": "Man City",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 225,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 24,
+     "logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+     "name": "أستون فيلا",
+     "title": "أستون فيلا",
+     "short_name": "Aston Villa",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 33,
+     "logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+     "name": "ليفربول",
+     "title": "ليفربول",
+     "short_name": "Liverpool",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 224,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-17 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 23,
+     "logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+     "name": "أرسنال",
+     "title": "أرسنال",
+     "short_name": "Arsenal",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 27,
+     "logo": "https://v3.appkora.com/storage/89860/burnley.png",
+     "name": "بيرنلي",
+     "title": "بيرنلي",
+     "short_name": "Burnley",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 243,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-09 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 40,
+     "logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+     "name": "وست هام يونايتد",
+     "title": "وست هام يونايتد",
+     "short_name": "West Ham",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 23,
+     "logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+     "name": "أرسنال",
+     "title": "أرسنال",
+     "short_name": "Arsenal",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 242,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-09 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 39,
+     "logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+     "name": "توتنهام",
+     "title": "توتنهام",
+     "short_name": "Tottenham ",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 32,
+     "logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+     "name": "ليدز يونايتد",
+     "title": "ليدز يونايتد",
+     "short_name": "Leeds",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 241,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-09 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 38,
+     "logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+     "name": "سندرلاند",
+     "title": "سندرلاند",
+     "short_name": "Sunderland",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 35,
+     "logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+     "name": "مانشستر يونايتد",
+     "title": "مانشستر يونايتد",
+     "short_name": "Man Utd",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 240,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-09 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 37,
+     "logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+     "name": "نوتينجهام فورست",
+     "title": "نوتينجهام فورست",
+     "short_name": "Forest",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 36,
+     "logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+     "name": "نيوكاسل يونايتد",
+     "title": "نيوكاسل يونايتد",
+     "short_name": "Newcastle",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   },
+   {
+    "id": 239,
+    "channel": [],
+    "channel_name": null,
+    "date": "2026-05-09 17:00:00",
+    "is_featured": 1,
+    "matchRoundInfo": null,
+    "status": "لم تبدأ",
+    "matchStatus": 1,
+    "rank": 0,
+    "season_id": 2,
+    "services": [
+     2
+    ],
+    "sport_id": 1,
+    "stadium": null,
+    "team1": {
+     "id": 34,
+     "logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+     "name": "مانشستر سيتي",
+     "title": "مانشستر سيتي",
+     "short_name": "Man City",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "team2": {
+     "id": 25,
+     "logo": "https://v3.appkora.com/storage/89800/brentford.png",
+     "name": "برينتفورد",
+     "title": "برينتفورد",
+     "short_name": "Brentford",
+     "type": "local",
+     "services": [
+      2
+     ],
+     "sport_id": 1,
+     "score": null
+    },
+    "time": "17:00:00",
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "services": [
+      2
+     ],
+     "has_league_stage": 0
+    },
+    "tournament_id": 3
+   }
+  ],
+  "links": {
+   "first": "https://testv3.appkora.com/api/tournament/matches?page=1",
+   "last": "https://testv3.appkora.com/api/tournament/matches?page=10",
+   "prev": null,
+   "next": "https://testv3.appkora.com/api/tournament/matches?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 10,
+   "links": [
+    {
+     "url": null,
+     "label": "&laquo; Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=3",
+     "label": "3",
+     "page": 3,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=4",
+     "label": "4",
+     "page": 4,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=5",
+     "label": "5",
+     "page": 5,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=6",
+     "label": "6",
+     "page": 6,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=7",
+     "label": "7",
+     "page": 7,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=8",
+     "label": "8",
+     "page": 8,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=9",
+     "label": "9",
+     "page": 9,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=10",
+     "label": "10",
+     "page": 10,
+     "active": false
+    },
+    {
+     "url": "https://testv3.appkora.com/api/tournament/matches?page=2",
+     "label": "Next &raquo;",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://testv3.appkora.com/api/tournament/matches",
+   "per_page": 40,
+   "to": 40,
+   "total": 388
+  }
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

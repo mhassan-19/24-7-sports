@@ -1,0 +1,44 @@
+{
+ "message": "Retreived Successfully",
+ "status": 200,
+ "data": {
+  "id": 26,
+  "active": 1,
+  "background": "",
+  "chairman": "--",
+  "champions": [],
+  "country_id": null,
+  "founded": "--",
+  "in_carousel": 0,
+  "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+  "manager": {
+   "id": 9341,
+   "age": 33,
+   "image": "https://v3.appkora.com/storage/35609/fabian-hurzeler.png",
+   "name": "فابيان هورزيلر",
+   "nationality": null
+  },
+  "name": "برايتون",
+  "short_name": "Brighton",
+  "stadium": "--",
+  "tournaments": [
+   {
+    "id": 3,
+    "title": "الدوري الإنجليزي",
+    "sport_id": 1,
+    "services": [
+     2
+    ],
+    "logo": "https://v3.appkora.com/storage/101/england-premier-league.png"
+   }
+  ],
+  "type": "local",
+  "services": [
+   2
+  ],
+  "sport_id": 1,
+  "service_id": 2,
+  "main_tournament_id": 3,
+  "current_season_id": 2
+ }
+}

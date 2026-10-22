@@ -1,0 +1,67 @@
+{
+ "data": {
+  "id": 3,
+  "active": 1,
+  "background_image": "https://v3.appkora.com/storage/102/england-premier-league.png",
+  "country_id": 210,
+  "current_round": null,
+  "current_season": {
+   "id": 2,
+   "order_column": null,
+   "name": "2025/2026",
+   "tournament_id": 3,
+   "winner_team_id": null,
+   "year": 2025,
+   "is_active": 1,
+   "edit_mode": "automatic",
+   "update_standing_method": null,
+   "created_at": "2025-11-11T11:20:30.000000Z",
+   "updated_at": "2025-11-11T11:20:30.000000Z",
+   "season_stages": [
+    {
+     "id": 2,
+     "order_column": null,
+     "tournament_id": 3,
+     "season_id": 2,
+     "stage_id": 1,
+     "edit_mode": "automatic",
+     "created_at": "2025-11-11T11:41:37.000000Z",
+     "updated_at": "2025-11-11T11:41:37.000000Z",
+     "stage": {
+      "id": 1,
+      "order_column": null,
+      "name_ar": "دور المجموعات",
+      "name_en": "Group Stage",
+      "type": "groups",
+      "key": "group_stage",
+      "is_active": 1,
+      "created_at": "2025-11-10T12:26:32.000000Z",
+      "updated_at": "2026-10-22T08:32:59.000000Z"
+     }
+    }
+   ]
+  },
+  "has_group": true,
+  "is_started": 1,
+  "seasons": [
+   {
+    "id": 2,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   }
+  ],
+  "service_id": 2,
+  "services": [
+   2
+  ],
+  "sport_id": 1,
+  "title": "الدوري الإنجليزي",
+  "type": "League",
+  "has_league_stage": 0,
+  "logo": "https://v3.appkora.com/storage/101/england-premier-league.png"
+ },
+ "current_stage_id": 1,
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

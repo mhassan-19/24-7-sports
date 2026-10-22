@@ -1,0 +1,436 @@
+{
+ "data": [
+  {
+   "id": 1,
+   "title": "الدوري المصري",
+   "logo": "https://v3.appkora.com/storage/97/6565f73d4292f.png",
+   "currentSeason": {
+    "id": 1,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 1,
+   "services": [
+    1
+   ]
+  },
+  {
+   "id": 3,
+   "title": "الدوري الإنجليزي",
+   "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+   "currentSeason": {
+    "id": 2,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 4,
+   "title": "الدوري الإسباني",
+   "logo": "https://v3.appkora.com/storage/103/64a56581b7ba6.png",
+   "currentSeason": {
+    "id": 3,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 5,
+   "title": "الدوري الإيطالي",
+   "logo": "https://v3.appkora.com/storage/105/italy-serie-a.png",
+   "currentSeason": {
+    "id": 4,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 6,
+   "title": "الدورى الألمانى",
+   "logo": "https://v3.appkora.com/storage/107/germany-bundesliga.png",
+   "currentSeason": {
+    "id": 5,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 7,
+   "title": "الدوري الفرنسي",
+   "logo": "https://v3.appkora.com/storage/109/france-ligue-1.png",
+   "currentSeason": {
+    "id": 6,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 8,
+   "title": "الدوري السعودي",
+   "logo": "https://v3.appkora.com/storage/111/saudi-arabia-saudi-professional-league.png",
+   "currentSeason": {
+    "id": 7,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 2,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 5,
+   "services": [
+    5
+   ]
+  },
+  {
+   "id": 9,
+   "title": "كأس العالم للاندية ـ كرة يد",
+   "logo": "https://v3.appkora.com/storage/113/international-super-globe.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 6,
+   "service_id": 4,
+   "services": [
+    4
+   ]
+  },
+  {
+   "id": 10,
+   "title": "دوري أبطال أوروبا",
+   "logo": "https://v3.appkora.com/storage/115/62fba95ca64c5.png",
+   "currentSeason": {
+    "id": 9,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 12,
+   "title": "بلاك بول 2023",
+   "logo": "https://v3.appkora.com/storage/119/63f247a8e90e4.jpeg",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 7,
+   "service_id": 4,
+   "services": [
+    4
+   ]
+  },
+  {
+   "id": 13,
+   "title": "كأس العالم للأندية - كرة سلة",
+   "logo": "https://v3.appkora.com/storage/121/international-intercontinental-cup.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 3,
+   "service_id": 4,
+   "services": [
+    4
+   ]
+  },
+  {
+   "id": 14,
+   "title": "تصفيات كأس العالم إفريقيا",
+   "logo": "https://v3.appkora.com/storage/123/6548f2accf93c.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 3,
+   "services": [
+    3
+   ]
+  },
+  {
+   "id": 15,
+   "title": "تصفيات كأس الأمم الإفريقية",
+   "logo": "https://v3.appkora.com/storage/125/africa-africa-cup-of-nations-qual.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 3,
+   "services": [
+    3
+   ]
+  },
+  {
+   "id": 17,
+   "title": "كأس مصر",
+   "logo": "https://v3.appkora.com/storage/129/egypt-egypt-cup.png",
+   "currentSeason": {
+    "id": 32,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 1,
+   "services": [
+    1
+   ]
+  },
+  {
+   "id": 18,
+   "title": "الدوري الأوروبي",
+   "logo": "https://v3.appkora.com/storage/131/europe-uefa-europa-league.png",
+   "currentSeason": {
+    "id": 10,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 19,
+   "title": "بطولة العالم لكرة السلة 2023",
+   "logo": "https://v3.appkora.com/storage/133/international-fiba-world-cup.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 3,
+   "service_id": 4,
+   "services": [
+    4
+   ]
+  },
+  {
+   "id": 20,
+   "title": "دوري أبطال إفريقيا",
+   "logo": "https://v3.appkora.com/storage/135/africa-caf-champions-league.png",
+   "currentSeason": {
+    "id": 12,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 1,
+   "sport_id": 1,
+   "service_id": 3,
+   "services": [
+    3
+   ]
+  },
+  {
+   "id": 21,
+   "title": "دوري أبطال آسيا",
+   "logo": "https://v3.appkora.com/storage/137/asia-afc-champions-league.png",
+   "currentSeason": {
+    "id": 14,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 1,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 22,
+   "title": "دورى المؤتمر الأوروبى",
+   "logo": "https://v3.appkora.com/storage/139/europe-uefa-europa-conference-league.png",
+   "currentSeason": {
+    "id": 11,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 1,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 23,
+   "title": "كأس العالم قطر 2022",
+   "logo": "https://v3.appkora.com/storage/141/637686637487f.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 24,
+   "title": "كأس العالم للأندية",
+   "logo": "https://v3.appkora.com/storage/143/684eece42c8ff.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 26,
+   "title": "أولمبياد باريس كرة سلة",
+   "logo": "https://v3.appkora.com/storage/147/international-olympic-games.png",
+   "currentSeason": null,
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 3,
+   "service_id": 4,
+   "services": [
+    4
+   ]
+  },
+  {
+   "id": 27,
+   "title": "كأس الرابطة الإنجليزية",
+   "logo": "https://v3.appkora.com/storage/149/england-efl-cup.png",
+   "currentSeason": {
+    "id": 22,
+    "parent_id": null,
+    "title": "كأس الرابطة الإنجليزية",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 0,
+   "sport_id": 1,
+   "service_id": 2,
+   "services": [
+    2
+   ]
+  },
+  {
+   "id": 28,
+   "title": "كأس الأمم الإفريقية",
+   "logo": "https://v3.appkora.com/storage/50152/01KEQRE71CP0JP6RE059W48YMH.png",
+   "currentSeason": {
+    "id": 16,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 1,
+   "sport_id": 1,
+   "service_id": 3,
+   "services": [
+    3
+   ]
+  },
+  {
+   "id": 29,
+   "title": "كأس الكونفدرالية",
+   "logo": "https://v3.appkora.com/storage/153/africa-caf-confederations-cup.png",
+   "currentSeason": {
+    "id": 13,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   "competition_type": 1,
+   "has_standing": 0,
+   "has_league_stage": 1,
+   "sport_id": 1,
+   "service_id": 3,
+   "services": [
+    3
+   ]
+  }
+ ],
+ "message": "Retrieved Successfully",
+ "status": 200
+}

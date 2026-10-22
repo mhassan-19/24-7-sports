@@ -1,0 +1,440 @@
+/* ---------- Match rows ---------- */
+.group {
+  background: var(--surface);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.groupHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-block-end: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.groupHead:hover {
+  color: var(--accent-text);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-block-end: 1px solid var(--line);
+}
+
+.row:last-child {
+  border-block-end: 0;
+}
+
+.row:hover {
+  background: color-mix(in srgb, var(--surface) 92%, var(--text));
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Names wrap to two lines and stay inside their column (a long single word is clipped, not
+   drawn over the score). */
+.team bdi {
+  display: -webkit-box;
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.3;
+}
+
+.away {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.mid {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  min-width: 64px;
+}
+
+.score {
+  display: flex;
+  gap: 6px;
+  font-family: var(--f-num);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.kickoff {
+  font-family: var(--f-num);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.live {
+  color: var(--accent-text);
+}
+
+.dot {
+  inline-size: 8px;
+  block-size: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* ---------- Match header ---------- */
+.header {
+  display: grid;
+  gap: 16px;
+  padding: 20px 16px;
+  background: var(--surface);
+  border-radius: var(--r-card);
+}
+
+.headerTeams {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.headerTeam {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  min-width: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.headerTeam:hover {
+  color: var(--accent-text);
+}
+
+.bigScore {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.bigScore .n {
+  font-family: var(--f-num);
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (width >= 1024px) {
+  .bigScore .n {
+    font-size: 72px;
+  }
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 14px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.centerEyebrow {
+  text-align: center;
+}
+
+/* ---------- Events ---------- */
+.events {
+  background: var(--surface);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.event {
+  display: grid;
+  grid-template-columns: 48px 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-block-end: 1px solid var(--line);
+}
+
+.event:last-child {
+  border-block-end: 0;
+}
+
+.minute {
+  font-family: var(--f-num);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-2);
+}
+
+.goal .minute {
+  color: var(--accent-text);
+}
+
+.period {
+  padding: 8px 14px;
+  border-block-end: 1px solid var(--line);
+  background: var(--bg);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.card {
+  display: inline-block;
+  inline-size: 12px;
+  block-size: 16px;
+  border: 1.5px solid var(--text);
+  border-radius: 2px;
+}
+
+.cardRed {
+  background: var(--text);
+}
+
+.var {
+  padding-inline: 3px;
+  border: 1.5px solid var(--text-2);
+  border-radius: 4px;
+  font-family: var(--f-num);
+  font-weight: 800;
+  font-size: 11px;
+  color: var(--text-2);
+}
+
+/* ---------- Stats compare ---------- */
+.compare {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.compareLabel {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+.compareValue {
+  font-family: var(--f-num);
+  font-weight: 700;
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.bars {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 4px;
+  block-size: 6px;
+}
+
+.bars i {
+  display: block;
+  min-inline-size: 4px;
+  border-radius: 3px;
+}
+
+.barHome {
+  background: var(--accent);
+}
+
+.barAway {
+  background: var(--text);
+}
+
+/* ---------- Pitch ---------- */
+.lineupGrid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (width >= 1024px) {
+  .lineupGrid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+/* The pitch is a picture of the field: never mirrored, so it keeps LTR geometry. */
+.pitch {
+  position: relative;
+  direction: ltr;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  inline-size: 100%;
+  max-inline-size: 460px;
+  aspect-ratio: 68 / 96;
+  margin-inline: auto;
+  padding: 14px 6px;
+  overflow: hidden;
+  background: var(--surface);
+  border-radius: var(--r-card);
+}
+
+.pitch::before {
+  content: '';
+  position: absolute;
+  inset: 50% 0 auto;
+  border-block-start: 1px solid var(--line);
+}
+
+.pitch::after {
+  content: '';
+  position: absolute;
+  inset-inline-start: 50%;
+  top: 50%;
+  inline-size: 26%;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  position: absolute;
+  inset-inline: 22%;
+  block-size: 13%;
+  border: 1px solid var(--line);
+}
+
+.boxTop {
+  top: 0;
+  border-block-start: 0;
+}
+
+.boxBottom {
+  bottom: 0;
+  border-block-end: 0;
+}
+
+.pitchRow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.player {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  inline-size: 72px;
+  text-align: center;
+}
+
+.player:hover .disc {
+  outline: 2px solid var(--accent);
+}
+
+.disc {
+  position: relative;
+  display: grid;
+  place-items: center;
+  inline-size: 34px;
+  block-size: 34px;
+  border-radius: 50%;
+  background: var(--disc-bg);
+  color: var(--disc-fg);
+  font-family: var(--f-num);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.playerName {
+  max-inline-size: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.rating {
+  padding-inline: 4px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  font-family: var(--f-num);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ratingTop {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.discEvents {
+  position: absolute;
+  top: -6px;
+  inset-inline-end: -10px;
+  display: flex;
+  gap: 2px;
+}
+
+.discEvents svg {
+  inline-size: 14px;
+  block-size: 14px;
+  color: var(--text);
+}
+
+.discEvents .card {
+  inline-size: 8px;
+  block-size: 11px;
+  background: var(--bg);
+}
+
+.sub {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  padding-block: 8px;
+  border-block-end: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.sub:last-child {
+  border-block-end: 0;
+}

@@ -1,0 +1,34 @@
+{
+ "data": {
+  "tournament": {
+   "id": 28,
+   "name_ar": "كأس الأمم الإفريقية",
+   "title": "{\"en\":\"africa-cup-of-nations\",\"ar\":\"كأس الأمم الإفريقية\"}",
+   "type": "models/tournaments.cup",
+   "logo": "https://v3.appkora.com/storage/50152/01KEQRE71CP0JP6RE059W48YMH.png"
+  },
+  "stages": [
+   {
+    "stage_name": "دور المجموعات",
+    "start_date": "21 ديسمبر",
+    "total_matches": 36,
+    "completed_matches": 36
+   },
+   {
+    "stage_name": "الأدوار الإقصائية",
+    "start_date": "3 يناير",
+    "total_matches": 14,
+    "completed_matches": 14
+   },
+   {
+    "stage_name": "النهائي",
+    "start_date": "18 يناير",
+    "total_matches": 1,
+    "completed_matches": 1
+   }
+  ],
+  "total_percentage": 100
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

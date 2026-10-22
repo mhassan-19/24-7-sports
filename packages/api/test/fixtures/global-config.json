@@ -1,0 +1,31 @@
+{
+ "data": {
+  "al_ahly": {
+   "id": 1,
+   "logo": "https://v3.appkora.com/storage/126774/al-ahly.png",
+   "name": "الأهلي",
+   "service_id": 1
+  },
+  "world_cup": {
+   "id": 24,
+   "logo": "https://v3.appkora.com/storage/143/684eece42c8ff.png",
+   "name": "كأس العالم للأندية",
+   "service_id": 2
+  },
+  "caf_cup": {
+   "id": 28,
+   "logo": "https://v3.appkora.com/storage/50152/01KEQRE71CP0JP6RE059W48YMH.png",
+   "name": "كأس الأمم الإفريقية",
+   "service_id": 3
+  },
+  "egypt": {
+   "id": 607,
+   "logo": "https://v3.appkora.com/storage/126517/egypt.png",
+   "name": "مصر",
+   "service_id": null
+  },
+  "national_world_cup": null
+ },
+ "message": "Retrieved Successfully",
+ "status": 200
+}

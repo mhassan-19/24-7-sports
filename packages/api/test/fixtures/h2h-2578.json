@@ -1,0 +1,219 @@
+{
+ "data": [
+  {
+   "id": 561,
+   "tournament": {
+    "id": 3,
+    "title": "الدوري الإنجليزي",
+    "logo": "https://v3.appkora.com/storage/101/england-premier-league.png"
+   },
+   "stadium": "استاد فيتاليتي",
+   "date": "2025-09-13 17:00:00",
+   "team1": {
+    "id": 22,
+    "name": "بورنموث",
+    "logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+    "score": 2,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://testv3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 561,
+      "playerOne_id": 936,
+      "playerOne_image": "https://v3.appkora.com/storage/89706/alex-scott.png",
+      "playerOne_name": "اليكس سكوت",
+      "playerTwo_id": 934,
+      "playerTwo_image": "https://v3.appkora.com/storage/89704/antoine-semenyo.png",
+      "playerTwo_name": "أنطوان سيمنيو",
+      "team_id": 22,
+      "team_name": "بورنموث",
+      "team_image": "https://v3.appkora.com/storage/89701/bournemouth.png",
+      "time": "18",
+      "event_time": "18",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2025-11-11 13:49:05"
+     },
+     {
+      "event_id": 24,
+      "event_image": "https://testv3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 561,
+      "playerOne_id": 934,
+      "playerOne_image": "https://v3.appkora.com/storage/89704/antoine-semenyo.png",
+      "playerOne_name": "أنطوان سيمنيو",
+      "playerTwo_id": null,
+      "playerTwo_image": null,
+      "playerTwo_name": null,
+      "team_id": 22,
+      "team_name": "بورنموث",
+      "team_image": "https://v3.appkora.com/storage/89701/bournemouth.png",
+      "time": "61",
+      "event_time": "61",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2025-11-11 13:49:06"
+     }
+    ]
+   },
+   "team2": {
+    "id": 26,
+    "name": "برايتون",
+    "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+    "score": 1,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://testv3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 561,
+      "playerOne_id": 1058,
+      "playerOne_image": "https://v3.appkora.com/storage/89835/kaoru-mitoma.png",
+      "playerOne_name": "كاورو ميتوما",
+      "playerTwo_id": 1070,
+      "playerTwo_image": "https://v3.appkora.com/storage/89847/no-photo.png",
+      "playerTwo_name": "يانكوبا مينته",
+      "team_id": 26,
+      "team_name": "برايتون",
+      "team_image": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+      "time": "48",
+      "event_time": "48",
+      "match_score": null,
+      "is_home": 0,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2025-11-11 13:49:06"
+     }
+    ]
+   }
+  },
+  {
+   "id": 2578,
+   "tournament": {
+    "id": 3,
+    "title": "الدوري الإنجليزي",
+    "logo": "https://v3.appkora.com/storage/101/england-premier-league.png"
+   },
+   "stadium": "Amex Stadium",
+   "date": "2026-01-19 23:00:00",
+   "team1": {
+    "id": 26,
+    "name": "برايتون",
+    "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+    "score": 1,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://testv3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 2578,
+      "playerOne_id": 1082,
+      "playerOne_image": "https://v3.appkora.com/storage/89859/no-photo.png",
+      "playerOne_name": "Charalampos Kostoulas",
+      "playerTwo_id": 1063,
+      "playerTwo_image": "https://v3.appkora.com/storage/89840/jan-paul-van-hecke.png",
+      "playerTwo_name": "جان بول فان هيك",
+      "team_id": 26,
+      "team_name": "برايتون",
+      "team_image": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+      "time": "90+1",
+      "event_time": "90+1",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-01-20 12:15:13"
+     }
+    ]
+   },
+   "team2": {
+    "id": 22,
+    "name": "بورنموث",
+    "logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+    "score": 1,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://testv3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 2578,
+      "playerOne_id": 937,
+      "playerOne_image": "https://v3.appkora.com/storage/89707/marcus-tavernier.png",
+      "playerOne_name": "ماركوس تافيرنييه",
+      "playerTwo_id": null,
+      "playerTwo_image": null,
+      "playerTwo_name": null,
+      "team_id": 22,
+      "team_name": "بورنموث",
+      "team_image": "https://v3.appkora.com/storage/89701/bournemouth.png",
+      "time": "32",
+      "event_time": "32",
+      "match_score": null,
+      "is_home": 0,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-01-20 12:15:03"
+     }
+    ]
+   }
+  }
+ ],
+ "stats": [
+  {
+   "team_id": 26,
+   "team_name": "برايتون",
+   "team_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+   "total_target_shots": 15,
+   "total_passes": 2364,
+   "total_yellow_cards": 9,
+   "total_red_cards": 0,
+   "average_pass_accuracy": 83.88
+  },
+  {
+   "team_id": 22,
+   "team_name": "بورنموث",
+   "team_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+   "total_target_shots": 23,
+   "total_passes": 1824,
+   "total_yellow_cards": 10,
+   "total_red_cards": 0,
+   "average_pass_accuracy": 78.62
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

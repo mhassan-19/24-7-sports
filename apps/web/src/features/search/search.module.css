@@ -1,0 +1,194 @@
+/* Inline (desktop header) and sheet (phone overlay) search. */
+.box {
+  position: relative;
+  min-width: 0;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  block-size: 40px;
+  padding-inline: 12px;
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  color: var(--text-3);
+}
+
+.field:focus-within {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.field input {
+  inline-size: 100%;
+  min-width: 0;
+  background: none;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.field input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.clear {
+  display: grid;
+  place-items: center;
+  inline-size: 28px;
+  block-size: 28px;
+  border-radius: 50%;
+  color: var(--text-2);
+}
+
+.clear:hover {
+  background: var(--surface);
+}
+
+.clear svg {
+  inline-size: 16px;
+  block-size: 16px;
+}
+
+.inline {
+  inline-size: 300px;
+}
+
+/* Dropdown under the header field. No shadow (brand): separated by surface and a line. */
+.panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  inset-inline-end: 0;
+  z-index: 40;
+  inline-size: min(420px, 90vw);
+  max-block-size: min(70vh, 560px);
+  overflow-y: auto;
+  padding-block: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+}
+
+.results {
+  display: grid;
+}
+
+.groupLabel {
+  padding: 10px 14px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+:root:lang(ar) .groupLabel {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.option[aria-selected='true'],
+.option:hover {
+  background: var(--surface-2);
+}
+
+.optionText {
+  display: grid;
+  min-width: 0;
+}
+
+.optionText b,
+.optionText span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seeAll {
+  display: block;
+  margin-block-start: 4px;
+  padding: 12px 14px;
+  border-block-start: 1px solid var(--line);
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.seeAll[aria-selected='true'],
+.seeAll:hover {
+  background: var(--surface-2);
+}
+
+.note {
+  padding: 14px;
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+/* Phone: full-screen sheet over the current page. */
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  background: var(--bg);
+}
+
+.sheetHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: max(8px, env(safe-area-inset-top, 0px)) 8px;
+  padding-inline: max(var(--gutter), env(safe-area-inset-left, 0px)) max(var(--gutter), env(safe-area-inset-right, 0px));
+  border-block-end: 1px solid var(--line);
+}
+
+.sheetHead .box {
+  flex: 1;
+}
+
+.sheetHead .field {
+  block-size: 44px;
+}
+
+.sheetBody {
+  overflow-y: auto;
+  padding-block: 4px max(16px, env(safe-area-inset-bottom, 0px));
+}
+
+.sheetBody .option {
+  padding-inline: max(var(--gutter), env(safe-area-inset-left, 0px));
+  min-height: 56px;
+}
+
+.sheetBody .groupLabel,
+.sheetBody .note,
+.sheetBody .seeAll {
+  padding-inline: var(--gutter);
+}
+
+.iconBtn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  border-radius: var(--r-sm);
+}
+
+.iconBtn:hover {
+  background: var(--surface-2);
+}

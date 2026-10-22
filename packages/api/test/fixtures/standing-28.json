@@ -1,0 +1,1498 @@
+{
+ "data": [
+  {
+   "id": 28,
+   "title": "كأس الأمم الإفريقية",
+   "logo": "https://v3.appkora.com/storage/50152/01KEQRE71CP0JP6RE059W48YMH.png",
+   "competition_type": 1,
+   "has_tree": 1,
+   "has_group": 1,
+   "has_league_stage": 1,
+   "is_started": 1,
+   "data": {
+    "standing": [
+     {
+      "team_id": 602,
+      "team_name": "جزر القمر",
+      "team_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+      "point": null,
+      "played": null,
+      "goals_in": null,
+      "goals_out": null,
+      "lastStatus": [
+       {
+        "id": 3675,
+        "date": "2025-12-29 22:00:00",
+        "status": "D",
+        "teamOne_id": 602,
+        "teamOne_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamOne_name": "جزر القمر",
+        "teamOne_score": 0,
+        "teamTwo_id": 603,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126513/mali.png",
+        "teamTwo_name": "مالي",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3688,
+        "date": "2025-12-26 20:30:00",
+        "status": "D",
+        "teamOne_id": 605,
+        "teamOne_logo": "https://v3.appkora.com/storage/126515/zambia.png",
+        "teamOne_name": "زامبيا",
+        "teamOne_score": 0,
+        "teamTwo_id": 602,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamTwo_name": "جزر القمر",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3702,
+        "date": "2025-12-21 22:00:00",
+        "status": "L",
+        "teamOne_id": 604,
+        "teamOne_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+        "teamOne_name": "المغرب",
+        "teamOne_score": 2,
+        "teamTwo_id": 602,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamTwo_name": "جزر القمر",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": null
+     },
+     {
+      "team_id": 606,
+      "team_name": "أنغولا",
+      "team_logo": "https://v3.appkora.com/storage/126516/angola.png",
+      "point": null,
+      "played": null,
+      "goals_in": null,
+      "goals_out": null,
+      "lastStatus": [
+       {
+        "id": 3677,
+        "date": "2025-12-29 19:00:00",
+        "status": "D",
+        "teamOne_id": 606,
+        "teamOne_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamOne_name": "أنغولا",
+        "teamOne_score": 0,
+        "teamTwo_id": 607,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+        "teamTwo_name": "مصر",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3690,
+        "date": "2025-12-26 15:30:00",
+        "status": "D",
+        "teamOne_id": 606,
+        "teamOne_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamOne_name": "أنغولا",
+        "teamOne_score": 1,
+        "teamTwo_id": 609,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126519/zimbabwe.png",
+        "teamTwo_name": "زيمبابوي",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3700,
+        "date": "2025-12-22 20:00:00",
+        "status": "L",
+        "teamOne_id": 608,
+        "teamOne_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+        "teamOne_name": "جنوب أفريقيا",
+        "teamOne_score": 2,
+        "teamTwo_id": 606,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamTwo_name": "أنغولا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": null
+     },
+     {
+      "team_id": 621,
+      "team_name": "السودان",
+      "team_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+      "point": null,
+      "played": null,
+      "goals_in": null,
+      "goals_out": null,
+      "lastStatus": [
+       {
+        "id": 3670,
+        "date": "2025-12-31 19:00:00",
+        "status": "L",
+        "teamOne_id": 621,
+        "teamOne_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamOne_name": "السودان",
+        "teamOne_score": 0,
+        "teamTwo_id": 619,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+        "teamTwo_name": "بوركينا فاسو",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3681,
+        "date": "2025-12-28 18:00:00",
+        "status": "W",
+        "teamOne_id": 620,
+        "teamOne_logo": "https://v3.appkora.com/storage/126530/equatorial-guinea.png",
+        "teamOne_name": "غينيا الإستوائية",
+        "teamOne_score": 0,
+        "teamTwo_id": 621,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamTwo_name": "السودان",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3693,
+        "date": "2025-12-24 18:00:00",
+        "status": "L",
+        "teamOne_id": 618,
+        "teamOne_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+        "teamOne_name": "الجزائر",
+        "teamOne_score": 3,
+        "teamTwo_id": 621,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamTwo_name": "السودان",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": null
+     },
+     {
+      "team_id": 625,
+      "team_name": "موزمبيق",
+      "team_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+      "point": null,
+      "played": null,
+      "goals_in": null,
+      "goals_out": null,
+      "lastStatus": [
+       {
+        "id": 3668,
+        "date": "2025-12-31 22:00:00",
+        "status": "L",
+        "teamOne_id": 625,
+        "teamOne_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamOne_name": "موزمبيق",
+        "teamOne_score": 1,
+        "teamTwo_id": 622,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamTwo_name": "الكاميرون",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3682,
+        "date": "2025-12-28 15:30:00",
+        "status": "W",
+        "teamOne_id": 623,
+        "teamOne_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamOne_name": "الجابون",
+        "teamOne_score": 2,
+        "teamTwo_id": 625,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamTwo_name": "موزمبيق",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3692,
+        "date": "2025-12-24 20:30:00",
+        "status": "L",
+        "teamOne_id": 624,
+        "teamOne_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamOne_name": "ساحل العاج",
+        "teamOne_score": 1,
+        "teamTwo_id": 625,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamTwo_name": "موزمبيق",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": null
+     },
+     {
+      "team_id": 611,
+      "team_name": "تنزانيا",
+      "team_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+      "point": null,
+      "played": null,
+      "goals_in": null,
+      "goals_out": null,
+      "lastStatus": [
+       {
+        "id": 3673,
+        "date": "2025-12-30 19:00:00",
+        "status": "D",
+        "teamOne_id": 611,
+        "teamOne_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamOne_name": "تنزانيا",
+        "teamOne_score": 1,
+        "teamTwo_id": 612,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+        "teamTwo_name": "تونس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3684,
+        "date": "2025-12-27 20:30:00",
+        "status": "D",
+        "teamOne_id": 613,
+        "teamOne_logo": "https://v3.appkora.com/storage/126523/uganda.png",
+        "teamOne_name": "أوغندا",
+        "teamOne_score": 1,
+        "teamTwo_id": 611,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamTwo_name": "تنزانيا",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3696,
+        "date": "2025-12-23 20:30:00",
+        "status": "L",
+        "teamOne_id": 610,
+        "teamOne_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+        "teamOne_name": "نيجيريا",
+        "teamOne_score": 2,
+        "teamTwo_id": 611,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamTwo_name": "تنزانيا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": null
+     },
+     {
+      "team_id": 614,
+      "team_name": "بنين",
+      "team_logo": "https://v3.appkora.com/storage/126524/benin.png",
+      "point": null,
+      "played": null,
+      "goals_in": null,
+      "goals_out": null,
+      "lastStatus": [
+       {
+        "id": 3671,
+        "date": "2025-12-30 22:00:00",
+        "status": "L",
+        "teamOne_id": 614,
+        "teamOne_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamOne_name": "بنين",
+        "teamOne_score": 0,
+        "teamTwo_id": 617,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+        "teamTwo_name": "السنغال",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3686,
+        "date": "2025-12-27 15:30:00",
+        "status": "W",
+        "teamOne_id": 614,
+        "teamOne_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamOne_name": "بنين",
+        "teamOne_score": 1,
+        "teamTwo_id": 615,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126525/botswana.png",
+        "teamTwo_name": "بوتسوانا",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3698,
+        "date": "2025-12-23 15:30:00",
+        "status": "L",
+        "teamOne_id": 616,
+        "teamOne_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+        "teamOne_name": "الكونغو الديمقراطية",
+        "teamOne_score": 1,
+        "teamTwo_id": 614,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamTwo_name": "بنين",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": null
+     },
+     {
+      "team_id": 624,
+      "team_name": "ساحل العاج",
+      "team_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+      "point": 7,
+      "played": 3,
+      "goals_in": 5,
+      "goals_out": 3,
+      "lastStatus": [
+       {
+        "id": 3667,
+        "date": "2025-12-31 22:00:00",
+        "status": "W",
+        "teamOne_id": 623,
+        "teamOne_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamOne_name": "الجابون",
+        "teamOne_score": 2,
+        "teamTwo_id": 624,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamTwo_name": "ساحل العاج",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3679,
+        "date": "2025-12-28 23:00:00",
+        "status": "D",
+        "teamOne_id": 624,
+        "teamOne_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamOne_name": "ساحل العاج",
+        "teamOne_score": 1,
+        "teamTwo_id": 622,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamTwo_name": "الكاميرون",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3692,
+        "date": "2025-12-24 20:30:00",
+        "status": "W",
+        "teamOne_id": 624,
+        "teamOne_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamOne_name": "ساحل العاج",
+        "teamOne_score": 1,
+        "teamTwo_id": 625,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamTwo_name": "موزمبيق",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 618,
+      "team_name": "الجزائر",
+      "team_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+      "point": 9,
+      "played": 3,
+      "goals_in": 7,
+      "goals_out": 1,
+      "lastStatus": [
+       {
+        "id": 3669,
+        "date": "2025-12-31 19:00:00",
+        "status": "W",
+        "teamOne_id": 620,
+        "teamOne_logo": "https://v3.appkora.com/storage/126530/equatorial-guinea.png",
+        "teamOne_name": "غينيا الإستوائية",
+        "teamOne_score": 1,
+        "teamTwo_id": 618,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+        "teamTwo_name": "الجزائر",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3680,
+        "date": "2025-12-28 20:30:00",
+        "status": "W",
+        "teamOne_id": 618,
+        "teamOne_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+        "teamOne_name": "الجزائر",
+        "teamOne_score": 1,
+        "teamTwo_id": 619,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+        "teamTwo_name": "بوركينا فاسو",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3693,
+        "date": "2025-12-24 18:00:00",
+        "status": "W",
+        "teamOne_id": 618,
+        "teamOne_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+        "teamOne_name": "الجزائر",
+        "teamOne_score": 3,
+        "teamTwo_id": 621,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamTwo_name": "السودان",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 617,
+      "team_name": "السنغال",
+      "team_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+      "point": 7,
+      "played": 3,
+      "goals_in": 7,
+      "goals_out": 1,
+      "lastStatus": [
+       {
+        "id": 3671,
+        "date": "2025-12-30 22:00:00",
+        "status": "W",
+        "teamOne_id": 614,
+        "teamOne_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamOne_name": "بنين",
+        "teamOne_score": 0,
+        "teamTwo_id": 617,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+        "teamTwo_name": "السنغال",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3685,
+        "date": "2025-12-27 18:00:00",
+        "status": "D",
+        "teamOne_id": 617,
+        "teamOne_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+        "teamOne_name": "السنغال",
+        "teamOne_score": 1,
+        "teamTwo_id": 616,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+        "teamTwo_name": "الكونغو الديمقراطية",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3697,
+        "date": "2025-12-23 18:00:00",
+        "status": "W",
+        "teamOne_id": 617,
+        "teamOne_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+        "teamOne_name": "السنغال",
+        "teamOne_score": 3,
+        "teamTwo_id": 615,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126525/botswana.png",
+        "teamTwo_name": "بوتسوانا",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 610,
+      "team_name": "نيجيريا",
+      "team_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+      "point": 9,
+      "played": 3,
+      "goals_in": 8,
+      "goals_out": 4,
+      "lastStatus": [
+       {
+        "id": 3674,
+        "date": "2025-12-30 19:00:00",
+        "status": "W",
+        "teamOne_id": 613,
+        "teamOne_logo": "https://v3.appkora.com/storage/126523/uganda.png",
+        "teamOne_name": "أوغندا",
+        "teamOne_score": 1,
+        "teamTwo_id": 610,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+        "teamTwo_name": "نيجيريا",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3683,
+        "date": "2025-12-27 23:00:00",
+        "status": "W",
+        "teamOne_id": 610,
+        "teamOne_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+        "teamOne_name": "نيجيريا",
+        "teamOne_score": 3,
+        "teamTwo_id": 612,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+        "teamTwo_name": "تونس",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3696,
+        "date": "2025-12-23 20:30:00",
+        "status": "W",
+        "teamOne_id": 610,
+        "teamOne_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+        "teamOne_name": "نيجيريا",
+        "teamOne_score": 2,
+        "teamTwo_id": 611,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamTwo_name": "تنزانيا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 604,
+      "team_name": "المغرب",
+      "team_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+      "point": 7,
+      "played": 3,
+      "goals_in": 6,
+      "goals_out": 1,
+      "lastStatus": [
+       {
+        "id": 3676,
+        "date": "2025-12-29 22:00:00",
+        "status": "W",
+        "teamOne_id": 605,
+        "teamOne_logo": "https://v3.appkora.com/storage/126515/zambia.png",
+        "teamOne_name": "زامبيا",
+        "teamOne_score": 0,
+        "teamTwo_id": 604,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+        "teamTwo_name": "المغرب",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3687,
+        "date": "2025-12-26 23:00:00",
+        "status": "D",
+        "teamOne_id": 604,
+        "teamOne_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+        "teamOne_name": "المغرب",
+        "teamOne_score": 1,
+        "teamTwo_id": 603,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126513/mali.png",
+        "teamTwo_name": "مالي",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3702,
+        "date": "2025-12-21 22:00:00",
+        "status": "W",
+        "teamOne_id": 604,
+        "teamOne_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+        "teamOne_name": "المغرب",
+        "teamOne_score": 2,
+        "teamTwo_id": 602,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamTwo_name": "جزر القمر",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 607,
+      "team_name": "مصر",
+      "team_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+      "point": 7,
+      "played": 3,
+      "goals_in": 3,
+      "goals_out": 1,
+      "lastStatus": [
+       {
+        "id": 3677,
+        "date": "2025-12-29 19:00:00",
+        "status": "D",
+        "teamOne_id": 606,
+        "teamOne_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamOne_name": "أنغولا",
+        "teamOne_score": 0,
+        "teamTwo_id": 607,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+        "teamTwo_name": "مصر",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3689,
+        "date": "2025-12-26 18:00:00",
+        "status": "W",
+        "teamOne_id": 607,
+        "teamOne_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+        "teamOne_name": "مصر",
+        "teamOne_score": 1,
+        "teamTwo_id": 608,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+        "teamTwo_name": "جنوب أفريقيا",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3699,
+        "date": "2025-12-22 23:00:00",
+        "status": "W",
+        "teamOne_id": 607,
+        "teamOne_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+        "teamOne_name": "مصر",
+        "teamOne_score": 2,
+        "teamTwo_id": 609,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126519/zimbabwe.png",
+        "teamTwo_name": "زيمبابوي",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 608,
+      "team_name": "جنوب أفريقيا",
+      "team_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+      "point": 6,
+      "played": 3,
+      "goals_in": 5,
+      "goals_out": 4,
+      "lastStatus": [
+       {
+        "id": 3678,
+        "date": "2025-12-29 19:00:00",
+        "status": "W",
+        "teamOne_id": 609,
+        "teamOne_logo": "https://v3.appkora.com/storage/126519/zimbabwe.png",
+        "teamOne_name": "زيمبابوي",
+        "teamOne_score": 2,
+        "teamTwo_id": 608,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+        "teamTwo_name": "جنوب أفريقيا",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3689,
+        "date": "2025-12-26 18:00:00",
+        "status": "L",
+        "teamOne_id": 607,
+        "teamOne_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+        "teamOne_name": "مصر",
+        "teamOne_score": 1,
+        "teamTwo_id": 608,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+        "teamTwo_name": "جنوب أفريقيا",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3700,
+        "date": "2025-12-22 20:00:00",
+        "status": "W",
+        "teamOne_id": 608,
+        "teamOne_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+        "teamOne_name": "جنوب أفريقيا",
+        "teamOne_score": 2,
+        "teamTwo_id": 606,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamTwo_name": "أنغولا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 619,
+      "team_name": "بوركينا فاسو",
+      "team_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+      "point": 6,
+      "played": 3,
+      "goals_in": 4,
+      "goals_out": 2,
+      "lastStatus": [
+       {
+        "id": 3670,
+        "date": "2025-12-31 19:00:00",
+        "status": "W",
+        "teamOne_id": 621,
+        "teamOne_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamOne_name": "السودان",
+        "teamOne_score": 0,
+        "teamTwo_id": 619,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+        "teamTwo_name": "بوركينا فاسو",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3680,
+        "date": "2025-12-28 20:30:00",
+        "status": "L",
+        "teamOne_id": 618,
+        "teamOne_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+        "teamOne_name": "الجزائر",
+        "teamOne_score": 1,
+        "teamTwo_id": 619,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+        "teamTwo_name": "بوركينا فاسو",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3694,
+        "date": "2025-12-24 15:30:00",
+        "status": "W",
+        "teamOne_id": 619,
+        "teamOne_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+        "teamOne_name": "بوركينا فاسو",
+        "teamOne_score": 2,
+        "teamTwo_id": 620,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126530/equatorial-guinea.png",
+        "teamTwo_name": "غينيا الإستوائية",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 622,
+      "team_name": "الكاميرون",
+      "team_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+      "point": 7,
+      "played": 3,
+      "goals_in": 4,
+      "goals_out": 2,
+      "lastStatus": [
+       {
+        "id": 3668,
+        "date": "2025-12-31 22:00:00",
+        "status": "W",
+        "teamOne_id": 625,
+        "teamOne_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamOne_name": "موزمبيق",
+        "teamOne_score": 1,
+        "teamTwo_id": 622,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamTwo_name": "الكاميرون",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3679,
+        "date": "2025-12-28 23:00:00",
+        "status": "D",
+        "teamOne_id": 624,
+        "teamOne_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamOne_name": "ساحل العاج",
+        "teamOne_score": 1,
+        "teamTwo_id": 622,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamTwo_name": "الكاميرون",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3691,
+        "date": "2025-12-24 23:00:00",
+        "status": "W",
+        "teamOne_id": 622,
+        "teamOne_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamOne_name": "الكاميرون",
+        "teamOne_score": 1,
+        "teamTwo_id": 623,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamTwo_name": "الجابون",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 616,
+      "team_name": "الكونغو الديمقراطية",
+      "team_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+      "point": 7,
+      "played": 3,
+      "goals_in": 5,
+      "goals_out": 1,
+      "lastStatus": [
+       {
+        "id": 3672,
+        "date": "2025-12-30 22:00:00",
+        "status": "W",
+        "teamOne_id": 615,
+        "teamOne_logo": "https://v3.appkora.com/storage/126525/botswana.png",
+        "teamOne_name": "بوتسوانا",
+        "teamOne_score": 0,
+        "teamTwo_id": 616,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+        "teamTwo_name": "الكونغو الديمقراطية",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3685,
+        "date": "2025-12-27 18:00:00",
+        "status": "D",
+        "teamOne_id": 617,
+        "teamOne_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+        "teamOne_name": "السنغال",
+        "teamOne_score": 1,
+        "teamTwo_id": 616,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+        "teamTwo_name": "الكونغو الديمقراطية",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3698,
+        "date": "2025-12-23 15:30:00",
+        "status": "W",
+        "teamOne_id": 616,
+        "teamOne_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+        "teamOne_name": "الكونغو الديمقراطية",
+        "teamOne_score": 1,
+        "teamTwo_id": 614,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamTwo_name": "بنين",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 603,
+      "team_name": "مالي",
+      "team_logo": "https://v3.appkora.com/storage/126513/mali.png",
+      "point": 3,
+      "played": 3,
+      "goals_in": 2,
+      "goals_out": 2,
+      "lastStatus": [
+       {
+        "id": 3675,
+        "date": "2025-12-29 22:00:00",
+        "status": "D",
+        "teamOne_id": 602,
+        "teamOne_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamOne_name": "جزر القمر",
+        "teamOne_score": 0,
+        "teamTwo_id": 603,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126513/mali.png",
+        "teamTwo_name": "مالي",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3687,
+        "date": "2025-12-26 23:00:00",
+        "status": "D",
+        "teamOne_id": 604,
+        "teamOne_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+        "teamOne_name": "المغرب",
+        "teamOne_score": 1,
+        "teamTwo_id": 603,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126513/mali.png",
+        "teamTwo_name": "مالي",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3701,
+        "date": "2025-12-22 17:00:00",
+        "status": "D",
+        "teamOne_id": 603,
+        "teamOne_logo": "https://v3.appkora.com/storage/126513/mali.png",
+        "teamOne_name": "مالي",
+        "teamOne_score": 1,
+        "teamTwo_id": 605,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126515/zambia.png",
+        "teamTwo_name": "زامبيا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 612,
+      "team_name": "تونس",
+      "team_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+      "point": 4,
+      "played": 3,
+      "goals_in": 6,
+      "goals_out": 5,
+      "lastStatus": [
+       {
+        "id": 3673,
+        "date": "2025-12-30 19:00:00",
+        "status": "D",
+        "teamOne_id": 611,
+        "teamOne_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamOne_name": "تنزانيا",
+        "teamOne_score": 1,
+        "teamTwo_id": 612,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+        "teamTwo_name": "تونس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3683,
+        "date": "2025-12-27 23:00:00",
+        "status": "L",
+        "teamOne_id": 610,
+        "teamOne_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+        "teamOne_name": "نيجيريا",
+        "teamOne_score": 3,
+        "teamTwo_id": 612,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+        "teamTwo_name": "تونس",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3695,
+        "date": "2025-12-23 23:00:00",
+        "status": "W",
+        "teamOne_id": 612,
+        "teamOne_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+        "teamOne_name": "تونس",
+        "teamOne_score": 3,
+        "teamTwo_id": 613,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126523/uganda.png",
+        "teamTwo_name": "أوغندا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 606,
+      "team_name": "أنغولا",
+      "team_logo": "https://v3.appkora.com/storage/126516/angola.png",
+      "point": 2,
+      "played": 3,
+      "goals_in": 2,
+      "goals_out": 3,
+      "lastStatus": [
+       {
+        "id": 3677,
+        "date": "2025-12-29 19:00:00",
+        "status": "D",
+        "teamOne_id": 606,
+        "teamOne_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamOne_name": "أنغولا",
+        "teamOne_score": 0,
+        "teamTwo_id": 607,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126517/egypt.png",
+        "teamTwo_name": "مصر",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3690,
+        "date": "2025-12-26 15:30:00",
+        "status": "D",
+        "teamOne_id": 606,
+        "teamOne_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamOne_name": "أنغولا",
+        "teamOne_score": 1,
+        "teamTwo_id": 609,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126519/zimbabwe.png",
+        "teamTwo_name": "زيمبابوي",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3700,
+        "date": "2025-12-22 20:00:00",
+        "status": "L",
+        "teamOne_id": 608,
+        "teamOne_logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+        "teamOne_name": "جنوب أفريقيا",
+        "teamOne_score": 2,
+        "teamTwo_id": 606,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126516/angola.png",
+        "teamTwo_name": "أنغولا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 625,
+      "team_name": "موزمبيق",
+      "team_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+      "point": 3,
+      "played": 3,
+      "goals_in": 4,
+      "goals_out": 5,
+      "lastStatus": [
+       {
+        "id": 3668,
+        "date": "2025-12-31 22:00:00",
+        "status": "L",
+        "teamOne_id": 625,
+        "teamOne_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamOne_name": "موزمبيق",
+        "teamOne_score": 1,
+        "teamTwo_id": 622,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamTwo_name": "الكاميرون",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3682,
+        "date": "2025-12-28 15:30:00",
+        "status": "W",
+        "teamOne_id": 623,
+        "teamOne_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamOne_name": "الجابون",
+        "teamOne_score": 2,
+        "teamTwo_id": 625,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamTwo_name": "موزمبيق",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3692,
+        "date": "2025-12-24 20:30:00",
+        "status": "L",
+        "teamOne_id": 624,
+        "teamOne_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamOne_name": "ساحل العاج",
+        "teamOne_score": 1,
+        "teamTwo_id": 625,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamTwo_name": "موزمبيق",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 611,
+      "team_name": "تنزانيا",
+      "team_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+      "point": 2,
+      "played": 3,
+      "goals_in": 3,
+      "goals_out": 4,
+      "lastStatus": [
+       {
+        "id": 3673,
+        "date": "2025-12-30 19:00:00",
+        "status": "D",
+        "teamOne_id": 611,
+        "teamOne_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamOne_name": "تنزانيا",
+        "teamOne_score": 1,
+        "teamTwo_id": 612,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+        "teamTwo_name": "تونس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3684,
+        "date": "2025-12-27 20:30:00",
+        "status": "D",
+        "teamOne_id": 613,
+        "teamOne_logo": "https://v3.appkora.com/storage/126523/uganda.png",
+        "teamOne_name": "أوغندا",
+        "teamOne_score": 1,
+        "teamTwo_id": 611,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamTwo_name": "تنزانيا",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3696,
+        "date": "2025-12-23 20:30:00",
+        "status": "L",
+        "teamOne_id": 610,
+        "teamOne_logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+        "teamOne_name": "نيجيريا",
+        "teamOne_score": 2,
+        "teamTwo_id": 611,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+        "teamTwo_name": "تنزانيا",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 621,
+      "team_name": "السودان",
+      "team_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+      "point": 3,
+      "played": 3,
+      "goals_in": 1,
+      "goals_out": 5,
+      "lastStatus": [
+       {
+        "id": 3670,
+        "date": "2025-12-31 19:00:00",
+        "status": "L",
+        "teamOne_id": 621,
+        "teamOne_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamOne_name": "السودان",
+        "teamOne_score": 0,
+        "teamTwo_id": 619,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+        "teamTwo_name": "بوركينا فاسو",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 3681,
+        "date": "2025-12-28 18:00:00",
+        "status": "W",
+        "teamOne_id": 620,
+        "teamOne_logo": "https://v3.appkora.com/storage/126530/equatorial-guinea.png",
+        "teamOne_name": "غينيا الإستوائية",
+        "teamOne_score": 0,
+        "teamTwo_id": 621,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamTwo_name": "السودان",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 3693,
+        "date": "2025-12-24 18:00:00",
+        "status": "L",
+        "teamOne_id": 618,
+        "teamOne_logo": "https://v3.appkora.com/storage/126528/algeria.png",
+        "teamOne_name": "الجزائر",
+        "teamOne_score": 3,
+        "teamTwo_id": 621,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126531/sudan.png",
+        "teamTwo_name": "السودان",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 614,
+      "team_name": "بنين",
+      "team_logo": "https://v3.appkora.com/storage/126524/benin.png",
+      "point": 3,
+      "played": 3,
+      "goals_in": 1,
+      "goals_out": 4,
+      "lastStatus": [
+       {
+        "id": 3671,
+        "date": "2025-12-30 22:00:00",
+        "status": "L",
+        "teamOne_id": 614,
+        "teamOne_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamOne_name": "بنين",
+        "teamOne_score": 0,
+        "teamTwo_id": 617,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126527/senegal.png",
+        "teamTwo_name": "السنغال",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3686,
+        "date": "2025-12-27 15:30:00",
+        "status": "W",
+        "teamOne_id": 614,
+        "teamOne_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamOne_name": "بنين",
+        "teamOne_score": 1,
+        "teamTwo_id": 615,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126525/botswana.png",
+        "teamTwo_name": "بوتسوانا",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3698,
+        "date": "2025-12-23 15:30:00",
+        "status": "L",
+        "teamOne_id": 616,
+        "teamOne_logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+        "teamOne_name": "الكونغو الديمقراطية",
+        "teamOne_score": 1,
+        "teamTwo_id": 614,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126524/benin.png",
+        "teamTwo_name": "بنين",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 602,
+      "team_name": "جزر القمر",
+      "team_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+      "point": 2,
+      "played": 3,
+      "goals_in": 0,
+      "goals_out": 2,
+      "lastStatus": [
+       {
+        "id": 3675,
+        "date": "2025-12-29 22:00:00",
+        "status": "D",
+        "teamOne_id": 602,
+        "teamOne_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamOne_name": "جزر القمر",
+        "teamOne_score": 0,
+        "teamTwo_id": 603,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126513/mali.png",
+        "teamTwo_name": "مالي",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3688,
+        "date": "2025-12-26 20:30:00",
+        "status": "D",
+        "teamOne_id": 605,
+        "teamOne_logo": "https://v3.appkora.com/storage/126515/zambia.png",
+        "teamOne_name": "زامبيا",
+        "teamOne_score": 0,
+        "teamTwo_id": 602,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamTwo_name": "جزر القمر",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 3702,
+        "date": "2025-12-21 22:00:00",
+        "status": "L",
+        "teamOne_id": 604,
+        "teamOne_logo": "https://v3.appkora.com/storage/126514/morocco.png",
+        "teamOne_name": "المغرب",
+        "teamOne_score": 2,
+        "teamTwo_id": 602,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126512/comoros.png",
+        "teamTwo_name": "جزر القمر",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 623,
+      "team_name": "الجابون",
+      "team_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+      "point": 0,
+      "played": 3,
+      "goals_in": 4,
+      "goals_out": 7,
+      "lastStatus": [
+       {
+        "id": 3667,
+        "date": "2025-12-31 22:00:00",
+        "status": "L",
+        "teamOne_id": 623,
+        "teamOne_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamOne_name": "الجابون",
+        "teamOne_score": 2,
+        "teamTwo_id": 624,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+        "teamTwo_name": "ساحل العاج",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3682,
+        "date": "2025-12-28 15:30:00",
+        "status": "L",
+        "teamOne_id": 623,
+        "teamOne_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamOne_name": "الجابون",
+        "teamOne_score": 2,
+        "teamTwo_id": 625,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+        "teamTwo_name": "موزمبيق",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 3691,
+        "date": "2025-12-24 23:00:00",
+        "status": "L",
+        "teamOne_id": 622,
+        "teamOne_logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+        "teamOne_name": "الكاميرون",
+        "teamOne_score": 1,
+        "teamTwo_id": 623,
+        "teamTwo_logo": "https://v3.appkora.com/storage/126533/gabon.png",
+        "teamTwo_name": "الجابون",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       null
+      ],
+      "sport_id": 1,
+      "sort": 4
+     }
+    ]
+   }
+  }
+ ],
+ "tournament": [
+  28
+ ],
+ "message": "Retrieved Successfully",
+ "status": 200
+}

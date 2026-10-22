@@ -1,0 +1,1723 @@
+{
+ "data": [
+  {
+   "id": 3,
+   "title": "الدوري الإنجليزي",
+   "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+   "competition_type": 2,
+   "has_tree": 0,
+   "has_group": 0,
+   "has_league_stage": 0,
+   "is_started": 1,
+   "data": {
+    "standing": [
+     {
+      "team_id": 23,
+      "team_name": "أرسنال",
+      "team_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+      "point": 58,
+      "played": 27,
+      "goals_in": 52,
+      "goals_out": 20,
+      "lastStatus": [
+       {
+        "id": 293,
+        "date": "2026-02-18 23:00:00",
+        "status": "D",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 2,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 335,
+        "date": "2026-02-12 23:00:00",
+        "status": "D",
+        "teamOne_id": 25,
+        "teamOne_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamOne_name": "برينتفورد",
+        "teamOne_score": 1,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 344,
+        "date": "2026-02-07 18:00:00",
+        "status": "W",
+        "teamOne_id": 23,
+        "teamOne_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamOne_name": "أرسنال",
+        "teamOne_score": 3,
+        "teamTwo_id": 38,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamTwo_name": "سندرلاند",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 357,
+        "date": "2026-01-31 18:00:00",
+        "status": "W",
+        "teamOne_id": 32,
+        "teamOne_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamOne_name": "ليدز يونايتد",
+        "teamOne_score": 0,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 4
+       },
+       {
+        "id": 364,
+        "date": "2026-01-25 19:30:00",
+        "status": "L",
+        "teamOne_id": 23,
+        "teamOne_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamOne_name": "أرسنال",
+        "teamOne_score": 2,
+        "teamTwo_id": 35,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamTwo_name": "مانشستر يونايتد",
+        "teamTwo_score": 3
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 1
+     },
+     {
+      "team_id": 34,
+      "team_name": "مانشستر سيتي",
+      "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+      "point": 53,
+      "played": 26,
+      "goals_in": 54,
+      "goals_out": 24,
+      "lastStatus": [
+       {
+        "id": 339,
+        "date": "2026-02-11 22:30:00",
+        "status": "W",
+        "teamOne_id": 34,
+        "teamOne_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamOne_name": "مانشستر سيتي",
+        "teamOne_score": 3,
+        "teamTwo_id": 31,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamTwo_name": "فولهام",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 350,
+        "date": "2026-02-08 19:30:00",
+        "status": "W",
+        "teamOne_id": 33,
+        "teamOne_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamOne_name": "ليفربول",
+        "teamOne_score": 1,
+        "teamTwo_id": 34,
+        "teamTwo_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamTwo_name": "مانشستر سيتي",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 362,
+        "date": "2026-02-01 19:30:00",
+        "status": "D",
+        "teamOne_id": 39,
+        "teamOne_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamOne_name": "توتنهام",
+        "teamOne_score": 2,
+        "teamTwo_id": 34,
+        "teamTwo_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamTwo_name": "مانشستر سيتي",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 371,
+        "date": "2026-01-24 18:00:00",
+        "status": "W",
+        "teamOne_id": 34,
+        "teamOne_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamOne_name": "مانشستر سيتي",
+        "teamOne_score": 2,
+        "teamTwo_id": 41,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamTwo_name": "ولفرهامبتون",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 379,
+        "date": "2026-01-17 15:30:00",
+        "status": "L",
+        "teamOne_id": 35,
+        "teamOne_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamOne_name": "مانشستر يونايتد",
+        "teamOne_score": 2,
+        "teamTwo_id": 34,
+        "teamTwo_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamTwo_name": "مانشستر سيتي",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 2
+     },
+     {
+      "team_id": 24,
+      "team_name": "أستون فيلا",
+      "team_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+      "point": 50,
+      "played": 26,
+      "goals_in": 37,
+      "goals_out": 27,
+      "lastStatus": [
+       {
+        "id": 334,
+        "date": "2026-02-11 22:30:00",
+        "status": "W",
+        "teamOne_id": 24,
+        "teamOne_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamOne_name": "أستون فيلا",
+        "teamOne_score": 1,
+        "teamTwo_id": 26,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamTwo_name": "برايتون",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 345,
+        "date": "2026-02-07 18:00:00",
+        "status": "D",
+        "teamOne_id": 22,
+        "teamOne_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamOne_name": "بورنموث",
+        "teamOne_score": 1,
+        "teamTwo_id": 24,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamTwo_name": "أستون فيلا",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 354,
+        "date": "2026-02-01 17:00:00",
+        "status": "L",
+        "teamOne_id": 24,
+        "teamOne_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamOne_name": "أستون فيلا",
+        "teamOne_score": 0,
+        "teamTwo_id": 25,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamTwo_name": "برينتفورد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 372,
+        "date": "2026-01-25 17:00:00",
+        "status": "W",
+        "teamOne_id": 36,
+        "teamOne_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamOne_name": "نيوكاسل يونايتد",
+        "teamOne_score": 0,
+        "teamTwo_id": 24,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamTwo_name": "أستون فيلا",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 374,
+        "date": "2026-01-18 19:30:00",
+        "status": "L",
+        "teamOne_id": 24,
+        "teamOne_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamOne_name": "أستون فيلا",
+        "teamOne_score": 0,
+        "teamTwo_id": 30,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamTwo_name": "إيفرتون",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 3
+     },
+     {
+      "team_id": 35,
+      "team_name": "مانشستر يونايتد",
+      "team_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+      "point": 45,
+      "played": 26,
+      "goals_in": 47,
+      "goals_out": 37,
+      "lastStatus": [
+       {
+        "id": 343,
+        "date": "2026-02-10 23:15:00",
+        "status": "D",
+        "teamOne_id": 40,
+        "teamOne_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamOne_name": "وست هام يونايتد",
+        "teamOne_score": 1,
+        "teamTwo_id": 35,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamTwo_name": "مانشستر يونايتد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 351,
+        "date": "2026-02-07 15:30:00",
+        "status": "W",
+        "teamOne_id": 35,
+        "teamOne_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamOne_name": "مانشستر يونايتد",
+        "teamOne_score": 2,
+        "teamTwo_id": 39,
+        "teamTwo_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamTwo_name": "توتنهام",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 359,
+        "date": "2026-02-01 17:00:00",
+        "status": "W",
+        "teamOne_id": 35,
+        "teamOne_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamOne_name": "مانشستر يونايتد",
+        "teamOne_score": 3,
+        "teamTwo_id": 31,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamTwo_name": "فولهام",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 364,
+        "date": "2026-01-25 19:30:00",
+        "status": "W",
+        "teamOne_id": 23,
+        "teamOne_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamOne_name": "أرسنال",
+        "teamOne_score": 2,
+        "teamTwo_id": 35,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamTwo_name": "مانشستر يونايتد",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 379,
+        "date": "2026-01-17 15:30:00",
+        "status": "W",
+        "teamOne_id": 35,
+        "teamOne_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamOne_name": "مانشستر يونايتد",
+        "teamOne_score": 2,
+        "teamTwo_id": 34,
+        "teamTwo_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamTwo_name": "مانشستر سيتي",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 4
+     },
+     {
+      "team_id": 28,
+      "team_name": "تشيلسي",
+      "team_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+      "point": 44,
+      "played": 26,
+      "goals_in": 47,
+      "goals_out": 30,
+      "lastStatus": [
+       {
+        "id": 336,
+        "date": "2026-02-10 22:30:00",
+        "status": "D",
+        "teamOne_id": 28,
+        "teamOne_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamOne_name": "تشيلسي",
+        "teamOne_score": 2,
+        "teamTwo_id": 32,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamTwo_name": "ليدز يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 353,
+        "date": "2026-02-07 18:00:00",
+        "status": "W",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 28,
+        "teamTwo_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamTwo_name": "تشيلسي",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 356,
+        "date": "2026-01-31 20:30:00",
+        "status": "W",
+        "teamOne_id": 28,
+        "teamOne_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamOne_name": "تشيلسي",
+        "teamOne_score": 3,
+        "teamTwo_id": 40,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamTwo_name": "وست هام يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 368,
+        "date": "2026-01-25 17:00:00",
+        "status": "W",
+        "teamOne_id": 29,
+        "teamOne_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamOne_name": "كريستال بالاس",
+        "teamOne_score": 1,
+        "teamTwo_id": 28,
+        "teamTwo_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamTwo_name": "تشيلسي",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 376,
+        "date": "2026-01-17 18:00:00",
+        "status": "W",
+        "teamOne_id": 28,
+        "teamOne_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamOne_name": "تشيلسي",
+        "teamOne_score": 2,
+        "teamTwo_id": 25,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamTwo_name": "برينتفورد",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 5
+     },
+     {
+      "team_id": 33,
+      "team_name": "ليفربول",
+      "team_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+      "point": 42,
+      "played": 26,
+      "goals_in": 41,
+      "goals_out": 35,
+      "lastStatus": [
+       {
+        "id": 341,
+        "date": "2026-02-11 23:15:00",
+        "status": "W",
+        "teamOne_id": 38,
+        "teamOne_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamOne_name": "سندرلاند",
+        "teamOne_score": 0,
+        "teamTwo_id": 33,
+        "teamTwo_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamTwo_name": "ليفربول",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 350,
+        "date": "2026-02-08 19:30:00",
+        "status": "L",
+        "teamOne_id": 33,
+        "teamOne_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamOne_name": "ليفربول",
+        "teamOne_score": 1,
+        "teamTwo_id": 34,
+        "teamTwo_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamTwo_name": "مانشستر سيتي",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 358,
+        "date": "2026-01-31 23:00:00",
+        "status": "W",
+        "teamOne_id": 33,
+        "teamOne_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamOne_name": "ليفربول",
+        "teamOne_score": 4,
+        "teamTwo_id": 36,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamTwo_name": "نيوكاسل يونايتد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 365,
+        "date": "2026-01-24 20:30:00",
+        "status": "L",
+        "teamOne_id": 22,
+        "teamOne_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamOne_name": "بورنموث",
+        "teamOne_score": 3,
+        "teamTwo_id": 33,
+        "teamTwo_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamTwo_name": "ليفربول",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 378,
+        "date": "2026-01-17 18:00:00",
+        "status": "D",
+        "teamOne_id": 33,
+        "teamOne_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamOne_name": "ليفربول",
+        "teamOne_score": 1,
+        "teamTwo_id": 27,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamTwo_name": "بيرنلي",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 6
+     },
+     {
+      "team_id": 25,
+      "team_name": "برينتفورد",
+      "team_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+      "point": 40,
+      "played": 26,
+      "goals_in": 40,
+      "goals_out": 35,
+      "lastStatus": [
+       {
+        "id": 335,
+        "date": "2026-02-12 23:00:00",
+        "status": "D",
+        "teamOne_id": 25,
+        "teamOne_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamOne_name": "برينتفورد",
+        "teamOne_score": 1,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 352,
+        "date": "2026-02-07 20:30:00",
+        "status": "W",
+        "teamOne_id": 36,
+        "teamOne_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamOne_name": "نيوكاسل يونايتد",
+        "teamOne_score": 2,
+        "teamTwo_id": 25,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamTwo_name": "برينتفورد",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 354,
+        "date": "2026-02-01 17:00:00",
+        "status": "W",
+        "teamOne_id": 24,
+        "teamOne_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamOne_name": "أستون فيلا",
+        "teamOne_score": 0,
+        "teamTwo_id": 25,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamTwo_name": "برينتفورد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 366,
+        "date": "2026-01-25 17:00:00",
+        "status": "L",
+        "teamOne_id": 25,
+        "teamOne_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamOne_name": "برينتفورد",
+        "teamOne_score": 0,
+        "teamTwo_id": 37,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamTwo_name": "نوتينجهام فورست",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 376,
+        "date": "2026-01-17 18:00:00",
+        "status": "L",
+        "teamOne_id": 28,
+        "teamOne_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamOne_name": "تشيلسي",
+        "teamOne_score": 2,
+        "teamTwo_id": 25,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamTwo_name": "برينتفورد",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 7
+     },
+     {
+      "team_id": 30,
+      "team_name": "إيفرتون",
+      "team_logo": "https://v3.appkora.com/storage/89962/everton.png",
+      "point": 37,
+      "played": 26,
+      "goals_in": 29,
+      "goals_out": 30,
+      "lastStatus": [
+       {
+        "id": 338,
+        "date": "2026-02-10 22:30:00",
+        "status": "L",
+        "teamOne_id": 30,
+        "teamOne_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamOne_name": "إيفرتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 22,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamTwo_name": "بورنموث",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 348,
+        "date": "2026-02-07 18:00:00",
+        "status": "W",
+        "teamOne_id": 31,
+        "teamOne_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamOne_name": "فولهام",
+        "teamOne_score": 1,
+        "teamTwo_id": 30,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamTwo_name": "إيفرتون",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 355,
+        "date": "2026-01-31 18:00:00",
+        "status": "D",
+        "teamOne_id": 26,
+        "teamOne_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamOne_name": "برايتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 30,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamTwo_name": "إيفرتون",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 2577,
+        "date": "2026-01-26 23:00:00",
+        "status": "D",
+        "teamOne_id": 30,
+        "teamOne_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamOne_name": "إيفرتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 32,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamTwo_name": "ليدز يونايتد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 374,
+        "date": "2026-01-18 19:30:00",
+        "status": "W",
+        "teamOne_id": 24,
+        "teamOne_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamOne_name": "أستون فيلا",
+        "teamOne_score": 0,
+        "teamTwo_id": 30,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamTwo_name": "إيفرتون",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 8
+     },
+     {
+      "team_id": 22,
+      "team_name": "بورنموث",
+      "team_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+      "point": 37,
+      "played": 26,
+      "goals_in": 43,
+      "goals_out": 45,
+      "lastStatus": [
+       {
+        "id": 338,
+        "date": "2026-02-10 22:30:00",
+        "status": "W",
+        "teamOne_id": 30,
+        "teamOne_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamOne_name": "إيفرتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 22,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamTwo_name": "بورنموث",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 345,
+        "date": "2026-02-07 18:00:00",
+        "status": "D",
+        "teamOne_id": 22,
+        "teamOne_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamOne_name": "بورنموث",
+        "teamOne_score": 1,
+        "teamTwo_id": 24,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamTwo_name": "أستون فيلا",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 363,
+        "date": "2026-01-31 18:00:00",
+        "status": "W",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 0,
+        "teamTwo_id": 22,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamTwo_name": "بورنموث",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 365,
+        "date": "2026-01-24 20:30:00",
+        "status": "W",
+        "teamOne_id": 22,
+        "teamOne_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamOne_name": "بورنموث",
+        "teamOne_score": 3,
+        "teamTwo_id": 33,
+        "teamTwo_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamTwo_name": "ليفربول",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 2578,
+        "date": "2026-01-19 23:00:00",
+        "status": "D",
+        "teamOne_id": 26,
+        "teamOne_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamOne_name": "برايتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 22,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamTwo_name": "بورنموث",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 9
+     },
+     {
+      "team_id": 36,
+      "team_name": "نيوكاسل يونايتد",
+      "team_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+      "point": 36,
+      "played": 26,
+      "goals_in": 37,
+      "goals_out": 37,
+      "lastStatus": [
+       {
+        "id": 342,
+        "date": "2026-02-10 22:30:00",
+        "status": "W",
+        "teamOne_id": 39,
+        "teamOne_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamOne_name": "توتنهام",
+        "teamOne_score": 1,
+        "teamTwo_id": 36,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamTwo_name": "نيوكاسل يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 352,
+        "date": "2026-02-07 20:30:00",
+        "status": "L",
+        "teamOne_id": 36,
+        "teamOne_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamOne_name": "نيوكاسل يونايتد",
+        "teamOne_score": 2,
+        "teamTwo_id": 25,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamTwo_name": "برينتفورد",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 358,
+        "date": "2026-01-31 23:00:00",
+        "status": "L",
+        "teamOne_id": 33,
+        "teamOne_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamOne_name": "ليفربول",
+        "teamOne_score": 4,
+        "teamTwo_id": 36,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamTwo_name": "نيوكاسل يونايتد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 372,
+        "date": "2026-01-25 17:00:00",
+        "status": "L",
+        "teamOne_id": 36,
+        "teamOne_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamOne_name": "نيوكاسل يونايتد",
+        "teamOne_score": 0,
+        "teamTwo_id": 24,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamTwo_name": "أستون فيلا",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 383,
+        "date": "2026-01-18 17:00:00",
+        "status": "D",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 0,
+        "teamTwo_id": 36,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamTwo_name": "نيوكاسل يونايتد",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 10
+     },
+     {
+      "team_id": 38,
+      "team_name": "سندرلاند",
+      "team_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+      "point": 36,
+      "played": 26,
+      "goals_in": 27,
+      "goals_out": 30,
+      "lastStatus": [
+       {
+        "id": 341,
+        "date": "2026-02-11 23:15:00",
+        "status": "L",
+        "teamOne_id": 38,
+        "teamOne_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamOne_name": "سندرلاند",
+        "teamOne_score": 0,
+        "teamTwo_id": 33,
+        "teamTwo_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamTwo_name": "ليفربول",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 344,
+        "date": "2026-02-07 18:00:00",
+        "status": "L",
+        "teamOne_id": 23,
+        "teamOne_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamOne_name": "أرسنال",
+        "teamOne_score": 3,
+        "teamTwo_id": 38,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamTwo_name": "سندرلاند",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 2576,
+        "date": "2026-02-02 23:00:00",
+        "status": "W",
+        "teamOne_id": 38,
+        "teamOne_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamOne_name": "سندرلاند",
+        "teamOne_score": 3,
+        "teamTwo_id": 27,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamTwo_name": "بيرنلي",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 373,
+        "date": "2026-01-24 15:30:00",
+        "status": "L",
+        "teamOne_id": 40,
+        "teamOne_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamOne_name": "وست هام يونايتد",
+        "teamOne_score": 3,
+        "teamTwo_id": 38,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamTwo_name": "سندرلاند",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 381,
+        "date": "2026-01-17 18:00:00",
+        "status": "W",
+        "teamOne_id": 38,
+        "teamOne_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamOne_name": "سندرلاند",
+        "teamOne_score": 2,
+        "teamTwo_id": 29,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamTwo_name": "كريستال بالاس",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 11
+     },
+     {
+      "team_id": 31,
+      "team_name": "فولهام",
+      "team_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+      "point": 34,
+      "played": 26,
+      "goals_in": 35,
+      "goals_out": 40,
+      "lastStatus": [
+       {
+        "id": 339,
+        "date": "2026-02-11 22:30:00",
+        "status": "L",
+        "teamOne_id": 34,
+        "teamOne_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamOne_name": "مانشستر سيتي",
+        "teamOne_score": 3,
+        "teamTwo_id": 31,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamTwo_name": "فولهام",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 348,
+        "date": "2026-02-07 18:00:00",
+        "status": "L",
+        "teamOne_id": 31,
+        "teamOne_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamOne_name": "فولهام",
+        "teamOne_score": 1,
+        "teamTwo_id": 30,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamTwo_name": "إيفرتون",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 359,
+        "date": "2026-02-01 17:00:00",
+        "status": "L",
+        "teamOne_id": 35,
+        "teamOne_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamOne_name": "مانشستر يونايتد",
+        "teamOne_score": 3,
+        "teamTwo_id": 31,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamTwo_name": "فولهام",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 370,
+        "date": "2026-01-24 18:00:00",
+        "status": "W",
+        "teamOne_id": 31,
+        "teamOne_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamOne_name": "فولهام",
+        "teamOne_score": 2,
+        "teamTwo_id": 26,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamTwo_name": "برايتون",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 377,
+        "date": "2026-01-17 18:00:00",
+        "status": "L",
+        "teamOne_id": 32,
+        "teamOne_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamOne_name": "ليدز يونايتد",
+        "teamOne_score": 1,
+        "teamTwo_id": 31,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamTwo_name": "فولهام",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 12
+     },
+     {
+      "team_id": 29,
+      "team_name": "كريستال بالاس",
+      "team_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+      "point": 32,
+      "played": 26,
+      "goals_in": 28,
+      "goals_out": 32,
+      "lastStatus": [
+       {
+        "id": 337,
+        "date": "2026-02-11 22:30:00",
+        "status": "L",
+        "teamOne_id": 29,
+        "teamOne_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamOne_name": "كريستال بالاس",
+        "teamOne_score": 2,
+        "teamTwo_id": 27,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamTwo_name": "بيرنلي",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 346,
+        "date": "2026-02-08 17:00:00",
+        "status": "W",
+        "teamOne_id": 26,
+        "teamOne_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamOne_name": "برايتون",
+        "teamOne_score": 0,
+        "teamTwo_id": 29,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamTwo_name": "كريستال بالاس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 360,
+        "date": "2026-02-01 17:00:00",
+        "status": "D",
+        "teamOne_id": 37,
+        "teamOne_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamOne_name": "نوتينجهام فورست",
+        "teamOne_score": 1,
+        "teamTwo_id": 29,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamTwo_name": "كريستال بالاس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 368,
+        "date": "2026-01-25 17:00:00",
+        "status": "L",
+        "teamOne_id": 29,
+        "teamOne_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamOne_name": "كريستال بالاس",
+        "teamOne_score": 1,
+        "teamTwo_id": 28,
+        "teamTwo_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamTwo_name": "تشيلسي",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 381,
+        "date": "2026-01-17 18:00:00",
+        "status": "L",
+        "teamOne_id": 38,
+        "teamOne_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamOne_name": "سندرلاند",
+        "teamOne_score": 2,
+        "teamTwo_id": 29,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamTwo_name": "كريستال بالاس",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 13
+     },
+     {
+      "team_id": 26,
+      "team_name": "برايتون",
+      "team_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+      "point": 31,
+      "played": 26,
+      "goals_in": 34,
+      "goals_out": 34,
+      "lastStatus": [
+       {
+        "id": 334,
+        "date": "2026-02-11 22:30:00",
+        "status": "L",
+        "teamOne_id": 24,
+        "teamOne_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+        "teamOne_name": "أستون فيلا",
+        "teamOne_score": 1,
+        "teamTwo_id": 26,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamTwo_name": "برايتون",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 346,
+        "date": "2026-02-08 17:00:00",
+        "status": "L",
+        "teamOne_id": 26,
+        "teamOne_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamOne_name": "برايتون",
+        "teamOne_score": 0,
+        "teamTwo_id": 29,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamTwo_name": "كريستال بالاس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 355,
+        "date": "2026-01-31 18:00:00",
+        "status": "D",
+        "teamOne_id": 26,
+        "teamOne_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamOne_name": "برايتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 30,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamTwo_name": "إيفرتون",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 370,
+        "date": "2026-01-24 18:00:00",
+        "status": "L",
+        "teamOne_id": 31,
+        "teamOne_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamOne_name": "فولهام",
+        "teamOne_score": 2,
+        "teamTwo_id": 26,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamTwo_name": "برايتون",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 2578,
+        "date": "2026-01-19 23:00:00",
+        "status": "D",
+        "teamOne_id": 26,
+        "teamOne_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+        "teamOne_name": "برايتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 22,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamTwo_name": "بورنموث",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 14
+     },
+     {
+      "team_id": 32,
+      "team_name": "ليدز يونايتد",
+      "team_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+      "point": 30,
+      "played": 26,
+      "goals_in": 36,
+      "goals_out": 45,
+      "lastStatus": [
+       {
+        "id": 336,
+        "date": "2026-02-10 22:30:00",
+        "status": "D",
+        "teamOne_id": 28,
+        "teamOne_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamOne_name": "تشيلسي",
+        "teamOne_score": 2,
+        "teamTwo_id": 32,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamTwo_name": "ليدز يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 349,
+        "date": "2026-02-06 23:00:00",
+        "status": "W",
+        "teamOne_id": 32,
+        "teamOne_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamOne_name": "ليدز يونايتد",
+        "teamOne_score": 3,
+        "teamTwo_id": 37,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamTwo_name": "نوتينجهام فورست",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 357,
+        "date": "2026-01-31 18:00:00",
+        "status": "L",
+        "teamOne_id": 32,
+        "teamOne_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamOne_name": "ليدز يونايتد",
+        "teamOne_score": 0,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 4
+       },
+       {
+        "id": 2577,
+        "date": "2026-01-26 23:00:00",
+        "status": "D",
+        "teamOne_id": 30,
+        "teamOne_logo": "https://v3.appkora.com/storage/89962/everton.png",
+        "teamOne_name": "إيفرتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 32,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamTwo_name": "ليدز يونايتد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 377,
+        "date": "2026-01-17 18:00:00",
+        "status": "W",
+        "teamOne_id": 32,
+        "teamOne_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamOne_name": "ليدز يونايتد",
+        "teamOne_score": 1,
+        "teamTwo_id": 31,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+        "teamTwo_name": "فولهام",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 15
+     },
+     {
+      "team_id": 39,
+      "team_name": "توتنهام",
+      "team_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+      "point": 29,
+      "played": 26,
+      "goals_in": 36,
+      "goals_out": 37,
+      "lastStatus": [
+       {
+        "id": 342,
+        "date": "2026-02-10 22:30:00",
+        "status": "L",
+        "teamOne_id": 39,
+        "teamOne_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamOne_name": "توتنهام",
+        "teamOne_score": 1,
+        "teamTwo_id": 36,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+        "teamTwo_name": "نيوكاسل يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 351,
+        "date": "2026-02-07 15:30:00",
+        "status": "L",
+        "teamOne_id": 35,
+        "teamOne_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamOne_name": "مانشستر يونايتد",
+        "teamOne_score": 2,
+        "teamTwo_id": 39,
+        "teamTwo_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamTwo_name": "توتنهام",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 362,
+        "date": "2026-02-01 19:30:00",
+        "status": "D",
+        "teamOne_id": 39,
+        "teamOne_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamOne_name": "توتنهام",
+        "teamOne_score": 2,
+        "teamTwo_id": 34,
+        "teamTwo_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamTwo_name": "مانشستر سيتي",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 367,
+        "date": "2026-01-24 18:00:00",
+        "status": "D",
+        "teamOne_id": 27,
+        "teamOne_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamOne_name": "بيرنلي",
+        "teamOne_score": 2,
+        "teamTwo_id": 39,
+        "teamTwo_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamTwo_name": "توتنهام",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 382,
+        "date": "2026-01-17 18:00:00",
+        "status": "L",
+        "teamOne_id": 39,
+        "teamOne_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamOne_name": "توتنهام",
+        "teamOne_score": 1,
+        "teamTwo_id": 40,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamTwo_name": "وست هام يونايتد",
+        "teamTwo_score": 2
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 16
+     },
+     {
+      "team_id": 37,
+      "team_name": "نوتينجهام فورست",
+      "team_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+      "point": 27,
+      "played": 26,
+      "goals_in": 25,
+      "goals_out": 38,
+      "lastStatus": [
+       {
+        "id": 340,
+        "date": "2026-02-11 22:30:00",
+        "status": "D",
+        "teamOne_id": 37,
+        "teamOne_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamOne_name": "نوتينجهام فورست",
+        "teamOne_score": 0,
+        "teamTwo_id": 41,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamTwo_name": "ولفرهامبتون",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 349,
+        "date": "2026-02-06 23:00:00",
+        "status": "L",
+        "teamOne_id": 32,
+        "teamOne_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+        "teamOne_name": "ليدز يونايتد",
+        "teamOne_score": 3,
+        "teamTwo_id": 37,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamTwo_name": "نوتينجهام فورست",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 360,
+        "date": "2026-02-01 17:00:00",
+        "status": "D",
+        "teamOne_id": 37,
+        "teamOne_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamOne_name": "نوتينجهام فورست",
+        "teamOne_score": 1,
+        "teamTwo_id": 29,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamTwo_name": "كريستال بالاس",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 366,
+        "date": "2026-01-25 17:00:00",
+        "status": "W",
+        "teamOne_id": 25,
+        "teamOne_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+        "teamOne_name": "برينتفورد",
+        "teamOne_score": 0,
+        "teamTwo_id": 37,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamTwo_name": "نوتينجهام فورست",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 380,
+        "date": "2026-01-17 20:30:00",
+        "status": "D",
+        "teamOne_id": 37,
+        "teamOne_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamOne_name": "نوتينجهام فورست",
+        "teamOne_score": 0,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 17
+     },
+     {
+      "team_id": 40,
+      "team_name": "وست هام يونايتد",
+      "team_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+      "point": 24,
+      "played": 26,
+      "goals_in": 32,
+      "goals_out": 49,
+      "lastStatus": [
+       {
+        "id": 343,
+        "date": "2026-02-10 23:15:00",
+        "status": "D",
+        "teamOne_id": 40,
+        "teamOne_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamOne_name": "وست هام يونايتد",
+        "teamOne_score": 1,
+        "teamTwo_id": 35,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+        "teamTwo_name": "مانشستر يونايتد",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 347,
+        "date": "2026-02-07 18:00:00",
+        "status": "W",
+        "teamOne_id": 27,
+        "teamOne_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamOne_name": "بيرنلي",
+        "teamOne_score": 0,
+        "teamTwo_id": 40,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamTwo_name": "وست هام يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 356,
+        "date": "2026-01-31 20:30:00",
+        "status": "L",
+        "teamOne_id": 28,
+        "teamOne_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamOne_name": "تشيلسي",
+        "teamOne_score": 3,
+        "teamTwo_id": 40,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamTwo_name": "وست هام يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 373,
+        "date": "2026-01-24 15:30:00",
+        "status": "W",
+        "teamOne_id": 40,
+        "teamOne_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamOne_name": "وست هام يونايتد",
+        "teamOne_score": 3,
+        "teamTwo_id": 38,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamTwo_name": "سندرلاند",
+        "teamTwo_score": 1
+       },
+       {
+        "id": 382,
+        "date": "2026-01-17 18:00:00",
+        "status": "W",
+        "teamOne_id": 39,
+        "teamOne_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamOne_name": "توتنهام",
+        "teamOne_score": 1,
+        "teamTwo_id": 40,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamTwo_name": "وست هام يونايتد",
+        "teamTwo_score": 2
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 18
+     },
+     {
+      "team_id": 27,
+      "team_name": "بيرنلي",
+      "team_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+      "point": 18,
+      "played": 26,
+      "goals_in": 28,
+      "goals_out": 51,
+      "lastStatus": [
+       {
+        "id": 337,
+        "date": "2026-02-11 22:30:00",
+        "status": "W",
+        "teamOne_id": 29,
+        "teamOne_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+        "teamOne_name": "كريستال بالاس",
+        "teamOne_score": 2,
+        "teamTwo_id": 27,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamTwo_name": "بيرنلي",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 347,
+        "date": "2026-02-07 18:00:00",
+        "status": "L",
+        "teamOne_id": 27,
+        "teamOne_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamOne_name": "بيرنلي",
+        "teamOne_score": 0,
+        "teamTwo_id": 40,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+        "teamTwo_name": "وست هام يونايتد",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 2576,
+        "date": "2026-02-02 23:00:00",
+        "status": "L",
+        "teamOne_id": 38,
+        "teamOne_logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+        "teamOne_name": "سندرلاند",
+        "teamOne_score": 3,
+        "teamTwo_id": 27,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamTwo_name": "بيرنلي",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 367,
+        "date": "2026-01-24 18:00:00",
+        "status": "D",
+        "teamOne_id": 27,
+        "teamOne_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamOne_name": "بيرنلي",
+        "teamOne_score": 2,
+        "teamTwo_id": 39,
+        "teamTwo_logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+        "teamTwo_name": "توتنهام",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 378,
+        "date": "2026-01-17 18:00:00",
+        "status": "D",
+        "teamOne_id": 33,
+        "teamOne_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+        "teamOne_name": "ليفربول",
+        "teamOne_score": 1,
+        "teamTwo_id": 27,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89860/burnley.png",
+        "teamTwo_name": "بيرنلي",
+        "teamTwo_score": 1
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 19
+     },
+     {
+      "team_id": 41,
+      "team_name": "ولفرهامبتون",
+      "team_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+      "point": 10,
+      "played": 27,
+      "goals_in": 18,
+      "goals_out": 50,
+      "lastStatus": [
+       {
+        "id": 293,
+        "date": "2026-02-18 23:00:00",
+        "status": "D",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 2,
+        "teamTwo_id": 23,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+        "teamTwo_name": "أرسنال",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 340,
+        "date": "2026-02-11 22:30:00",
+        "status": "D",
+        "teamOne_id": 37,
+        "teamOne_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+        "teamOne_name": "نوتينجهام فورست",
+        "teamOne_score": 0,
+        "teamTwo_id": 41,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamTwo_name": "ولفرهامبتون",
+        "teamTwo_score": 0
+       },
+       {
+        "id": 353,
+        "date": "2026-02-07 18:00:00",
+        "status": "L",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 1,
+        "teamTwo_id": 28,
+        "teamTwo_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+        "teamTwo_name": "تشيلسي",
+        "teamTwo_score": 3
+       },
+       {
+        "id": 363,
+        "date": "2026-01-31 18:00:00",
+        "status": "L",
+        "teamOne_id": 41,
+        "teamOne_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamOne_name": "ولفرهامبتون",
+        "teamOne_score": 0,
+        "teamTwo_id": 22,
+        "teamTwo_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+        "teamTwo_name": "بورنموث",
+        "teamTwo_score": 2
+       },
+       {
+        "id": 371,
+        "date": "2026-01-24 18:00:00",
+        "status": "L",
+        "teamOne_id": 34,
+        "teamOne_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+        "teamOne_name": "مانشستر سيتي",
+        "teamOne_score": 2,
+        "teamTwo_id": 41,
+        "teamTwo_logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+        "teamTwo_name": "ولفرهامبتون",
+        "teamTwo_score": 0
+       }
+      ],
+      "playNow": {
+       "status": false,
+       "score_status": ""
+      },
+      "services": [
+       2
+      ],
+      "sport_id": 1,
+      "sort": 20
+     }
+    ]
+   }
+  }
+ ],
+ "tournament": [
+  3
+ ],
+ "message": "Retrieved Successfully",
+ "status": 200
+}

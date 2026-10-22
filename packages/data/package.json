@@ -1,0 +1,27 @@
+{
+  "name": "@sports247/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@sports247/api": "workspace:*",
+    "@sports247/domain": "workspace:*"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.87.1",
+    "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^5.87.1",
+    "@types/react": "^19.1.12",
+    "react": "^19.1.1",
+    "vitest": "^3.2.4"
+  }
+}

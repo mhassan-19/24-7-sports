@@ -1,0 +1,25 @@
+{
+ "data": {
+  "played": 26,
+  "win": 7,
+  "lose": 9,
+  "draw": 10,
+  "difference": 0,
+  "clean_sheet": 5,
+  "goals_in": 34,
+  "goals_out": 34,
+  "goals_penalty": 0,
+  "yellow_cards": 64,
+  "red_cards": 0,
+  "scoringIntervals": {
+   "15m": 3,
+   "30m": 3,
+   "45m": 4,
+   "60m": 4,
+   "75m": 8,
+   "90m": 10
+  }
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

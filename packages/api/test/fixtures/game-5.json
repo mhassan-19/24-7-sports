@@ -1,0 +1,291 @@
+{
+ "type": "team_squad",
+ "team_squad_game": {
+  "id": 3,
+  "positions": [
+   {
+    "value": "goalkeeper",
+    "label": "Goalkeeper"
+   },
+   {
+    "value": "defender",
+    "label": "Defender"
+   },
+   {
+    "value": "midfielder",
+    "label": "Midfielder"
+   },
+   {
+    "value": "forward",
+    "label": "Forward"
+   }
+  ],
+  "game": {
+   "id": 5,
+   "title": "شكل فريق الجولة",
+   "image": "https://v3.appkora.com/storage/128711/01KSD1P9F8PBVWFQ4Q6NNBYWGS.png",
+   "is_active": true
+  }
+ },
+ "is_played": false,
+ "answer_endpoint": "/api/team-squad-games/3/answer",
+ "players": [
+  {
+   "id": 1381,
+   "name": "آرون رامسدال",
+   "position": "goalkeeper",
+   "image": "https://v3.appkora.com/storage/90172/aaron-ramsdale.png",
+   "team": {
+    "id": 1016,
+    "logo": ""
+   }
+  },
+  {
+   "id": 12556,
+   "name": "آرون تشيبولا",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/107486/aaron-tshibola.png",
+   "team": {
+    "id": 616,
+    "logo": "https://v3.appkora.com/storage/126526/dr-congo.png"
+   }
+  },
+  {
+   "id": 4089,
+   "name": "عبدالله سيما",
+   "position": "forward",
+   "image": "https://v3.appkora.com/storage/107509/sima.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 1885,
+   "name": "عبد الكبير أبقر",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107015/abdelkabir-abqar.png",
+   "team": {
+    "id": 604,
+    "logo": "https://v3.appkora.com/storage/126514/morocco.png"
+   }
+  },
+  {
+   "id": 2057,
+   "name": "عبد الصمد الزلزولي",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/106996/abdessamad-ezzalzouli.png",
+   "team": {
+    "id": 604,
+    "logo": "https://v3.appkora.com/storage/126514/morocco.png"
+   }
+  },
+  {
+   "id": 12571,
+   "name": "عبدو ديالو",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107519/abdou-diallo.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 2800,
+   "name": "نياكات ندياي",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107526/niakhate-ndiaye.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 12573,
+   "name": "عبد الله سيك",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107525/abdoulaye-seck.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 4049,
+   "name": "أشرف حكيمي",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107010/achraf-hakimi.png",
+   "team": {
+    "id": 604,
+    "logo": "https://v3.appkora.com/storage/126514/morocco.png"
+   }
+  },
+  {
+   "id": 12597,
+   "name": "آدم أوناس",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/107557/adam-ounas.png",
+   "team": {
+    "id": 618,
+    "logo": "https://v3.appkora.com/storage/126528/algeria.png"
+   }
+  },
+  {
+   "id": 692,
+   "name": "احمد الشناوى",
+   "position": "goalkeeper",
+   "image": "https://v3.appkora.com/storage/107140/ahmed-el-shenawy.png",
+   "team": {
+    "id": 607,
+    "logo": "https://v3.appkora.com/storage/126517/egypt.png"
+   }
+  },
+  {
+   "id": 823,
+   "name": "احمد فتوح",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107133/ahmed-fatouh.png",
+   "team": {
+    "id": 607,
+    "logo": "https://v3.appkora.com/storage/126517/egypt.png"
+   }
+  },
+  {
+   "id": 688,
+   "name": "احمد سامي",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107136/ahmed-samy.png",
+   "team": {
+    "id": 607,
+    "logo": "https://v3.appkora.com/storage/126517/egypt.png"
+   }
+  },
+  {
+   "id": 6680,
+   "name": "احمد طوبا",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107569/ahmed-touba.png",
+   "team": {
+    "id": 618,
+    "logo": "https://v3.appkora.com/storage/126528/algeria.png"
+   }
+  },
+  {
+   "id": 12428,
+   "name": "عيسى لعدوني",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/107331/aissa-laidouni.png",
+   "team": {
+    "id": 612,
+    "logo": "https://v3.appkora.com/storage/126522/tunisia.png"
+   }
+  },
+  {
+   "id": 3916,
+   "name": "عيسى مندي",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107568/aissa-mandi.png",
+   "team": {
+    "id": 618,
+    "logo": "https://v3.appkora.com/storage/126528/algeria.png"
+   }
+  },
+  {
+   "id": 7640,
+   "name": "علاء غرام",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107348/alaa-ghram.png",
+   "team": {
+    "id": 612,
+    "logo": "https://v3.appkora.com/storage/126522/tunisia.png"
+   }
+  },
+  {
+   "id": 12574,
+   "name": "ألفريد جوميس",
+   "position": "goalkeeper",
+   "image": "https://v3.appkora.com/storage/107529/alfred-gomis.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 3951,
+   "name": "علي عبدي",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/107345/ali-abdi.png",
+   "team": {
+    "id": 612,
+    "logo": "https://v3.appkora.com/storage/126522/tunisia.png"
+   }
+  },
+  {
+   "id": 686,
+   "name": "علي جبر",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107134/ali-gabr.png",
+   "team": {
+    "id": 607,
+    "logo": "https://v3.appkora.com/storage/126517/egypt.png"
+   }
+  },
+  {
+   "id": 12433,
+   "name": "علي معلول",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107341/ali-maaloul.png",
+   "team": {
+    "id": 612,
+    "logo": "https://v3.appkora.com/storage/126522/tunisia.png"
+   }
+  },
+  {
+   "id": 12578,
+   "name": "Amadou Coly",
+   "position": "defender",
+   "image": "https://v3.appkora.com/storage/107533/no-photo.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 12590,
+   "name": "Ameth Niang",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/107545/no-photo.png",
+   "team": {
+    "id": 617,
+    "logo": "https://v3.appkora.com/storage/126527/senegal.png"
+   }
+  },
+  {
+   "id": 966,
+   "name": "أمين عدلي",
+   "position": "forward",
+   "image": "https://v3.appkora.com/storage/106998/amine-adli.png",
+   "team": {
+    "id": 604,
+    "logo": "https://v3.appkora.com/storage/126514/morocco.png"
+   }
+  },
+  {
+   "id": 4278,
+   "name": "أمين حاريت",
+   "position": "midfielder",
+   "image": "https://v3.appkora.com/storage/107004/amine-harit.png",
+   "team": {
+    "id": 604,
+    "logo": "https://v3.appkora.com/storage/126514/morocco.png"
+   }
+  }
+ ],
+ "meta": {
+  "total_items": 250,
+  "items_per_page": 30,
+  "current_page": 1,
+  "last_page": 9
+ },
+ "status": 200
+}

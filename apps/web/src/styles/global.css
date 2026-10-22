@@ -1,0 +1,134 @@
+/* Base layer. Colour tokens come from @sports247/tokens (injected in main.tsx); layout uses
+   logical properties only so the same CSS serves RTL and LTR. */
+:root {
+  --f-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --f-text: 'Barlow', arial, sans-serif;
+  --f-num: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --r-card: 16px;
+  --r-sm: 12px;
+  --gutter: 16px;
+  --content-max: 1240px;
+}
+
+/* Arabic: Cairo for everything, including numbers (Barlow Condensed has no Arabic-Indic digits). */
+:root:lang(ar) {
+  --f-display: 'Cairo', sans-serif;
+  --f-text: 'Cairo', sans-serif;
+  --f-num: 'Cairo', sans-serif;
+}
+
+@media (width >= 1024px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--f-text);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+:root:lang(ar) body {
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+bdi {
+  unicode-bidi: isolate;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.num {
+  font-family: var(--f-num);
+  font-variant-numeric: tabular-nums;
+}
+
+.u {
+  text-transform: uppercase;
+}
+
+:root:lang(ar) .u {
+  text-transform: none;
+}
+
+.muted {
+  color: var(--text-2);
+}
+
+.small {
+  font-size: 14px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

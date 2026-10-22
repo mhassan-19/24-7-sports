@@ -1,0 +1,146 @@
+{
+ "data": [
+  {
+   "id": 22,
+   "logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+   "name": "بورنموث",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 23,
+   "logo": "https://v3.appkora.com/storage/89740/arsenal.png",
+   "name": "أرسنال",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 24,
+   "logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+   "name": "أستون فيلا",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 25,
+   "logo": "https://v3.appkora.com/storage/89800/brentford.png",
+   "name": "برينتفورد",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 26,
+   "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+   "name": "برايتون",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 27,
+   "logo": "https://v3.appkora.com/storage/89860/burnley.png",
+   "name": "بيرنلي",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 28,
+   "logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+   "name": "تشيلسي",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 29,
+   "logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+   "name": "كريستال بالاس",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 30,
+   "logo": "https://v3.appkora.com/storage/89962/everton.png",
+   "name": "إيفرتون",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 31,
+   "logo": "https://v3.appkora.com/storage/89992/fulham.png",
+   "name": "فولهام",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 32,
+   "logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+   "name": "ليدز يونايتد",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 33,
+   "logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+   "name": "ليفربول",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 34,
+   "logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+   "name": "مانشستر سيتي",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 35,
+   "logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+   "name": "مانشستر يونايتد",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 36,
+   "logo": "https://v3.appkora.com/storage/90144/newcastle-united.png",
+   "name": "نيوكاسل يونايتد",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 37,
+   "logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+   "name": "نوتينجهام فورست",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 38,
+   "logo": "https://v3.appkora.com/storage/90216/sunderland.png",
+   "name": "سندرلاند",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 39,
+   "logo": "https://v3.appkora.com/storage/111892/tottenham.png",
+   "name": "توتنهام",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 40,
+   "logo": "https://v3.appkora.com/storage/90320/west-ham-united.png",
+   "name": "وست هام يونايتد",
+   "service_id": 2,
+   "sport_id": 1
+  },
+  {
+   "id": 41,
+   "logo": "https://v3.appkora.com/storage/90389/wolverhampton.png",
+   "name": "ولفرهامبتون",
+   "service_id": 2,
+   "sport_id": 1
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

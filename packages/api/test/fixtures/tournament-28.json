@@ -1,0 +1,157 @@
+{
+ "data": {
+  "id": 28,
+  "active": 1,
+  "background_image": "https://v3.appkora.com/storage/152/africa-africa-cup-of-nations.png",
+  "country_id": 20,
+  "current_round": null,
+  "current_season": {
+   "id": 16,
+   "order_column": null,
+   "name": "2025/2026",
+   "tournament_id": 28,
+   "winner_team_id": null,
+   "year": 2025,
+   "is_active": 1,
+   "edit_mode": "automatic",
+   "update_standing_method": null,
+   "created_at": "2026-01-12T10:41:47.000000Z",
+   "updated_at": "2026-01-13T18:34:06.000000Z",
+   "season_stages": [
+    {
+     "id": 27,
+     "order_column": null,
+     "tournament_id": 28,
+     "season_id": 16,
+     "stage_id": 1,
+     "edit_mode": "automatic",
+     "created_at": "2026-01-12T11:03:28.000000Z",
+     "updated_at": "2026-01-12T11:03:28.000000Z",
+     "stage": {
+      "id": 1,
+      "order_column": null,
+      "name_ar": "دور المجموعات",
+      "name_en": "Group Stage",
+      "type": "groups",
+      "key": "group_stage",
+      "is_active": 1,
+      "created_at": "2025-11-10T12:26:32.000000Z",
+      "updated_at": "2026-10-22T08:32:59.000000Z"
+     }
+    },
+    {
+     "id": 28,
+     "order_column": null,
+     "tournament_id": 28,
+     "season_id": 16,
+     "stage_id": 3,
+     "edit_mode": "automatic",
+     "created_at": "2026-01-12T11:03:29.000000Z",
+     "updated_at": "2026-01-12T11:03:29.000000Z",
+     "stage": {
+      "id": 3,
+      "order_column": null,
+      "name_ar": "دور الـ 16",
+      "name_en": "Round of 16",
+      "type": "teams",
+      "key": "round_of_16",
+      "is_active": 1,
+      "created_at": "2025-11-10T12:26:32.000000Z",
+      "updated_at": "2026-10-22T08:32:59.000000Z"
+     }
+    },
+    {
+     "id": 29,
+     "order_column": null,
+     "tournament_id": 28,
+     "season_id": 16,
+     "stage_id": 4,
+     "edit_mode": "automatic",
+     "created_at": "2026-01-12T11:03:29.000000Z",
+     "updated_at": "2026-01-12T11:03:29.000000Z",
+     "stage": {
+      "id": 4,
+      "order_column": null,
+      "name_ar": "ربع النهائي",
+      "name_en": "Quarter Final",
+      "type": "teams",
+      "key": "quarter_final",
+      "is_active": 1,
+      "created_at": "2025-11-10T12:26:32.000000Z",
+      "updated_at": "2026-10-22T08:32:59.000000Z"
+     }
+    },
+    {
+     "id": 30,
+     "order_column": null,
+     "tournament_id": 28,
+     "season_id": 16,
+     "stage_id": 5,
+     "edit_mode": "automatic",
+     "created_at": "2026-01-12T11:03:29.000000Z",
+     "updated_at": "2026-01-12T11:03:29.000000Z",
+     "stage": {
+      "id": 5,
+      "order_column": null,
+      "name_ar": "نصف النهائي",
+      "name_en": "Semi Final",
+      "type": "teams",
+      "key": "semi_final",
+      "is_active": 1,
+      "created_at": "2025-11-10T12:26:32.000000Z",
+      "updated_at": "2026-10-22T08:32:59.000000Z"
+     }
+    },
+    {
+     "id": 77,
+     "order_column": null,
+     "tournament_id": 28,
+     "season_id": 16,
+     "stage_id": 6,
+     "edit_mode": "automatic",
+     "created_at": null,
+     "updated_at": null,
+     "stage": {
+      "id": 6,
+      "order_column": null,
+      "name_ar": "النهائي",
+      "name_en": "Final",
+      "type": "teams",
+      "key": "final",
+      "is_active": 1,
+      "created_at": "2025-11-10T12:26:32.000000Z",
+      "updated_at": "2026-10-22T08:32:59.000000Z"
+     }
+    }
+   ]
+  },
+  "has_group": true,
+  "is_started": 1,
+  "seasons": [
+   {
+    "id": 16,
+    "parent_id": null,
+    "title": "2025/2026",
+    "active": 1
+   },
+   {
+    "id": 25,
+    "parent_id": null,
+    "title": "2023/2024",
+    "active": 0
+   }
+  ],
+  "service_id": 3,
+  "services": [
+   3
+  ],
+  "sport_id": 1,
+  "title": "كأس الأمم الإفريقية",
+  "type": "Cup",
+  "has_league_stage": 1,
+  "logo": "https://v3.appkora.com/storage/50152/01KEQRE71CP0JP6RE059W48YMH.png"
+ },
+ "current_stage_id": 6,
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

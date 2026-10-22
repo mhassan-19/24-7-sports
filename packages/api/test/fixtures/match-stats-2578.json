@@ -1,0 +1,71 @@
+{
+ "data": {
+  "id": 2578,
+  "date": "2026-01-19 23:00:00",
+  "time": "20:00:00",
+  "rank": 1,
+  "matchStatus": 5,
+  "sport_id": 1,
+  "stadium": "Amex Stadium",
+  "status": "انتهت",
+  "team1": {
+   "id": 26,
+   "short_name": "Brighton",
+   "title": "برايتون",
+   "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+   "score": 1,
+   "penalty_score": null,
+   "statistics": [
+    {
+     "goals": 1,
+     "corners": 11,
+     "fouls": 6,
+     "shots": 17,
+     "target_shots": 6,
+     "pass": 554,
+     "offsides": 1,
+     "penalty_score": 0,
+     "yellow_cards": 2,
+     "red_cards": 0,
+     "possession": 66,
+     "ball_possession": 66
+    }
+   ]
+  },
+  "team2": {
+   "id": 22,
+   "short_name": "Bournemouth",
+   "title": "بورنموث",
+   "logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+   "score": 1,
+   "penalty_score": null,
+   "statistics": [
+    {
+     "goals": 1,
+     "corners": 6,
+     "fouls": 6,
+     "shots": 12,
+     "target_shots": 2,
+     "pass": 280,
+     "offsides": 2,
+     "penalty_score": 0,
+     "yellow_cards": 3,
+     "red_cards": 0,
+     "possession": 34,
+     "ball_possession": 34
+    }
+   ]
+  },
+  "services": [
+   2
+  ],
+  "tournament": {
+   "id": 3,
+   "title": "الدوري الإنجليزي",
+   "logo": "https://v3.appkora.com/storage/101/england-premier-league.png"
+  },
+  "tournament_id": 3
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

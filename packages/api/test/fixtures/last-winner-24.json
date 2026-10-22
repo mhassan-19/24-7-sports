@@ -1,0 +1,12 @@
+{
+ "data": {
+  "most_winner": null,
+  "last_winner": {
+   "id": 28,
+   "name": "تشيلسي",
+   "logo": "https://v3.appkora.com/storage/91804/chelsea.png"
+  }
+ },
+ "message": "Retrieved Successfully",
+ "status": 200
+}

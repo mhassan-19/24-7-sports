@@ -1,0 +1,511 @@
+/* Shared primitives. */
+
+/* ---------- Type ---------- */
+.display {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.95;
+  text-wrap: balance;
+}
+
+.h1 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+:root:lang(ar) .display,
+:root:lang(ar) .h1,
+:root:lang(ar) .h2 {
+  line-height: 1.3;
+}
+
+@media (width >= 1024px) {
+  .display {
+    font-size: 56px;
+  }
+
+  .h1 {
+    font-size: 36px;
+  }
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+}
+
+:root:lang(ar) .eyebrow {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* ---------- Brand ---------- */
+.logo {
+  display: block;
+  line-height: 0;
+  color: var(--text);
+}
+
+.logo svg {
+  width: 100%;
+  height: auto;
+}
+
+.slash {
+  display: inline-block;
+  flex: none;
+  width: 3px;
+  height: 18px;
+  border-radius: 1px;
+  background: var(--accent);
+  transform: rotate(30deg);
+}
+
+.stripes {
+  height: 14px;
+  border-radius: 4px;
+  background: var(--stripes);
+}
+
+/* ---------- Icons ---------- */
+.icon {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  stroke: currentcolor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+:root[dir='rtl'] .mirror {
+  transform: scaleX(-1);
+}
+
+/* ---------- Section ---------- */
+.section {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  align-content: start;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionHead > h2 {
+  flex: 1;
+  min-width: 0;
+}
+
+.link {
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Surfaces ---------- */
+.panel {
+  background: var(--surface);
+  border-radius: var(--r-card);
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+
+.list {
+  background: var(--surface);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border-block-end: 1px solid var(--line);
+  inline-size: 100%;
+  text-align: start;
+}
+
+.row:last-child {
+  border-block-end: 0;
+}
+
+a.row:hover {
+  background: color-mix(in srgb, var(--surface) 92%, var(--text));
+}
+
+/* ---------- Controls ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding-inline: 20px;
+  border-radius: var(--r-sm);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+:root:lang(ar) .btn {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.secondary {
+  border: 1.5px solid var(--text);
+}
+
+.ghost {
+  color: var(--accent-text);
+}
+
+.dark {
+  background: var(--c-midnight);
+  color: var(--c-bone);
+}
+
+.segmented {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--surface-2);
+  border-radius: var(--r-sm);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.segmented button {
+  flex: 1 0 auto;
+  min-height: 40px;
+  padding-inline: 14px;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.segmented button[aria-selected='true'] {
+  background: var(--surface-sel);
+  color: var(--text);
+}
+
+.tabs {
+  display: flex;
+  gap: 2px;
+  border-block-end: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs a {
+  padding: 12px 14px;
+  min-height: 44px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.tabs a[aria-current='page'] {
+  color: var(--text);
+  box-shadow: inset 0 -3px 0 var(--accent);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-block-end: 2px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding-inline: 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.chip[aria-pressed='true'] {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--bg);
+}
+
+.select {
+  min-height: 40px;
+  padding-inline: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding-inline: 14px;
+  background: var(--surface-2);
+  border-radius: var(--r-sm);
+  color: var(--text-3);
+}
+
+.field input {
+  inline-size: 100%;
+  min-height: 46px;
+  background: none;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.field:focus-within {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Crest and avatar ---------- */
+.crest {
+  flex: none;
+  display: grid;
+  place-items: center;
+  inline-size: var(--size, 28px);
+  block-size: var(--size, 28px);
+  border-radius: calc(var(--size, 28px) / 4);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  font-family: var(--f-num);
+  font-weight: 700;
+  font-size: calc(var(--size, 28px) * 0.38);
+  color: var(--text-2);
+}
+
+.crest img {
+  inline-size: 80%;
+  block-size: 80%;
+  object-fit: contain;
+}
+
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  inline-size: var(--size, 40px);
+  block-size: var(--size, 40px);
+  border-radius: 50%;
+  background: var(--surface-2);
+  overflow: hidden;
+  font-weight: 700;
+  color: var(--text-2);
+}
+
+.avatar img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.badgeAccent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+/* ---------- States ---------- */
+.state {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  background: var(--surface);
+  border-radius: var(--r-card);
+}
+
+.state p {
+  max-inline-size: 42ch;
+}
+
+.state .icon {
+  inline-size: 36px;
+  block-size: 36px;
+  color: var(--text-3);
+}
+
+.offline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px var(--gutter);
+  background: var(--surface);
+  border-block-end: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--line) 70%, transparent), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* ---------- Stats ---------- */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (width >= 640px) {
+  .tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.tile {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  background: var(--surface);
+  border-radius: var(--r-card);
+}
+
+.tileValue {
+  font-family: var(--f-num);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.tileLabel {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 16px;
+  margin: 0;
+}
+
+@media (width >= 640px) {
+  .kv {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.kv div {
+  display: grid;
+  gap: 2px;
+}
+
+.kv dt {
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.kv dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.crumbs {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.crumbs a:hover {
+  color: var(--text);
+}
+
+@media (width >= 1024px) {
+  .crumbs {
+    display: flex;
+  }
+}

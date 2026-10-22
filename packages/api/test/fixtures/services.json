@@ -1,0 +1,59 @@
+{
+ "data": [
+  {
+   "id": 1,
+   "name_ar": "الكرة المحلية",
+   "name_en": "Local",
+   "is_active": 1
+  },
+  {
+   "id": 2,
+   "name_ar": "الكرة العالمية",
+   "name_en": "International",
+   "is_active": 1
+  },
+  {
+   "id": 3,
+   "name_ar": "الكرة الإفريقية",
+   "name_en": "Africa",
+   "is_active": 1
+  },
+  {
+   "id": 4,
+   "name_ar": "رياضات أخرى",
+   "name_en": "Othersports",
+   "is_active": 1
+  },
+  {
+   "id": 5,
+   "name_ar": "الكرة السعودية",
+   "name_en": "Saudi",
+   "is_active": 1
+  },
+  {
+   "id": 6,
+   "name_ar": "الكرة الأسيوية",
+   "name_en": "Asian",
+   "is_active": 1
+  },
+  {
+   "id": 7,
+   "name_ar": "فيتنس",
+   "name_en": "Fitness",
+   "is_active": 1
+  },
+  {
+   "id": 8,
+   "name_ar": "كبسولة كرة القدم",
+   "name_en": "Football Capsule",
+   "is_active": 1
+  }
+ ],
+ "meta": {
+  "total_items": 8,
+  "items_per_page": 20,
+  "current_page": 1,
+  "last_page": 1
+ },
+ "status": 200
+}

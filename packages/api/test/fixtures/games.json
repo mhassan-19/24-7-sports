@@ -1,0 +1,92 @@
+{
+ "games": [
+  {
+   "id": 11,
+   "title": "خمن المنتخب",
+   "image": "https://v3.appkora.com/storage/128710/01KSCQKQ09CSDAQS49MBN4TYFB.png",
+   "is_active": true,
+   "is_played": false,
+   "type": "guess",
+   "slug": "guess"
+  },
+  {
+   "id": 10,
+   "title": "فين الكورة!؟",
+   "image": "https://v3.appkora.com/storage/128709/01KSCQEYFR202RBF7WZJZ2PZS0.png",
+   "is_active": true,
+   "is_played": false,
+   "type": "guess",
+   "slug": "guess"
+  },
+  {
+   "id": 9,
+   "title": "خمن اللاعب",
+   "image": "https://v3.appkora.com/storage/128708/01KSCQ95G47GBXHTQQCCFEHEJ3.jpg",
+   "is_active": true,
+   "is_played": false,
+   "type": "guess",
+   "slug": "guess"
+  },
+  {
+   "id": 8,
+   "title": "خمن اللاعب",
+   "image": "https://v3.appkora.com/storage/128707/01KSCQ7NYZG6WBYQCH39K0DJRH.jpg",
+   "is_active": true,
+   "is_played": false,
+   "type": "unknown",
+   "slug": "unknown"
+  },
+  {
+   "id": 7,
+   "title": "خمن اللاعب ",
+   "image": "https://v3.appkora.com/storage/128701/01KRYEWT8EP7ZV32MBRW898588.jpg",
+   "is_active": true,
+   "is_played": false,
+   "type": "unknown",
+   "slug": "unknown"
+  },
+  {
+   "id": 6,
+   "title": "من سيفوز !؟",
+   "image": "https://v3.appkora.com/storage/128700/01KRYEQW57C1S9H5ZP5S31RMS2.webp",
+   "is_active": true,
+   "is_played": false,
+   "type": "match_predict",
+   "slug": "match_predict"
+  },
+  {
+   "id": 5,
+   "title": "شكل فريق الجولة",
+   "image": "https://v3.appkora.com/storage/128711/01KSD1P9F8PBVWFQ4Q6NNBYWGS.png",
+   "is_active": true,
+   "is_played": false,
+   "type": "team_squad",
+   "slug": "team_squad"
+  },
+  {
+   "id": 4,
+   "title": "من سيفوز ف دور ال 16 ",
+   "image": "https://v3.appkora.com/storage/128698/01KRY0AFX0V4MV9ARBBK5JP6HB.avif",
+   "is_active": true,
+   "is_played": false,
+   "type": "match_predict",
+   "slug": "match_predict"
+  },
+  {
+   "id": 3,
+   "title": "من سيفوز ف دور ال 16 في مصر",
+   "image": "https://v3.appkora.com/storage/128697/01KRXZ490GN1MYTBA5B0CCYECZ.jpg",
+   "is_active": true,
+   "is_played": false,
+   "type": "team_squad",
+   "slug": "team_squad"
+  }
+ ],
+ "meta": {
+  "total_items": 9,
+  "items_per_page": 20,
+  "current_page": 1,
+  "last_page": 1
+ },
+ "status": 200
+}

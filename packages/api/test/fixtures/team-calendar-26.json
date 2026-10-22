@@ -1,0 +1,126 @@
+{
+ "data": {
+  "previous": [
+   {
+    "id": 4068,
+    "date": "2026-02-14 23:00:00",
+    "time": "20:00:00",
+    "channel": [],
+    "channel_name": null,
+    "rank": 1,
+    "matchStatus": 5,
+    "sport_id": 1,
+    "stadium": null,
+    "status": "انتهت",
+    "team1": {
+     "id": 33,
+     "short_name": "Liverpool",
+     "title": "ليفربول",
+     "logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+     "score": 3,
+     "penalty_score": null,
+     "possession": 47
+    },
+    "team2": {
+     "id": 26,
+     "short_name": "Brighton",
+     "title": "برايتون",
+     "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+     "score": 0,
+     "penalty_score": null,
+     "possession": 53
+    },
+    "matchRoundInfo": {
+     "event_id": 4,
+     "time": "90",
+     "created_at": "2026-02-14 21:56:08"
+    },
+    "services": [
+     2
+    ],
+    "tournament": {
+     "id": 45,
+     "title": "كأس الاتحاد الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/185/england-fa-cup.png",
+     "current_season": {
+      "id": 15,
+      "parent_id": null,
+      "title": "2025/2026",
+      "active": 1
+     }
+    },
+    "stage": {
+     "id": 15,
+     "title": null
+    },
+    "group": {
+     "id": null,
+     "title": null
+    },
+    "tournament_id": 45
+   },
+   {
+    "id": 334,
+    "date": "2026-02-11 22:30:00",
+    "time": "19:30:00",
+    "channel": [],
+    "channel_name": null,
+    "rank": 1,
+    "matchStatus": 5,
+    "sport_id": 1,
+    "stadium": "فيلا بارك",
+    "status": "انتهت",
+    "team1": {
+     "id": 24,
+     "short_name": "Aston Villa",
+     "title": "أستون فيلا",
+     "logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+     "score": 1,
+     "penalty_score": null,
+     "possession": 50
+    },
+    "team2": {
+     "id": 26,
+     "short_name": "Brighton",
+     "title": "برايتون",
+     "logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+     "score": 0,
+     "penalty_score": null,
+     "possession": 50
+    },
+    "matchRoundInfo": {
+     "event_id": 4,
+     "time": "90",
+     "created_at": "2026-02-11 21:27:02"
+    },
+    "services": [
+     2
+    ],
+    "tournament": {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "logo": "https://v3.appkora.com/storage/101/england-premier-league.png",
+     "current_season": {
+      "id": 2,
+      "parent_id": null,
+      "title": "2025/2026",
+      "active": 1
+     }
+    },
+    "stage": {
+     "id": 1,
+     "title": "دور المجموعات"
+    },
+    "group": {
+     "id": 14,
+     "title": null
+    },
+    "tournament_id": 3
+   }
+  ],
+  "today": [],
+  "next": []
+ },
+ "message": "Retrieved Successfully",
+ "status": 200
+}

@@ -1,0 +1,35 @@
+{
+  "name": "sports247",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @sports247/web dev",
+    "dev:web:live": "pnpm --filter @sports247/web dev:live",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "eslint . && stylelint \"apps/**/*.css\" \"packages/**/*.css\"",
+    "test": "turbo run test",
+    "e2e": "pnpm --filter @sports247/web e2e",
+    "format": "prettier --write .",
+    "record-fixtures": "node packages/api/scripts/record-fixtures.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.3.0",
+    "pnpm": "10.12.1",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.24.0",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-use-logical": "^2.1.2",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0"
+  }
+}

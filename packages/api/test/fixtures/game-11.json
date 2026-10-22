@@ -1,0 +1,40 @@
+{
+ "type": "guess",
+ "guess_game": {
+  "id": 5,
+  "title": "خمن المنتخب",
+  "image": "https://v3.appkora.com/storage/128710/01KSCQKQ09CSDAQS49MBN4TYFB.png",
+  "question": "ايه اسم المنتخب ده ؟",
+  "question_image": "https://v3.appkora.com/storage/128714/01KSF1KBFRXFTPNDBP6NMXBGA7.png"
+ },
+ "hints": [],
+ "choices": [
+  {
+   "id": 15,
+   "text": "مصر",
+   "image": null,
+   "is_correct": false
+  },
+  {
+   "id": 16,
+   "text": "ساحل العاج",
+   "image": null,
+   "is_correct": true
+  },
+  {
+   "id": 17,
+   "text": "زامبيا",
+   "image": null,
+   "is_correct": false
+  },
+  {
+   "id": 18,
+   "text": "الكونغو",
+   "image": null,
+   "is_correct": false
+  }
+ ],
+ "is_played": false,
+ "answer_endpoint": "/api/guess-games/5/answer",
+ "status": 200
+}

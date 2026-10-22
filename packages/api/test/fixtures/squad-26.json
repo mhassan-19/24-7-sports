@@ -1,0 +1,535 @@
+{
+ "data": {
+  "players": {
+   "goalkeepers": [
+    {
+     "active": 1,
+     "age": 24,
+     "birth_date": "2002-08-18",
+     "id": 1066,
+     "image": "https://v3.appkora.com/storage/89843/bart-verbruggen.png",
+     "name": "بارت فيربروجن",
+     "nationality": {
+      "id": 192,
+      "flag": "https://v3.appkora.com/storage/95349/6329b8e827dbb.png",
+      "title": "هولندا"
+     },
+     "position": "حارس مرمي",
+     "height": 193,
+     "weight": null,
+     "shirt_number": 1,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 36,
+     "birth_date": "1990-08-18",
+     "id": 1067,
+     "image": "https://v3.appkora.com/storage/89844/jason-steele.png",
+     "name": "جايسون ستيل",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "حارس مرمي",
+     "height": 188,
+     "weight": 79,
+     "shirt_number": 23,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 26,
+     "birth_date": "2000-03-25",
+     "id": 1068,
+     "image": "https://v3.appkora.com/storage/89845/tom-mcgill.png",
+     "name": "توم ماكجيل",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "حارس مرمي",
+     "height": 185,
+     "weight": null,
+     "shirt_number": 38,
+     "services": [
+      2
+     ]
+    }
+   ],
+   "defenders": [
+    {
+     "active": 1,
+     "age": 34,
+     "birth_date": "1991-11-21",
+     "id": 1062,
+     "image": "https://v3.appkora.com/storage/89839/lewis-dunk.png",
+     "name": "لويس دونك",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "مدافع",
+     "height": 190,
+     "weight": 77,
+     "shirt_number": 5,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 26,
+     "birth_date": "2000-06-08",
+     "id": 1063,
+     "image": "https://v3.appkora.com/storage/89840/jan-paul-van-hecke.png",
+     "name": "جان بول فان هيك",
+     "nationality": {
+      "id": 192,
+      "flag": "https://v3.appkora.com/storage/95349/6329b8e827dbb.png",
+      "title": "هولندا"
+     },
+     "position": "مدافع",
+     "height": 189,
+     "weight": null,
+     "shirt_number": 6,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 34,
+     "birth_date": "1992-01-15",
+     "id": 1064,
+     "image": "https://v3.appkora.com/storage/89841/joel-veltman.png",
+     "name": "جويل فيلتمان",
+     "nationality": {
+      "id": 192,
+      "flag": "https://v3.appkora.com/storage/95349/6329b8e827dbb.png",
+      "title": "هولندا"
+     },
+     "position": "مدافع",
+     "height": 184,
+     "weight": 73,
+     "shirt_number": 34,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 31,
+     "birth_date": "1995-01-04",
+     "id": 1065,
+     "image": "https://v3.appkora.com/storage/89842/adam-webster.png",
+     "name": "آدم ويبستر",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "مدافع",
+     "height": 191,
+     "weight": 75,
+     "shirt_number": 4,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 21,
+     "birth_date": "2005-04-11",
+     "id": 1072,
+     "image": "https://v3.appkora.com/storage/89849/no-photo.png",
+     "name": "جاك هينشيلوود",
+     "nationality": {
+      "id": 1,
+      "flag": "https://v3.appkora.com/storage/95143/6641e6cd83efb.png",
+      "title": "أفريقيا"
+     },
+     "position": "مدافع",
+     "height": 182,
+     "weight": null,
+     "shirt_number": 13,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 27,
+     "birth_date": "1999-10-07",
+     "id": 1074,
+     "image": "https://v3.appkora.com/storage/89851/ferdi-kadioglu.png",
+     "name": "Ferdi Kadıoğlu",
+     "nationality": {
+      "id": 157,
+      "flag": "https://v3.appkora.com/storage/95312/6329cd6122c58.png",
+      "title": "تركيا"
+     },
+     "position": "مدافع",
+     "height": 174,
+     "weight": 64,
+     "shirt_number": 24,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 22,
+     "birth_date": "2003-12-28",
+     "id": 1078,
+     "image": "https://v3.appkora.com/storage/89855/no-photo.png",
+     "name": "دييغو كوبولا",
+     "nationality": {
+      "id": 181,
+      "flag": "https://v3.appkora.com/storage/95338/62eb800bd926f.png",
+      "title": "إيطاليا"
+     },
+     "position": "مدافع",
+     "height": 192,
+     "weight": null,
+     "shirt_number": 42,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 25,
+     "birth_date": "2000-12-22",
+     "id": 1079,
+     "image": "https://v3.appkora.com/storage/89856/maxim-de-cuyper.png",
+     "name": "مكسيم دي كويبر",
+     "nationality": {
+      "id": 167,
+      "flag": "https://v3.appkora.com/storage/95323/6329c8d354f00.png",
+      "title": "بلجيكا"
+     },
+     "position": "مدافع",
+     "height": 183,
+     "weight": null,
+     "shirt_number": 29,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 28,
+     "birth_date": "1997-11-18",
+     "id": 1080,
+     "image": "https://v3.appkora.com/storage/89857/olivier-boscagli.png",
+     "name": "أوليفييه بوسكالي",
+     "nationality": {
+      "id": 175,
+      "flag": "https://v3.appkora.com/storage/95331/6329b68cdcdc0.png",
+      "title": "فرنسا"
+     },
+     "position": "مدافع",
+     "height": 181,
+     "weight": 68,
+     "shirt_number": 21,
+     "services": [
+      2
+     ]
+    }
+   ],
+   "midfielders": [
+    {
+     "active": 1,
+     "age": 29,
+     "birth_date": "1997-05-20",
+     "id": 1058,
+     "image": "https://v3.appkora.com/storage/89835/kaoru-mitoma.png",
+     "name": "كاورو ميتوما",
+     "nationality": {
+      "id": 130,
+      "flag": "https://v3.appkora.com/storage/95285/6329c76d55435.png",
+      "title": "اليابان"
+     },
+     "position": "وسط ملعب",
+     "height": 178,
+     "weight": 71,
+     "shirt_number": 22,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 40,
+     "birth_date": "1986-01-04",
+     "id": 1059,
+     "image": "https://v3.appkora.com/storage/89836/james-milner.png",
+     "name": "جيمس ميلنر",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "وسط ملعب",
+     "height": 175,
+     "weight": 70,
+     "shirt_number": 20,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 32,
+     "birth_date": "1994-07-20",
+     "id": 1060,
+     "image": "https://v3.appkora.com/storage/89837/solly-march.png",
+     "name": "سولي مارس",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "وسط ملعب",
+     "height": 180,
+     "weight": 77,
+     "shirt_number": 7,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 22,
+     "birth_date": "2004-01-03",
+     "id": 1061,
+     "image": "https://v3.appkora.com/storage/89838/no-photo.png",
+     "name": "كارلوس بالبا",
+     "nationality": {
+      "id": 1,
+      "flag": "https://v3.appkora.com/storage/95143/6641e6cd83efb.png",
+      "title": "أفريقيا"
+     },
+     "position": "وسط ملعب",
+     "height": 179,
+     "weight": null,
+     "shirt_number": 17,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 23,
+     "birth_date": "2003-10-06",
+     "id": 1069,
+     "image": "https://v3.appkora.com/storage/89846/no-photo.png",
+     "name": "ياسين عياري",
+     "nationality": {
+      "id": 202,
+      "flag": "https://v3.appkora.com/storage/95359/6329d69389d9c.png",
+      "title": "السويد"
+     },
+     "position": "وسط ملعب",
+     "height": 172,
+     "weight": null,
+     "shirt_number": 26,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 22,
+     "birth_date": "2004-07-22",
+     "id": 1070,
+     "image": "https://v3.appkora.com/storage/89847/no-photo.png",
+     "name": "يانكوبا مينته",
+     "nationality": {
+      "id": 27,
+      "flag": "https://v3.appkora.com/storage/95172/631743ca31920.png",
+      "title": "غامبيا"
+     },
+     "position": "وسط ملعب",
+     "height": 180,
+     "weight": null,
+     "shirt_number": 11,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 26,
+     "birth_date": "1999-11-16",
+     "id": 1071,
+     "image": "https://v3.appkora.com/storage/89848/mats-wieffer.png",
+     "name": "ماتس ويفر",
+     "nationality": {
+      "id": 192,
+      "flag": "https://v3.appkora.com/storage/95349/6329b8e827dbb.png",
+      "title": "هولندا"
+     },
+     "position": "وسط ملعب",
+     "height": 188,
+     "weight": null,
+     "shirt_number": 27,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 24,
+     "birth_date": "2002-04-20",
+     "id": 1073,
+     "image": "https://v3.appkora.com/storage/89850/georginio-rutter.png",
+     "name": "جورجينيو راتر",
+     "nationality": {
+      "id": 175,
+      "flag": "https://v3.appkora.com/storage/95331/6329b68cdcdc0.png",
+      "title": "فرنسا"
+     },
+     "position": "وسط ملعب",
+     "height": 182,
+     "weight": null,
+     "shirt_number": 10,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 0,
+     "birth_date": "2025-11-11",
+     "id": 1075,
+     "image": "https://v3.appkora.com/storage/89852/no-photo.png",
+     "name": "برايان جرودا",
+     "nationality": {
+      "id": 1,
+      "flag": "https://v3.appkora.com/storage/95143/6641e6cd83efb.png",
+      "title": "أفريقيا"
+     },
+     "position": "وسط ملعب",
+     "height": 178,
+     "weight": null,
+     "shirt_number": 8,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 23,
+     "birth_date": "2003-03-27",
+     "id": 1076,
+     "image": "https://v3.appkora.com/storage/89853/no-photo.png",
+     "name": "دييجو جوميز",
+     "nationality": {
+      "id": 69,
+      "flag": "https://v3.appkora.com/storage/95218/6329dca15f31d.png",
+      "title": "باراجواي"
+     },
+     "position": "وسط ملعب",
+     "height": 185,
+     "weight": null,
+     "shirt_number": 25,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 20,
+     "birth_date": "2006-04-08",
+     "id": 1081,
+     "image": "https://v3.appkora.com/storage/89858/no-photo.png",
+     "name": "توم واتسون",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "وسط ملعب",
+     "height": 190,
+     "weight": null,
+     "shirt_number": 14,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 0,
+     "birth_date": "2025-11-11",
+     "id": 1082,
+     "image": "https://v3.appkora.com/storage/89859/no-photo.png",
+     "name": "Charalampos Kostoulas",
+     "nationality": {
+      "id": 1,
+      "flag": "https://v3.appkora.com/storage/95143/6641e6cd83efb.png",
+      "title": "أفريقيا"
+     },
+     "position": "وسط ملعب",
+     "height": 185,
+     "weight": null,
+     "shirt_number": 19,
+     "services": [
+      2
+     ]
+    }
+   ],
+   "forwards": [
+    {
+     "active": 1,
+     "age": 35,
+     "birth_date": "1990-11-26",
+     "id": 1057,
+     "image": "https://v3.appkora.com/storage/89834/danny-welbeck.png",
+     "name": "داني ويلبيك",
+     "nationality": {
+      "id": 210,
+      "flag": "https://v3.appkora.com/storage/95367/6329b4fa0fb4c.png",
+      "title": "إنجلترا"
+     },
+     "position": "مهاجم",
+     "height": 185,
+     "weight": 73,
+     "shirt_number": 18,
+     "services": [
+      2
+     ]
+    },
+    {
+     "active": 1,
+     "age": 20,
+     "birth_date": "2006-01-06",
+     "id": 1077,
+     "image": "https://v3.appkora.com/storage/89854/no-photo.png",
+     "name": "ستيفانوس تزيماس",
+     "nationality": {
+      "id": 177,
+      "flag": "https://v3.appkora.com/storage/95333/6329d59d3b712.png",
+      "title": "اليونان"
+     },
+     "position": "مهاجم",
+     "height": 184,
+     "weight": 78,
+     "shirt_number": 9,
+     "services": [
+      2
+     ]
+    }
+   ]
+  }
+ },
+ "status": 200
+}

@@ -1,0 +1,314 @@
+{
+ "message": "Retrieved Successfully",
+ "status": 200,
+ "data": {
+  "topAssists": [
+   {
+    "id": 1324,
+    "name": "برونو فرنانديز",
+    "player_position": "وسط ملعب",
+    "played": 22,
+    "image": "https://v3.appkora.com/storage/90112/bruno-fernandes.png",
+    "team_id": 35,
+    "team_name": "مانشستر يونايتد",
+    "team_logo": "https://v3.appkora.com/storage/90111/manchester-united.png",
+    "ratio": 7.56,
+    "service": [
+     2
+    ],
+    "assissts": "10"
+   },
+   {
+    "id": 1262,
+    "name": "محمد صلاح",
+    "player_position": "وسط ملعب",
+    "played": 17,
+    "image": "https://v3.appkora.com/storage/107116/mohamed-salah.png",
+    "team_id": 33,
+    "team_name": "ليفربول",
+    "team_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+    "ratio": 6.76,
+    "service": [
+     2
+    ],
+    "assissts": "6"
+   },
+   {
+    "id": 1320,
+    "name": "ريان شرقي",
+    "player_position": "وسط ملعب",
+    "played": 21,
+    "image": "https://v3.appkora.com/storage/95423/rayan-cherki.png",
+    "team_id": 34,
+    "team_name": "مانشستر سيتي",
+    "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+    "ratio": 7.2,
+    "service": [
+     2
+    ],
+    "assissts": "6"
+   },
+   {
+    "id": 1297,
+    "name": "إيرلينج هالاند",
+    "player_position": "مهاجم",
+    "played": 26,
+    "image": "https://v3.appkora.com/storage/95400/erling-braut-haland.png",
+    "team_id": 34,
+    "team_name": "مانشستر سيتي",
+    "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+    "ratio": 7.43,
+    "service": [
+     2
+    ],
+    "assissts": "6"
+   },
+   {
+    "id": 1004,
+    "name": "مورجان روجرز",
+    "player_position": "وسط ملعب",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/89777/morgan-rogers.png",
+    "team_id": 24,
+    "team_name": "أستون فيلا",
+    "team_logo": "https://v3.appkora.com/storage/89770/aston-villa.png",
+    "ratio": 6.85,
+    "service": [
+     2
+    ],
+    "assissts": "5"
+   }
+  ],
+  "topScorers": [
+   {
+    "id": 1297,
+    "name": "إيرلينج هالاند",
+    "player_position": "مهاجم",
+    "played": 26,
+    "image": "https://v3.appkora.com/storage/95400/erling-braut-haland.png",
+    "team_id": 34,
+    "team_name": "مانشستر سيتي",
+    "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+    "ratio": 7.43,
+    "service": [
+     2
+    ],
+    "goals": "21"
+   },
+   {
+    "id": 934,
+    "name": "أنطوان سيمنيو",
+    "player_position": "وسط ملعب",
+    "played": 25,
+    "image": "https://v3.appkora.com/storage/89704/antoine-semenyo.png",
+    "team_id": 22,
+    "team_name": "بورنموث",
+    "team_logo": "https://v3.appkora.com/storage/89701/bournemouth.png",
+    "ratio": 7.09,
+    "service": [
+     2
+    ],
+    "goals": "13"
+   },
+   {
+    "id": 1041,
+    "name": "تياجو",
+    "player_position": "مهاجم",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/89817/thiago-3.png",
+    "team_id": 25,
+    "team_name": "برينتفورد",
+    "team_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+    "ratio": 6.96,
+    "service": [
+     2
+    ],
+    "goals": "13"
+   },
+   {
+    "id": 1261,
+    "name": "دومينيك كالفيرت لوين",
+    "player_position": "مهاجم",
+    "played": 20,
+    "image": "https://v3.appkora.com/storage/90046/dominic-calvert-lewin.png",
+    "team_id": 32,
+    "team_name": "ليدز يونايتد",
+    "team_logo": "https://v3.appkora.com/storage/90020/leeds-united.png",
+    "ratio": 6.72,
+    "service": [
+     2
+    ],
+    "goals": "10"
+   },
+   {
+    "id": 1288,
+    "name": "هوغو إيكيتيك",
+    "player_position": "مهاجم",
+    "played": 21,
+    "image": "https://v3.appkora.com/storage/90074/hugo-ekitike.png",
+    "team_id": 33,
+    "team_name": "ليفربول",
+    "team_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+    "ratio": 6.92,
+    "service": [
+     2
+    ],
+    "goals": "10"
+   }
+  ],
+  "topCleanSheats": [
+   {
+    "id": 1039,
+    "name": "ديفيد رايا",
+    "player_position": "حارس مرمي",
+    "played": 27,
+    "image": "https://v3.appkora.com/storage/89815/david-raya.png",
+    "team_id": 25,
+    "team_name": "برينتفورد",
+    "team_logo": "https://v3.appkora.com/storage/89800/brentford.png",
+    "ratio": 6.86,
+    "service": [
+     2
+    ],
+    "clean_sheets": 13
+   },
+   {
+    "id": 1323,
+    "name": "جيانلويجي دوناروما",
+    "player_position": "حارس مرمي",
+    "played": 23,
+    "image": "https://v3.appkora.com/storage/95426/gianluigi-donnarumma.png",
+    "team_id": 34,
+    "team_name": "مانشستر سيتي",
+    "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+    "ratio": 7.03,
+    "service": [
+     2
+    ],
+    "clean_sheets": 10
+   },
+   {
+    "id": 1156,
+    "name": "دين هندرسون",
+    "player_position": "حارس مرمي",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/89936/dean-henderson.png",
+    "team_id": 29,
+    "team_name": "كريستال بالاس",
+    "team_logo": "https://v3.appkora.com/storage/89930/crystal-palace.png",
+    "ratio": 7,
+    "service": [
+     2
+    ],
+    "clean_sheets": 9
+   },
+   {
+    "id": 1124,
+    "name": "روبرت سانشيز",
+    "player_position": "حارس مرمي",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/91812/robert-sanchez.png",
+    "team_id": 28,
+    "team_name": "تشيلسي",
+    "team_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+    "ratio": 6.93,
+    "service": [
+     2
+    ],
+    "clean_sheets": 9
+   },
+   {
+    "id": 1186,
+    "name": "جوردان بيكفورد",
+    "player_position": "حارس مرمي",
+    "played": 26,
+    "image": "https://v3.appkora.com/storage/89970/jordan-pickford.png",
+    "team_id": 30,
+    "team_name": "إيفرتون",
+    "team_logo": "https://v3.appkora.com/storage/89962/everton.png",
+    "ratio": 7.11,
+    "service": [
+     2
+    ],
+    "clean_sheets": 9
+   }
+  ],
+  "topPassers": [
+   {
+    "id": 1265,
+    "name": "فيرجيل فان ديك",
+    "player_position": "مدافع",
+    "played": 26,
+    "image": "https://v3.appkora.com/storage/90052/virgil-van-dijk.png",
+    "team_id": 33,
+    "team_name": "ليفربول",
+    "team_logo": "https://v3.appkora.com/storage/117553/01KF5PHRDPYQ9BKZNVR64Q2VE7.png",
+    "ratio": 7.29,
+    "service": [
+     2
+    ],
+    "passes": 2004
+   },
+   {
+    "id": 1062,
+    "name": "لويس دونك",
+    "player_position": "مدافع",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/89839/lewis-dunk.png",
+    "team_id": 26,
+    "team_name": "برايتون",
+    "team_logo": "https://v3.appkora.com/storage/89833/brighton-hove-albion.png",
+    "ratio": 6.9,
+    "service": [
+     2
+    ],
+    "passes": 1980
+   },
+   {
+    "id": 1218,
+    "name": "يواكيم أندرسن",
+    "player_position": "مدافع",
+    "played": 23,
+    "image": "https://v3.appkora.com/storage/90003/joachim-andersen.png",
+    "team_id": 31,
+    "team_name": "فولهام",
+    "team_logo": "https://v3.appkora.com/storage/89992/fulham.png",
+    "ratio": 7.03,
+    "service": [
+     2
+    ],
+    "passes": 1831
+   },
+   {
+    "id": 1123,
+    "name": "تريفوه شلوبه",
+    "player_position": "مدافع",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/91811/trevoh-chalobah.png",
+    "team_id": 28,
+    "team_name": "تشيلسي",
+    "team_logo": "https://v3.appkora.com/storage/91804/chelsea.png",
+    "ratio": 6.98,
+    "service": [
+     2
+    ],
+    "passes": 1795
+   },
+   {
+    "id": 1402,
+    "name": "إليوت أندرسون",
+    "player_position": "وسط ملعب",
+    "played": 24,
+    "image": "https://v3.appkora.com/storage/90196/elliot-anderson.png",
+    "team_id": 37,
+    "team_name": "نوتينجهام فورست",
+    "team_logo": "https://v3.appkora.com/storage/90182/nottingham-forest.png",
+    "ratio": 7.29,
+    "service": [
+     2
+    ],
+    "passes": 1735
+   }
+  ]
+ }
+}

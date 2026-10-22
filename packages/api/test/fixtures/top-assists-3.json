@@ -1,0 +1,231 @@
+{
+ "data": [
+  {
+   "id": 1324,
+   "name": "برونو فرنانديز",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90112/bruno-fernandes.png",
+   "assissts": "10",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1320,
+   "name": "ريان شرقي",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/95423/rayan-cherki.png",
+   "assissts": "6",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1297,
+   "name": "إيرلينج هالاند",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/95400/erling-braut-haland.png",
+   "assissts": "6",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1262,
+   "name": "محمد صلاح",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/107116/mohamed-salah.png",
+   "assissts": "6",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1495,
+   "name": "محمد قدوس",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90307/kudus-mohammed.png",
+   "assissts": "5",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1204,
+   "name": "جاك جريليش",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89987/jack-grealish.png",
+   "assissts": "5",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1004,
+   "name": "مورجان روجرز",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89777/morgan-rogers.png",
+   "assissts": "5",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 975,
+   "name": "لياندرو تروسارد",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89747/leandro-trossard.png",
+   "assissts": "5",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1522,
+   "name": "الحاج مالك ضيوف",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90370/no-photo.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1500,
+   "name": "تشافي سيمونز",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90316/xavi-simons.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1449,
+   "name": "جرانيت شاكا",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90245/granit-xhaka.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1426,
+   "name": "إنزو لو في",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90222/enzo-le-fee.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1369,
+   "name": "برونو غيماريش",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90160/bruno-guimaraes.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1303,
+   "name": "ماثيوس نونيس",
+   "position": "مدافع",
+   "image": "https://v3.appkora.com/storage/95406/matheus-luiz-nunes.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1300,
+   "name": "برناردو سيلفا",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/95403/bernardo-silva-1.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1298,
+   "name": "جيريمي دوكو",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/95401/jeremy-doku.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1233,
+   "name": "صموئيل تشوكويز",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/107240/samuel-chukwueze.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1146,
+   "name": "جواو بيدرو",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/91834/joao-pedro-6.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1118,
+   "name": "ريس جيمس",
+   "position": "مدافع",
+   "image": "https://v3.appkora.com/storage/91806/reece-james.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1103,
+   "name": "كويلندشي هارتمان",
+   "position": "مدافع",
+   "image": "https://v3.appkora.com/storage/89880/no-photo.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1070,
+   "name": "يانكوبا مينته",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89847/no-photo.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1030,
+   "name": "فيتالي جانيلت",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89806/vitaly-janelt.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 1009,
+   "name": "يوري تيلمانس",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89782/youri-tielemans.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 976,
+   "name": "رايس ديكلان",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89748/declan-rice.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  },
+  {
+   "id": 971,
+   "name": "مارتن أوديجارد",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89743/martin-odegaard.png",
+   "assissts": "4",
+   "service": 2,
+   "played": 0
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

@@ -1,0 +1,178 @@
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { describe, expect, it } from 'vitest';
+import * as m from '../src/mappers';
+
+const fx = (name: string): unknown =>
+  JSON.parse(readFileSync(join(import.meta.dirname, 'fixtures', `${name}.json`), 'utf8'));
+
+describe('matches', () => {
+  const detail = m.mapMatchDetail(fx('match-stats-2578'));
+
+  it('maps a finished match with Egypt wall-clock kickoff', () => {
+    expect(detail.match).toMatchObject({
+      id: 2578,
+      state: 'finished',
+      kickoff: '2026-01-19T23:00',
+      phase: null,
+      home: { id: 26, shortName: 'Brighton', score: 1 },
+      away: { id: 22, shortName: 'Bournemouth', score: 1 },
+      competition: { id: 3 },
+    });
+  });
+
+  it('maps statistics for both teams with clean keys', () => {
+    const possession = detail.stats.find((s) => s.key === 'possession');
+    expect(possession).toEqual({ key: 'possession', home: 66, away: 34 });
+    expect(detail.stats.map((s) => s.key)).toContain('shotsOnTarget');
+  });
+
+  it('maps the empty home calendar from TEST', () => {
+    expect(m.mapDayMatches(fx('home-calendar'))).toEqual({ yesterday: [], today: [], tomorrow: [] });
+  });
+
+  it('maps a live match with phase and minute', () => {
+    const live = m.mapMatch({ id: 1, matchStatus: 3, date: '2026-10-22 21:00:00', matchRoundInfo: { event_id: 3, time: '67' } });
+    expect(live).toMatchObject({ state: 'live', phase: 'second_half', minute: '67', kickoff: '2026-10-22T21:00' });
+  });
+
+  it('maps events, keeping period markers and player names', () => {
+    const events = m.mapEvents(fx('match-events-2578'));
+    expect(events[0]).toMatchObject({ kind: 'period', player: null });
+    expect(events.some((e) => e.kind === 'goal' && e.player)).toBe(true);
+  });
+
+  it('maps lineups from goalkeeper to attack and drops empty rows', () => {
+    const [first] = m.mapLineups(fx('lineup-2578'));
+    expect(first!.formation).toBe('4-2-3-1');
+    expect(first!.rows[0]).toHaveLength(1);
+    expect(first!.rows.every((r) => r.length > 0)).toBe(true);
+    expect(first!.rows.flat()).toHaveLength(11);
+  });
+
+  it('maps head to head meetings and totals', () => {
+    const h2h = m.mapHeadToHead(fx('h2h-2578'));
+    expect(h2h.meetings.length).toBeGreaterThan(0);
+    expect(h2h.totals[0]).toHaveProperty('passAccuracy');
+  });
+});
+
+describe('competitions', () => {
+  it('maps a league with seasons and stages', () => {
+    const c = m.mapCompetitionDetail(fx('tournament-3'));
+    expect(c).toMatchObject({ id: 3, format: 'league', hasStandings: true });
+    expect(c.currentSeason?.id).toBeTypeOf('number');
+  });
+
+  it('maps a cup with groups', () => {
+    const c = m.mapCompetitionDetail(fx('tournament-28'));
+    expect(c).toMatchObject({ format: 'cup', hasGroups: true, hasStandings: true });
+    expect(c.seasons.length).toBeGreaterThan(1);
+  });
+
+  it('maps standings with W/D/L form only', () => {
+    const s = m.mapStandings(fx('standing-3'));
+    const top = s.groups[0]!.rows[0]!;
+    expect(top.position).toBe(1);
+    expect(top.points).toBeGreaterThan(0);
+    expect(top.form.every((f) => ['W', 'D', 'L'].includes(f))).toBe(true);
+  });
+
+  it('maps named groups for group competitions (World Cup, recorded from PROD)', () => {
+    const s = m.mapGroupStandings(fx('standing-groups-23'));
+    expect(s.groups.length).toBeGreaterThanOrEqual(12);
+    expect(s.groups[0]!.name).toBe('المجموعة أ');
+    expect(s.groups[0]!.rows).toHaveLength(4);
+    expect(s.groups[0]!.rows.map((r) => r.position)).toEqual([1, 2, 3, 4]);
+    expect(s.groups[0]!.rows[0]!.points).toBeGreaterThan(0);
+  });
+
+  it('returns no groups for a league, so callers fall back to the flat table', () => {
+    expect(m.mapGroupStandings(fx('tournament-standing-3')).groups).toEqual([]);
+  });
+
+  it('absorbs the API typos in leader boards', () => {
+    const l = m.mapLeaderBoards(fx('leaders-3'));
+    expect(l.topAssists[0]!.value).toBeGreaterThan(0);
+    expect(l.cleanSheets[0]!.value).toBeGreaterThan(0);
+    expect(l.topScorers[0]!.team?.name).toBeTruthy();
+  });
+
+  it('maps a knockout bracket ordered by slot', () => {
+    const rounds = m.mapBracket(fx('bracket-28'));
+    expect(rounds.length).toBeGreaterThan(0);
+    const slots = rounds[0]!.matches.map((x) => x.slot);
+    expect(slots).toEqual([...slots].sort((a, b) => a - b));
+    expect(rounds[0]!.matches[0]!.teams).toHaveLength(2);
+  });
+
+  it('maps honours from history and last winner', () => {
+    const h = m.mapHonours(fx('history-28'), fx('last-winner-24'));
+    expect(h.winners[0]!.team.name).toBeTruthy();
+    expect(h.lastWinner?.name).toBeTruthy();
+  });
+});
+
+describe('teams and players', () => {
+  it('maps a team and treats "--" as missing', () => {
+    const t = m.mapTeam(fx('team-26'));
+    expect(t).toMatchObject({ id: 26, shortName: 'Brighton', stadium: null, founded: null });
+  });
+
+  it('maps the squad in position order', () => {
+    expect(m.mapSquad(fx('squad-26')).map((g) => g.position)).toEqual(['goalkeepers', 'defenders', 'midfielders', 'forwards']);
+  });
+
+  it('maps team stats with interval labels', () => {
+    const s = m.mapTeamStats(fx('team-stats-26'));
+    expect(s.byInterval.map((x) => x.label)).toEqual(['15', '30', '45', '60', '75', '90']);
+  });
+
+  it('maps a player and their stats', () => {
+    expect(m.mapPlayer(fx('player-1297'))).toMatchObject({ id: 1297, shirtNumber: 9 });
+    expect(m.mapPlayerStats(fx('player-stats-1297'))).toMatchObject({ goals: 21, assists: 6 });
+  });
+
+  it('maps paged transfers', () => {
+    const p = m.mapTransfers(fx('transfers'));
+    expect(p.page).toBe(1);
+    expect(p.items[0]!.from.name).toBeTruthy();
+  });
+});
+
+describe('content and games', () => {
+  it('maps paged news and article tags', () => {
+    const page = m.mapNewsPage(fx('media'));
+    expect(page.lastPage).toBeGreaterThan(1);
+    const a = m.mapArticle(fx('article-10571'));
+    expect(a.bodyHtml).toContain('<p>');
+    expect(a.tags.some((t) => t.kind === 'player')).toBe(true);
+  });
+
+  it('maps hubs to teams and competitions', () => {
+    const hubs = m.mapHubs(fx('global-config'));
+    expect(hubs.find((h) => h.key === 'al_ahly')?.kind).toBe('team');
+    expect(hubs.find((h) => h.key === 'world_cup')?.kind).toBe('competition');
+  });
+
+  it('drops games of unknown type', () => {
+    const games = m.mapGames(fx('games'));
+    expect(games.every((g) => ['guess', 'match_predict', 'team_squad'].includes(g.type))).toBe(true);
+  });
+
+  it('maps each game type', () => {
+    expect(m.mapGame(fx('game-11'))).toMatchObject({ type: 'guess', answerPath: expect.stringContaining('guess-games') });
+    const predict = m.mapGame(fx('game-6'));
+    expect(predict?.type).toBe('match_predict');
+    if (predict?.type === 'match_predict') {
+      expect(predict.outcomes).toEqual(['home', 'draw', 'away']);
+      expect(predict.fixtures[0]!.kickoff).toMatch(/T\d{2}:\d{2}:\d{2}\+00:00$/);
+    }
+    const squad = m.mapGame(fx('game-5'));
+    expect(squad).toMatchObject({ type: 'team_squad', pickCount: 11 });
+  });
+
+  it('maps search results to known kinds', () => {
+    expect(m.mapSearch(fx('search')).every((r) => ['team', 'player', 'competition'].includes(r.kind))).toBe(true);
+  });
+});

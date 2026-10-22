@@ -1,0 +1,50 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web",
+      "runtimeExecutable": "corepack",
+      "runtimeArgs": [
+        "pnpm",
+        "--filter",
+        "@sports247/web",
+        "dev"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "web-live",
+      "runtimeExecutable": "corepack",
+      "runtimeArgs": [
+        "pnpm",
+        "--filter",
+        "@sports247/web",
+        "dev:live"
+      ],
+      "port": 5174
+    },
+    {
+      "name": "web-preview",
+      "runtimeExecutable": "corepack",
+      "runtimeArgs": [
+        "pnpm",
+        "--filter",
+        "@sports247/web",
+        "preview"
+      ],
+      "port": 4174
+    },
+    {
+      "name": "prototype",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4173",
+        "--directory",
+        "docs/phase-1/prototype"
+      ],
+      "port": 4173
+    }
+  ]
+}

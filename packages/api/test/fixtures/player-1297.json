@@ -1,0 +1,82 @@
+{
+ "data": {
+  "age": 26,
+  "id": 1297,
+  "background_image": "",
+  "image": "https://v3.appkora.com/storage/95400/erling-braut-haland.png",
+  "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+  "ballLoseCount": 0,
+  "ballWinCount": 38,
+  "redCardCount": 0,
+  "yellowCardCount": 1,
+  "savesCount": 0,
+  "birth_date": "2000-07-21",
+  "height": 194,
+  "weight": 87,
+  "name": "إيرلينج هالاند",
+  "nationality": {
+   "id": 193,
+   "flag": "https://v3.appkora.com/storage/95350/6329d645e2954.png",
+   "title": "النرويج"
+  },
+  "position": "مهاجم",
+  "shirt_number": 9,
+  "sport": "كرة القدم",
+  "sport_id": 1,
+  "tournamentsData": [
+   {
+    "id": 3,
+    "name": "الدوري الإنجليزي",
+    "seasons": [
+     {
+      "id": 2,
+      "parent_id": null,
+      "title": "2025/2026",
+      "active": 1
+     }
+    ]
+   },
+   {
+    "id": 24,
+    "name": "كأس العالم للأندية",
+    "seasons": [
+     {
+      "id": 24,
+      "parent_id": null,
+      "title": "2025-2026",
+      "active": 0
+     }
+    ]
+   },
+   {
+    "id": 27,
+    "name": "كأس الرابطة الإنجليزية",
+    "seasons": [
+     {
+      "id": 22,
+      "parent_id": null,
+      "title": "كأس الرابطة الإنجليزية",
+      "active": 1
+     }
+    ]
+   },
+   {
+    "id": 10,
+    "name": "دوري أبطال أوروبا",
+    "seasons": [
+     {
+      "id": 9,
+      "parent_id": null,
+      "title": "2025/2026",
+      "active": 1
+     }
+    ]
+   }
+  ],
+  "services": [
+   2
+  ]
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

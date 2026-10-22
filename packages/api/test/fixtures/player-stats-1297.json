@@ -1,0 +1,21 @@
+{
+ "data": {
+  "id": 1297,
+  "assisstsCount": 6,
+  "attemptsCount": 47,
+  "ballLoseCount": 0,
+  "ballWinCount": 28,
+  "goalsCount": 21,
+  "longBallAccuracy": 50,
+  "passAccuracy": 64.95,
+  "playedMatchesCount": 26,
+  "playedMinutesCount": 2148,
+  "rating": 7.43,
+  "savesCount": 0,
+  "successLongBallCount": 8,
+  "successPassesCount": 271,
+  "totalCrossCount": 1
+ },
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

@@ -1,0 +1,268 @@
+{
+ "type": "match_predict",
+ "match_predict_game": {
+  "id": 3,
+  "is_active": true,
+  "tournament": {
+   "id": 84,
+   "name_en": "FIFA WORLD CUP 2026",
+   "name_ar": "كاس العالم"
+  },
+  "game": {
+   "id": 6,
+   "title": "من سيفوز !؟",
+   "image": "https://v3.appkora.com/storage/128700/01KRYEQW57C1S9H5ZP5S31RMS2.webp",
+   "is_active": true
+  },
+  "outcomes": [
+   {
+    "value": "home",
+    "label": "Home Win"
+   },
+   {
+    "value": "draw",
+    "label": "Draw"
+   },
+   {
+    "value": "away",
+    "label": "Away Win"
+   }
+  ]
+ },
+ "is_played": false,
+ "fixtures": [
+  {
+   "game_fixture_id": 6,
+   "order": 0,
+   "fixture": {
+    "id": 4714,
+    "match_datetime": "2026-06-11T19:00:00+00:00",
+    "status": "not_started",
+    "home_team": {
+     "id": 1176,
+     "name_en": "Mexico",
+     "name_ar": null,
+     "logo": ""
+    },
+    "away_team": {
+     "id": 608,
+     "name_en": "South Africa",
+     "name_ar": "جنوب أفريقيا",
+     "logo": "https://v3.appkora.com/storage/126518/south-africa-1.png"
+    },
+    "home_score": null,
+    "away_score": null,
+    "stadium": {
+     "id": 3237,
+     "name_en": "Azteca",
+     "name_ar": "أزتيكا"
+    },
+    "channels": null
+   },
+   "is_locked": false,
+   "is_answered": false,
+   "your_pick": null,
+   "stats": {
+    "total": 11,
+    "counts": {
+     "home": 1,
+     "draw": 1,
+     "away": 9
+    },
+    "percentages": {
+     "home": 9.1,
+     "draw": 9.1,
+     "away": 81.8
+    }
+   }
+  },
+  {
+   "game_fixture_id": 7,
+   "order": 1,
+   "fixture": {
+    "id": 4713,
+    "match_datetime": "2026-06-12T02:00:00+00:00",
+    "status": "not_started",
+    "home_team": {
+     "id": 1174,
+     "name_en": "South Korea",
+     "name_ar": null,
+     "logo": ""
+    },
+    "away_team": {
+     "id": 1175,
+     "name_en": "Czech Republic",
+     "name_ar": null,
+     "logo": ""
+    },
+    "home_score": null,
+    "away_score": null,
+    "stadium": {
+     "id": 15064,
+     "name_en": "Estadio Akron",
+     "name_ar": null
+    },
+    "channels": null
+   },
+   "is_locked": false,
+   "is_answered": false,
+   "your_pick": null,
+   "stats": {
+    "total": 9,
+    "counts": {
+     "home": 4,
+     "draw": 4,
+     "away": 1
+    },
+    "percentages": {
+     "home": 44.4,
+     "draw": 44.4,
+     "away": 11.1
+    }
+   }
+  },
+  {
+   "game_fixture_id": 8,
+   "order": 2,
+   "fixture": {
+    "id": 4712,
+    "match_datetime": "2026-06-12T19:00:00+00:00",
+    "status": "not_started",
+    "home_team": {
+     "id": 1181,
+     "name_en": "Canada",
+     "name_ar": null,
+     "logo": ""
+    },
+    "away_team": {
+     "id": 1182,
+     "name_en": "Bosnia & Herzegovina",
+     "name_ar": null,
+     "logo": ""
+    },
+    "home_score": null,
+    "away_score": null,
+    "stadium": {
+     "id": 679,
+     "name_en": "BMO Field",
+     "name_ar": "حقل BMO"
+    },
+    "channels": null
+   },
+   "is_locked": false,
+   "is_answered": false,
+   "your_pick": null,
+   "stats": {
+    "total": 9,
+    "counts": {
+     "home": 5,
+     "draw": 1,
+     "away": 3
+    },
+    "percentages": {
+     "home": 55.6,
+     "draw": 11.1,
+     "away": 33.3
+    }
+   }
+  },
+  {
+   "game_fixture_id": 9,
+   "order": 3,
+   "fixture": {
+    "id": 4711,
+    "match_datetime": "2026-06-13T01:00:00+00:00",
+    "status": "not_started",
+    "home_team": {
+     "id": 1167,
+     "name_en": "USA",
+     "name_ar": null,
+     "logo": ""
+    },
+    "away_team": {
+     "id": 1164,
+     "name_en": "Paraguay",
+     "name_ar": null,
+     "logo": ""
+    },
+    "home_score": null,
+    "away_score": null,
+    "stadium": {
+     "id": 14000,
+     "name_en": "SoFi Stadium",
+     "name_ar": "ملعب صوفي"
+    },
+    "channels": null
+   },
+   "is_locked": false,
+   "is_answered": false,
+   "your_pick": null,
+   "stats": {
+    "total": 5,
+    "counts": {
+     "home": 1,
+     "draw": 4,
+     "away": 0
+    },
+    "percentages": {
+     "home": 20,
+     "draw": 80,
+     "away": 0
+    }
+   }
+  },
+  {
+   "game_fixture_id": 10,
+   "order": 4,
+   "fixture": {
+    "id": 4710,
+    "match_datetime": "2026-06-13T19:00:00+00:00",
+    "status": "not_started",
+    "home_team": {
+     "id": 1183,
+     "name_en": "Qatar",
+     "name_ar": null,
+     "logo": ""
+    },
+    "away_team": {
+     "id": 1180,
+     "name_en": "Switzerland",
+     "name_ar": null,
+     "logo": ""
+    },
+    "home_score": null,
+    "away_score": null,
+    "stadium": {
+     "id": 13970,
+     "name_en": "Levi's Stadium",
+     "name_ar": "ملعب ليفي"
+    },
+    "channels": null
+   },
+   "is_locked": false,
+   "is_answered": false,
+   "your_pick": null,
+   "stats": {
+    "total": 4,
+    "counts": {
+     "home": 1,
+     "draw": 2,
+     "away": 1
+    },
+    "percentages": {
+     "home": 25,
+     "draw": 50,
+     "away": 25
+    }
+   }
+  }
+ ],
+ "answer_endpoint": "/api/match-predict-games/3/answer",
+ "meta": {
+  "total_items": 39,
+  "items_per_page": 5,
+  "current_page": 1,
+  "last_page": 8
+ },
+ "status": 200
+}

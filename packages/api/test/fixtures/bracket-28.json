@@ -1,0 +1,473 @@
+{
+ "data": [
+  {
+   "id": 3,
+   "title": "دور الـ 16",
+   "has_group": false,
+   "stage_id": 3,
+   "matches": [
+    {
+     "id": 3661,
+     "start_date": "2026-01-05 22:00:00",
+     "tree_position": 8,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 610,
+       "logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+       "score": 4,
+       "penalty_score": null,
+       "title": "نيجيريا",
+       "winner": true
+      },
+      {
+       "id": 625,
+       "logo": "https://v3.appkora.com/storage/126535/mozambique.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "موزمبيق",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:08:23"
+     }
+    },
+    {
+     "id": 3660,
+     "start_date": "2026-01-06 19:00:00",
+     "tree_position": 7,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 618,
+       "logo": "https://v3.appkora.com/storage/126528/algeria.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "الجزائر",
+       "winner": true
+      },
+      {
+       "id": 616,
+       "logo": "https://v3.appkora.com/storage/126526/dr-congo.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "الكونغو الديمقراطية",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 5,
+      "time": "120",
+      "created_at": "2026-01-12 13:08:16"
+     }
+    },
+    {
+     "id": 3664,
+     "start_date": "2026-01-04 19:00:00",
+     "tree_position": 6,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 604,
+       "logo": "https://v3.appkora.com/storage/126514/morocco.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "المغرب",
+       "winner": true
+      },
+      {
+       "id": 611,
+       "logo": "https://v3.appkora.com/storage/126521/tanzania.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "تنزانيا",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:08:48"
+     }
+    },
+    {
+     "id": 3663,
+     "start_date": "2026-01-04 22:00:00",
+     "tree_position": 5,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 608,
+       "logo": "https://v3.appkora.com/storage/126518/south-africa-1.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "جنوب أفريقيا",
+       "winner": false
+      },
+      {
+       "id": 622,
+       "logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+       "score": 2,
+       "penalty_score": null,
+       "title": "الكاميرون",
+       "winner": true
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:08:39"
+     }
+    },
+    {
+     "id": 3659,
+     "start_date": "2026-01-06 22:00:00",
+     "tree_position": 4,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 624,
+       "logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+       "score": 3,
+       "penalty_score": null,
+       "title": "ساحل العاج",
+       "winner": true
+      },
+      {
+       "id": 619,
+       "logo": "https://v3.appkora.com/storage/126529/burkina-faso.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "بوركينا فاسو",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:08:10"
+     }
+    },
+    {
+     "id": 3662,
+     "start_date": "2026-01-05 19:00:00",
+     "tree_position": 3,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 607,
+       "logo": "https://v3.appkora.com/storage/126517/egypt.png",
+       "score": 3,
+       "penalty_score": null,
+       "title": "مصر",
+       "winner": true
+      },
+      {
+       "id": 614,
+       "logo": "https://v3.appkora.com/storage/126524/benin.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "بنين",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 5,
+      "time": "120",
+      "created_at": "2026-01-12 13:08:30"
+     }
+    },
+    {
+     "id": 3666,
+     "start_date": "2026-01-03 19:00:00",
+     "tree_position": 2,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 617,
+       "logo": "https://v3.appkora.com/storage/126527/senegal.png",
+       "score": 3,
+       "penalty_score": null,
+       "title": "السنغال",
+       "winner": true
+      },
+      {
+       "id": 621,
+       "logo": "https://v3.appkora.com/storage/126531/sudan.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "السودان",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:09:04"
+     }
+    },
+    {
+     "id": 3665,
+     "start_date": "2026-01-03 22:00:00",
+     "tree_position": 1,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 603,
+       "logo": "https://v3.appkora.com/storage/126513/mali.png",
+       "score": 1,
+       "penalty_score": 3,
+       "title": "مالي",
+       "winner": true
+      },
+      {
+       "id": 612,
+       "logo": "https://v3.appkora.com/storage/126522/tunisia.png",
+       "score": 1,
+       "penalty_score": 2,
+       "title": "تونس",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 11,
+      "time": "999",
+      "created_at": "2026-01-12 13:08:57"
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "ربع النهائي",
+   "has_group": false,
+   "stage_id": 4,
+   "matches": [
+    {
+     "id": 3656,
+     "start_date": "2026-01-10 19:00:00",
+     "tree_position": 4,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 618,
+       "logo": "https://v3.appkora.com/storage/126528/algeria.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "الجزائر",
+       "winner": false
+      },
+      {
+       "id": 610,
+       "logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+       "score": 2,
+       "penalty_score": null,
+       "title": "نيجيريا",
+       "winner": true
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:07:51"
+     }
+    },
+    {
+     "id": 3657,
+     "start_date": "2026-01-09 22:00:00",
+     "tree_position": 3,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 622,
+       "logo": "https://v3.appkora.com/storage/126532/cameroon-1.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "الكاميرون",
+       "winner": false
+      },
+      {
+       "id": 604,
+       "logo": "https://v3.appkora.com/storage/126514/morocco.png",
+       "score": 2,
+       "penalty_score": null,
+       "title": "المغرب",
+       "winner": true
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:07:58"
+     }
+    },
+    {
+     "id": 3655,
+     "start_date": "2026-01-10 22:00:00",
+     "tree_position": 2,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 607,
+       "logo": "https://v3.appkora.com/storage/126517/egypt.png",
+       "score": 3,
+       "penalty_score": null,
+       "title": "مصر",
+       "winner": true
+      },
+      {
+       "id": 624,
+       "logo": "https://v3.appkora.com/storage/126534/ivory-coast.png",
+       "score": 2,
+       "penalty_score": null,
+       "title": "ساحل العاج",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:07:44"
+     }
+    },
+    {
+     "id": 3658,
+     "start_date": "2026-01-09 19:00:00",
+     "tree_position": 1,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 603,
+       "logo": "https://v3.appkora.com/storage/126513/mali.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "مالي",
+       "winner": false
+      },
+      {
+       "id": 617,
+       "logo": "https://v3.appkora.com/storage/126527/senegal.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "السنغال",
+       "winner": true
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-12 13:08:04"
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "title": "نصف النهائي",
+   "has_group": false,
+   "stage_id": 5,
+   "matches": [
+    {
+     "id": 3653,
+     "start_date": "2026-01-14 23:00:00",
+     "tree_position": 2,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 610,
+       "logo": "https://v3.appkora.com/storage/126520/nigeria.png",
+       "score": 0,
+       "penalty_score": 2,
+       "title": "نيجيريا",
+       "winner": false
+      },
+      {
+       "id": 604,
+       "logo": "https://v3.appkora.com/storage/126514/morocco.png",
+       "score": 0,
+       "penalty_score": 4,
+       "title": "المغرب",
+       "winner": true
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 5,
+      "time": "120",
+      "created_at": "2026-01-15 06:13:59"
+     }
+    },
+    {
+     "id": 3654,
+     "start_date": "2026-01-14 20:00:00",
+     "tree_position": 1,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 617,
+       "logo": "https://v3.appkora.com/storage/126527/senegal.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "السنغال",
+       "winner": true
+      },
+      {
+       "id": 607,
+       "logo": "https://v3.appkora.com/storage/126517/egypt.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "مصر",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 4,
+      "time": "90",
+      "created_at": "2026-01-14 20:46:21"
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "title": "النهائي",
+   "has_group": false,
+   "stage_id": 6,
+   "matches": [
+    {
+     "id": 3652,
+     "start_date": "2026-01-18 22:00:00",
+     "tree_position": 1,
+     "status": "انتهت",
+     "teams": [
+      {
+       "id": 617,
+       "logo": "https://v3.appkora.com/storage/126527/senegal.png",
+       "score": 1,
+       "penalty_score": null,
+       "title": "السنغال",
+       "winner": true
+      },
+      {
+       "id": 604,
+       "logo": "https://v3.appkora.com/storage/126514/morocco.png",
+       "score": 0,
+       "penalty_score": null,
+       "title": "المغرب",
+       "winner": false
+      }
+     ],
+     "matchRoundInfo": {
+      "event_id": 5,
+      "time": "120",
+      "created_at": "2026-01-18 21:25:28"
+     }
+    }
+   ]
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

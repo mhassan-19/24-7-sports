@@ -1,0 +1,256 @@
+{
+ "data": [
+  {
+   "id": 1297,
+   "name": "إيرلينج هالاند",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/95400/erling-braut-haland.png",
+   "goals": 21,
+   "service": 2,
+   "played": 26,
+   "ratio": 81
+  },
+  {
+   "id": 1041,
+   "name": "تياجو",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89817/thiago-3.png",
+   "goals": 13,
+   "service": 2,
+   "played": 24,
+   "ratio": 54
+  },
+  {
+   "id": 934,
+   "name": "أنطوان سيمنيو",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89704/antoine-semenyo.png",
+   "goals": 13,
+   "service": 2,
+   "played": 45,
+   "ratio": 29
+  },
+  {
+   "id": 1288,
+   "name": "هوغو إيكيتيك",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90074/hugo-ekitike.png",
+   "goals": 10,
+   "service": 2,
+   "played": 21,
+   "ratio": 48
+  },
+  {
+   "id": 1261,
+   "name": "دومينيك كالفيرت لوين",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90046/dominic-calvert-lewin.png",
+   "goals": 10,
+   "service": 2,
+   "played": 20,
+   "ratio": 50
+  },
+  {
+   "id": 1387,
+   "name": "نيك ولتيدي",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90178/nick-woltemade.png",
+   "goals": 8,
+   "service": 2,
+   "played": 21,
+   "ratio": 38
+  },
+  {
+   "id": 1350,
+   "name": "بريان مبيومو",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90138/bryan-mbeumo.png",
+   "goals": 8,
+   "service": 2,
+   "played": 20,
+   "ratio": 40
+  },
+  {
+   "id": 1154,
+   "name": "جان فيليب ماتيتا",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89934/jean-philippe-mateta.png",
+   "goals": 8,
+   "service": 2,
+   "played": 22,
+   "ratio": 36
+  },
+  {
+   "id": 1146,
+   "name": "جواو بيدرو",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/91834/joao-pedro-6.png",
+   "goals": 8,
+   "service": 2,
+   "played": 24,
+   "ratio": 33
+  },
+  {
+   "id": 1057,
+   "name": "داني ويلبيك",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89834/danny-welbeck.png",
+   "goals": 8,
+   "service": 2,
+   "played": 23,
+   "ratio": 35
+  },
+  {
+   "id": 991,
+   "name": "فيكتور جيوكريس",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89763/viktor-gyokeres.png",
+   "goals": 8,
+   "service": 2,
+   "played": 25,
+   "ratio": 32
+  },
+  {
+   "id": 963,
+   "name": "إيلي جونيور كروبي",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89733/no-photo.png",
+   "goals": 8,
+   "service": 2,
+   "played": 22,
+   "ratio": 36
+  },
+  {
+   "id": 1504,
+   "name": "جارود بوين",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90329/jarrod-bowen.png",
+   "goals": 7,
+   "service": 2,
+   "played": 26,
+   "ratio": 27
+  },
+  {
+   "id": 1471,
+   "name": "ريتشارليسون",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90269/richarlison.png",
+   "goals": 7,
+   "service": 2,
+   "played": 19,
+   "ratio": 37
+  },
+  {
+   "id": 1369,
+   "name": "برونو غيماريش",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90160/bruno-guimaraes.png",
+   "goals": 7,
+   "service": 2,
+   "played": 23,
+   "ratio": 30
+  },
+  {
+   "id": 1226,
+   "name": "هاري ويلسون",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90011/harry-wilson.png",
+   "goals": 7,
+   "service": 2,
+   "played": 42,
+   "ratio": 17
+  },
+  {
+   "id": 1128,
+   "name": "إنزو فرنانديز",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/91816/enzo-jeremias-fernandez.png",
+   "goals": 7,
+   "service": 2,
+   "played": 25,
+   "ratio": 28
+  },
+  {
+   "id": 1121,
+   "name": "كول بالمر",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/91809/cole-palmer.png",
+   "goals": 7,
+   "service": 2,
+   "played": 15,
+   "ratio": 47
+  },
+  {
+   "id": 1012,
+   "name": "أولي واتكينز",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/89785/ollie-watkins.png",
+   "goals": 7,
+   "service": 2,
+   "played": 23,
+   "ratio": 30
+  },
+  {
+   "id": 1004,
+   "name": "مورجان روجرز",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/89777/morgan-rogers.png",
+   "goals": 7,
+   "service": 2,
+   "played": 24,
+   "ratio": 29
+  },
+  {
+   "id": 1391,
+   "name": "مورجان جيبس ​​وايت",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/90185/morgan-gibbs-white.png",
+   "goals": 6,
+   "service": 2,
+   "played": 24,
+   "ratio": 25
+  },
+  {
+   "id": 1348,
+   "name": "ماثيوس كونها",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90136/matheus-cunha.png",
+   "goals": 6,
+   "service": 2,
+   "played": 22,
+   "ratio": 27
+  },
+  {
+   "id": 1299,
+   "name": "فيل فودين",
+   "position": "وسط ملعب",
+   "image": "https://v3.appkora.com/storage/95402/phil-foden.png",
+   "goals": 6,
+   "service": 2,
+   "played": 23,
+   "ratio": 26
+  },
+  {
+   "id": 1461,
+   "name": "بريان بروبي",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90257/brian-brobbey.png",
+   "goals": 5,
+   "service": 2,
+   "played": 19,
+   "ratio": 26
+  },
+  {
+   "id": 1361,
+   "name": "هارفي بارنز",
+   "position": "مهاجم",
+   "image": "https://v3.appkora.com/storage/90152/harvey-barnes.png",
+   "goals": 5,
+   "service": 2,
+   "played": 25,
+   "ratio": 20
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

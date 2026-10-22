@@ -1,0 +1,30 @@
+{
+ "data": [
+  {
+   "id": null,
+   "team_id": 34,
+   "team_logo": "https://v3.appkora.com/storage/95399/manchester-city.png",
+   "price": null,
+   "join_date": null,
+   "tournamentsStats": [
+    {
+     "id": 3,
+     "title": "الدوري الإنجليزي",
+     "goals": 21
+    },
+    {
+     "id": 10,
+     "title": "دوري أبطال أوروبا",
+     "goals": 7
+    },
+    {
+     "id": 27,
+     "title": "كأس الرابطة الإنجليزية",
+     "goals": 0
+    }
+   ]
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}
