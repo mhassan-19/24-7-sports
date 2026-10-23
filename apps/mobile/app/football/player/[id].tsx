@@ -4,12 +4,14 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { paths, useFmt } from '../../../src/lib/locale';
+import { useTheme } from '../../../src/lib/theme';
 import { Avatar, Card, Chip, Chips, Crest, Eyebrow, KeyValues, Row, Screen, Segmented, Tiles } from '../../../src/ui/primitives';
 import { EmptyState, QueryView, Skeleton } from '../../../src/ui/states';
 import { Text } from '../../../src/ui/Text';
 
 export default function PlayerScreen() {
   const f = useFmt();
+  const { c } = useTheme();
   const id = Number(useLocalSearchParams<{ id: string }>().id);
   const player = usePlayer(id);
   const [tab, setTab] = useState<'stats' | 'career'>('stats');
@@ -19,10 +21,22 @@ export default function PlayerScreen() {
         {(p) => (
           <>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
-              {p.shirtNumber != null ? (
+              {p.image ? (
+                <View>
+                  <Avatar name={p.name} image={p.image} size={80} />
+                  {p.shirtNumber != null ? (
+                    <View
+                      accessibilityLabel={`${f.t('player.shirt')} ${p.shirtNumber}`}
+                      style={{ position: 'absolute', bottom: -2, left: -4, minWidth: 30, height: 30, paddingHorizontal: 6, borderRadius: 15, backgroundColor: c.accent, alignItems: 'center', justifyContent: 'center' }}
+                    >
+                      <Text variant="num" size={15} weight={800} color="onAccent">{f.n(p.shirtNumber)}</Text>
+                    </View>
+                  ) : null}
+                </View>
+              ) : p.shirtNumber != null ? (
                 <Text variant="num" size={60} weight={800} color="accentText" accessibilityLabel={`${f.t('player.shirt')} ${p.shirtNumber}`}>{f.n(p.shirtNumber)}</Text>
               ) : (
-                <Avatar name={p.name} image={p.image} size={64} />
+                <Avatar name={p.name} image={null} size={64} />
               )}
               <View style={{ flex: 1, gap: 2 }}>
                 {p.position ? <Eyebrow>{p.position}</Eyebrow> : null}

@@ -114,7 +114,8 @@ docs/         api/, phase-1/, phase-2/, phase-3/
   ISO UTC values use `f.instant` (Africa/Cairo). The API `time` field is ignored.
 - Colours come from tokens (CSS variables injected from `@sports247/tokens`); results use W/D/L
   letters plus colour, never green/red. Light theme: Bone page, white cards, Concrete controls.
-  Card icons are neutral shapes.
+  Yellow and red cards use their real colours (`cardYellow`/`cardRed` tokens, product owner
+  decision 23 Oct 2026); nothing else uses them.
 - Every query renders through `QueryView` (loading after 300 ms, error with retry, empty) and keeps
   cached data when a refetch fails.
 - API strings render inside `<bdi>`; content stays as returned (Arabic).

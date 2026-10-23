@@ -64,6 +64,29 @@
   min-width: 0;
 }
 
+/* Player photo with the shirt number as a badge. */
+.photo {
+  position: relative;
+  flex: none;
+}
+
+.photoNumber {
+  position: absolute;
+  inset-block-end: -2px;
+  inset-inline-start: -4px;
+  display: grid;
+  place-items: center;
+  min-inline-size: 30px;
+  block-size: 30px;
+  padding-inline: 6px;
+  border-radius: 15px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--f-num);
+  font-weight: 800;
+  font-size: 15px;
+}
+
 .bigNumber {
   font-family: var(--f-num);
   font-weight: 800;

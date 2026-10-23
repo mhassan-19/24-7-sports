@@ -92,6 +92,7 @@
     "manager": "Manager",
     "subs": "Substitutes",
     "subOn": "On",
+    "subOff": "Off",
     "noLineup": "Lineups not announced yet.",
     "noEvents": "No events yet.",
     "noStats": "No stats yet.",

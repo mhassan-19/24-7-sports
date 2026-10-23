@@ -211,7 +211,17 @@ function PitchPlayer({ p, best }: { p: LineupPlayer; best: number }) {
       <bdi className={s.playerName} dir="auto">
         {last}
       </bdi>
-      {p.rating != null && <span className={`${s.rating} ${p.rating === best ? s.ratingTop : ''}`}>{f.n(p.rating)}</span>}
+      {(p.subMinute || p.rating != null) && (
+        <span className={s.playerMeta}>
+          {p.subMinute && (
+            <span className={s.subMark} title={`${f.t('match.subOff')} ${f.digits(p.subMinute)}${f.t('match.minute')}`}>
+              <Icon name="sub" />
+              {f.digits(p.subMinute)}&apos;
+            </span>
+          )}
+          {p.rating != null && <span className={`${s.rating} ${p.rating === best ? s.ratingTop : ''}`}>{f.n(p.rating)}</span>}
+        </span>
+      )}
     </Link>
   );
 }
@@ -266,8 +276,15 @@ export function Lineups({ lineups }: { lineups: Lineup[] }) {
                   <Avatar name={p.name} image={p.image} size={28} />
                   <bdi>{p.name}</bdi>
                 </Link>
-                <span className="small muted">
-                  {p.subMinute ? `${f.t('match.subOn')} ${f.digits(p.subMinute)}${f.t('match.minute')}` : ''}
+                <span className={`small muted ${s.subName}`}>
+                  {p.subMinute && (
+                    <>
+                      <span className={s.subMark} aria-hidden="true">
+                        <Icon name="sub" />
+                      </span>
+                      {`${f.t('match.subOn')} ${f.digits(p.subMinute)}${f.t('match.minute')}`}
+                    </>
+                  )}
                 </span>
                 {p.rating != null ? <span className={s.rating}>{f.n(p.rating)}</span> : <span />}
               </div>

@@ -220,12 +220,13 @@
   display: inline-block;
   inline-size: 12px;
   block-size: 16px;
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--card-edge);
   border-radius: 2px;
+  background: var(--card-yellow);
 }
 
 .cardRed {
-  background: var(--text);
+  background: var(--card-red);
 }
 
 .var {
@@ -459,7 +460,28 @@
 .discEvents .card {
   inline-size: 8px;
   block-size: 11px;
-  background: var(--bg);
+}
+
+/* Under a player on the pitch: substitution marker and rating side by side. */
+.playerMeta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.subMark {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  color: var(--accent-text);
+  font-family: var(--f-num);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.subMark svg {
+  inline-size: 14px;
+  block-size: 14px;
 }
 
 .sub {

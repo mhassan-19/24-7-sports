@@ -132,6 +132,13 @@ the shared packages, so the website and the app both have them.
 - Match events show newest first (full time on top, kick-off at the bottom) on the website and in
   the app: `newestFirst` in `packages/domain`.
 - The app's home screen lists every match of the day, like the website (it stopped at 12).
+- Yellow and red cards use their real colours (new `cardYellow`/`cardRed` tokens, outside the
+  brand palette by product-owner decision) in events and on the pitch; the app's pitch now shows
+  cards too.
+- Substituted players carry orange in/out arrows with the minute on the pitch, and the bench shows
+  the same arrows for players who came on.
+- Player profiles show the photo (shirt number as a badge) when the API has a real one; the big
+  number remains for players without a photo.
 
 ## Changes from the plan
 

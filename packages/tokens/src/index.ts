@@ -18,6 +18,10 @@ export const palette = {
   line: '#CFCBC3',
   lineDark: '#3A3C42',
   blueTint: '#9FB0FF',
+  // Match signals, outside the brand palette by product-owner decision (23 Oct 2026): the real
+  // colours of yellow and red cards. Used for card icons only.
+  cardYellow: '#FFCC00',
+  cardRed: '#D7192D',
 } as const;
 
 export type ThemeName = 'dark' | 'light';
@@ -39,6 +43,10 @@ export interface SemanticColors {
   scrim: string;
   discBg: string;
   discFg: string;
+  cardYellow: string;
+  cardRed: string;
+  /** Thin edge so a yellow card stays visible on white. */
+  cardEdge: string;
 }
 
 export const themes: Record<ThemeName, SemanticColors> = {
@@ -59,6 +67,9 @@ export const themes: Record<ThemeName, SemanticColors> = {
     scrim: 'rgba(20, 20, 22, 0.6)',
     discBg: palette.bone,
     discFg: palette.midnight,
+    cardYellow: palette.cardYellow,
+    cardRed: palette.cardRed,
+    cardEdge: 'rgba(0, 0, 0, 0.35)',
   },
   light: {
     bg: palette.bone,
@@ -77,6 +88,9 @@ export const themes: Record<ThemeName, SemanticColors> = {
     scrim: 'rgba(20, 20, 22, 0.4)',
     discBg: palette.midnight,
     discFg: palette.bone,
+    cardYellow: palette.cardYellow,
+    cardRed: palette.cardRed,
+    cardEdge: 'rgba(20, 20, 22, 0.3)',
   },
 };
 

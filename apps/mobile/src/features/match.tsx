@@ -177,9 +177,20 @@ export function MatchHeader({ match }: { match: Match }) {
   );
 }
 
-function CardIcon({ red }: { red?: boolean }) {
+function CardIcon({ red, small }: { red?: boolean; small?: boolean }) {
   const { c } = useTheme();
-  return <View style={{ width: 12, height: 16, borderRadius: 2, borderWidth: 1.5, borderColor: c.text, backgroundColor: red ? c.text : 'transparent' }} />;
+  return (
+    <View
+      style={{
+        width: small ? 8 : 12,
+        height: small ? 11 : 16,
+        borderRadius: 2,
+        borderWidth: 1,
+        borderColor: c.cardEdge,
+        backgroundColor: red ? c.cardRed : c.cardYellow,
+      }}
+    />
+  );
 }
 
 function EventIcon({ e }: { e: MatchEvent }) {
@@ -298,16 +309,28 @@ function PitchPlayer({ p, best }: { p: LineupPlayer; best: number }) {
             <Text variant="num" size={10.5} weight={800} style={{ color: c.discFg, lineHeight: 14 }}>{f.n(p.number)}</Text>
           </View>
         ) : null}
-        {p.goals > 0 ? (
-          <View style={{ position: 'absolute', top: -6, right: -8 }}>
-            <Icon name="ball" size={14} />
+        {p.goals > 0 || p.yellowCard || p.redCard ? (
+          <View style={{ position: 'absolute', top: -6, right: -10, flexDirection: 'row', alignItems: 'center', gap: 2 }}>
+            {p.goals > 0 ? <Icon name="ball" size={14} /> : null}
+            {p.yellowCard ? <CardIcon small /> : null}
+            {p.redCard ? <CardIcon red small /> : null}
           </View>
         ) : null}
       </View>
       <Text variant="caption" numberOfLines={1} style={{ maxWidth: 72 }}>{last}</Text>
-      {p.rating != null ? (
-        <View style={{ paddingHorizontal: 4, borderRadius: 6, backgroundColor: p.rating === best ? c.accent : c.bg, borderWidth: 1, borderColor: p.rating === best ? c.accent : c.line }}>
-          <Text variant="num" size={11} color={p.rating === best ? 'onAccent' : 'text'}>{f.n(p.rating)}</Text>
+      {p.subMinute || p.rating != null ? (
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+          {p.subMinute ? (
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 1 }} accessibilityLabel={`${f.t('match.subOff')} ${f.digits(p.subMinute)}${f.t('match.minute')}`}>
+              <Icon name="sub" size={14} color={c.accentText} />
+              <Text variant="num" size={11} color="accentText">{`${f.digits(p.subMinute)}'`}</Text>
+            </View>
+          ) : null}
+          {p.rating != null ? (
+            <View style={{ paddingHorizontal: 4, borderRadius: 6, backgroundColor: p.rating === best ? c.accent : c.bg, borderWidth: 1, borderColor: p.rating === best ? c.accent : c.line }}>
+              <Text variant="num" size={11} color={p.rating === best ? 'onAccent' : 'text'}>{f.n(p.rating)}</Text>
+            </View>
+          ) : null}
         </View>
       ) : null}
     </Pressable>
@@ -344,7 +367,12 @@ export function Lineups({ lineups }: { lineups: Lineup[] }) {
             <Text variant="num" style={{ width: 28 }}>{f.n(p.number)}</Text>
             <Avatar name={p.name} image={p.image} size={28} />
             <Text variant="small" style={{ flex: 1 }}>{p.name}</Text>
-            {p.subMinute ? <Text variant="caption" color="text2">{`${f.t('match.subOn')} ${f.digits(p.subMinute)}${f.t('match.minute')}`}</Text> : null}
+            {p.subMinute ? (
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
+                <Icon name="sub" size={14} color={c.accentText} />
+                <Text variant="caption" color="text2">{`${f.t('match.subOn')} ${f.digits(p.subMinute)}${f.t('match.minute')}`}</Text>
+              </View>
+            ) : null}
             {p.rating != null ? (
               <View style={{ paddingHorizontal: 4, borderRadius: 6, borderWidth: 1, borderColor: c.line }}>
                 <Text variant="num" size={11}>{f.n(p.rating)}</Text>

@@ -24,12 +24,21 @@ export default function PlayerPage() {
         <div className={p.stack}>
           <Seo title={pl.name} description={[pl.position, pl.nationality].filter(Boolean).join(' · ')} />
           <header className={p.entity}>
-            {pl.shirtNumber != null ? (
+            {pl.image ? (
+              <span className={p.photo}>
+                <Avatar name={pl.name} image={pl.image} size={88} />
+                {pl.shirtNumber != null && (
+                  <span className={p.photoNumber} aria-label={`${f.t('player.shirt')} ${pl.shirtNumber}`}>
+                    {f.n(pl.shirtNumber)}
+                  </span>
+                )}
+              </span>
+            ) : pl.shirtNumber != null ? (
               <span className={p.bigNumber} aria-label={`${f.t('player.shirt')} ${pl.shirtNumber}`}>
                 {f.n(pl.shirtNumber)}
               </span>
             ) : (
-              <Avatar name={pl.name} image={pl.image} size={72} />
+              <Avatar name={pl.name} image={null} size={72} />
             )}
             <div>
               {pl.position && (
