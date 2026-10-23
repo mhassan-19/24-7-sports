@@ -174,9 +174,10 @@ const PITCH_ROWS = ['goal', 'defence', 'midp1', 'midp2', 'midp3', 'attack'];
  * Unused substitutes sometimes carry a rating from the data provider (seen on PROD), and players
  * without one get 0, so a rating shows only for players who played and never as 0.
  */
-function lineupPlayer(r: Raw, sub: boolean): LineupPlayer {
+function lineupPlayer(r: Raw, sub: boolean, cameOnFor: (r: Raw) => string | null): LineupPlayer {
   const ev = obj(r.playerMatchEvents);
-  const played = !sub || bool(ev.hasexchanged);
+  const swapped = bool(ev.hasexchanged);
+  const played = !sub || swapped;
   return {
     id: num0(r.player_id),
     name: str0(r.player_name),
@@ -186,13 +187,33 @@ function lineupPlayer(r: Raw, sub: boolean): LineupPlayer {
     goals: num0(ev.goalsCount),
     yellowCard: bool(ev.hasYellowCard) || bool(ev.has2YellowCard),
     redCard: bool(ev.hasRedCard),
-    subMinute: bool(ev.hasexchanged) ? str(ev.event_time) : null,
+    subMinute: swapped ? str(ev.event_time) : null,
+    swapName: !swapped ? null : sub ? str(ev.player_exchanged_name) : cameOnFor(r),
   };
+}
+
+/**
+ * Who replaced each starter. A starter's own `player_exchanged_name` repeats his name (seen on
+ * PROD), but the substitute's entry names the starter he replaced, with his shirt number.
+ */
+function replacements(subs: Raw[]): (starter: Raw) => string | null {
+  const byKey = new Map<string, string>();
+  for (const s of subs) {
+    const ev = obj(s.playerMatchEvents);
+    if (!bool(ev.hasexchanged)) continue;
+    const shirt = num(ev.player_exchanged_shirt);
+    const out = str(ev.player_exchanged_name);
+    if (shirt != null) byKey.set(`#${shirt}`, str0(s.player_name));
+    if (out) byKey.set(out, str0(s.player_name));
+  }
+  return (r) => byKey.get(`#${num(r.shirt_number)}`) ?? byKey.get(str0(r.player_name)) ?? null;
 }
 
 export function mapLineups(body: unknown): Lineup[] {
   return objs(data(body)).map((t) => {
     const pitch = obj(t.pitch);
+    const subs = objs(t.subs);
+    const cameOnFor = replacements(subs);
     return {
       teamId: num0(t.team_id),
       teamName: str0(t.team_name),
@@ -200,8 +221,8 @@ export function mapLineups(body: unknown): Lineup[] {
       hasLineup: bool(t.has_lineup),
       formation: str(t.plan),
       manager: str(obj(t.manager).name),
-      rows: PITCH_ROWS.map((k) => objs(pitch[k]).map((p) => lineupPlayer(p, false))).filter((row) => row.length > 0),
-      subs: objs(t.subs).map((p) => lineupPlayer(p, true)),
+      rows: PITCH_ROWS.map((k) => objs(pitch[k]).map((p) => lineupPlayer(p, false, cameOnFor))).filter((row) => row.length > 0),
+      subs: subs.map((p) => lineupPlayer(p, true, cameOnFor)),
     };
   });
 }

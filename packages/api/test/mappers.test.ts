@@ -69,6 +69,16 @@ describe('matches', () => {
     expect(subs.find((p) => p.subMinute === '46')?.rating).toBe(6.9);
     expect([...starters, ...subs].every((p) => p.rating !== 0)).toBe(true);
   });
+
+  it('names who replaced each starter, from the bench side (PROD 18823)', () => {
+    const [hazm] = m.mapLineups(fx('lineup-18823'));
+    const starter = (n: number) => hazm!.rows.flat().find((p) => p.number === n);
+    // The API repeats the starter's own name here; the substitute's entry has the real pair.
+    expect(starter(82)).toMatchObject({ subMinute: '46', swapName: 'Mohammed Al Hamdani' });
+    expect(starter(28)).toMatchObject({ subMinute: '67', swapName: 'احمد الشمراني' });
+    expect(starter(17)).toMatchObject({ subMinute: null, swapName: null });
+    expect(hazm!.subs.find((p) => p.number === 77)?.swapName).toBe('عبدالعزيز الحربي');
+  });
 });
 
 describe('live matches', () => {

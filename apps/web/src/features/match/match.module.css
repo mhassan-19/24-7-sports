@@ -182,13 +182,53 @@
   overflow: hidden;
 }
 
+/* Home team's events at the start, away team's at the end, the minute in between. */
 .event {
   display: grid;
-  grid-template-columns: 48px 28px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 56px minmax(0, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding: 10px 14px;
   border-block-end: 1px solid var(--line);
+}
+
+.sideHome,
+.sideAway {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-inline-size: 0;
+}
+
+.sideHome {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.sideAway {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.eventBody {
+  display: grid;
+  gap: 2px;
+  min-inline-size: 0;
+}
+
+/* Substitution: player coming on (larger, accent), player going off (smaller). */
+.subIn {
+  font-size: 15px;
+  color: var(--accent-text);
+}
+
+.subIn a {
+  color: inherit;
+}
+
+.subOut {
+  font-size: 12px;
+  color: var(--text-2);
 }
 
 .event:last-child {
@@ -198,7 +238,8 @@
 .minute {
   font-family: var(--f-num);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
+  text-align: center;
   color: var(--text-2);
 }
 
@@ -408,6 +449,19 @@
   color: var(--disc-fg);
   font-size: 10.5px;
   line-height: 1;
+}
+
+/* Substitute's name with, under it, the player he replaced. */
+.subWho {
+  display: grid;
+  gap: 1px;
+  min-inline-size: 0;
+}
+
+.subFor {
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--text-2);
 }
 
 .subName {

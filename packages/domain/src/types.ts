@@ -136,6 +136,8 @@ export interface LineupPlayer {
   redCard: boolean;
   /** Minute the player was substituted (off for starters, on for subs). */
   subMinute: string | null;
+  /** The other player in the substitution: who came on (starters), who went off (subs). */
+  swapName: string | null;
 }
 
 export interface Lineup {

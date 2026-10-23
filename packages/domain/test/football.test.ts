@@ -3,11 +3,14 @@ import type { Match } from '../src';
 import {
   clockForPhase,
   crestInitials,
+  eventSide,
   eventKindFromId,
   groupByCompetition,
   liveMinute,
   matchStateFromStatus,
   newestFirst,
+  substitution,
+  topEvents,
   phaseFromCode,
   sortMatches,
 } from '../src';
@@ -71,6 +74,41 @@ describe('live clock', () => {
     expect(clockForPhase('half_time', '2026-10-22T14:48:18Z')).toBeNull();
     expect(clockForPhase('penalties', '2026-10-22T14:48:18Z')).toBeNull();
     expect(clockForPhase('first_half', null)).toBeNull();
+  });
+});
+
+describe('event sides and top events', () => {
+  const ev = (kind: 'goal' | 'red_card' | 'yellow_card' | 'substitution' | 'period', teamId: number | null) => ({
+    kind,
+    label: kind,
+    minute: '10',
+    teamId,
+    player: null,
+    secondPlayer: null,
+  });
+  const teams = { home: m(1, 'finished', 'x').home, away: m(1, 'finished', 'x').away };
+
+  it('puts each event on its team side, period markers on neither', () => {
+    expect(eventSide(ev('goal', 1), teams)).toBe('home');
+    expect(eventSide(ev('goal', 2), teams)).toBe('away');
+    expect(eventSide(ev('period', null), teams)).toBeNull();
+    expect(eventSide(ev('goal', 99), teams)).toBeNull();
+  });
+
+  it('keeps only goals and red cards as top events', () => {
+    const all = [ev('period', null), ev('goal', 1), ev('yellow_card', 2), ev('substitution', 1), ev('red_card', 2)];
+    expect(topEvents(all).map((e) => e.kind)).toEqual(['goal', 'red_card']);
+  });
+
+  it('reads a substitution as off (first player) and on (second player)', () => {
+    const e = { ...ev('substitution', 1), player: { id: 4478, name: 'احمد باماسود' }, secondPlayer: { id: 32227, name: 'تركي الجعدي' } };
+    expect(substitution(e)).toEqual({ off: { id: 4478, name: 'احمد باماسود' }, on: { id: 32227, name: 'تركي الجعدي' } });
+    expect(substitution(ev('goal', 1))).toBeNull();
+  });
+
+  it('counts a second yellow (id 15) as a red card', () => {
+    expect(eventKindFromId(15, true)).toBe('red_card');
+    expect(eventKindFromId(16, true)).toBe('red_card');
   });
 });
 

@@ -1,5 +1,5 @@
 import { useLiveMinute } from '@sports247/data';
-import { groupByCompetition, newestFirst, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchSide, type MatchStat } from '@sports247/domain';
+import { eventSide, groupByCompetition, newestFirst, substitution, topEvents, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchSide, type MatchStat } from '@sports247/domain';
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useState } from 'react';
@@ -208,50 +208,119 @@ function EventIcon({ e }: { e: MatchEvent }) {
   return <Icon name="matches" />;
 }
 
+/** One event on its team's side (home at the start, away at the end), the minute between. */
+function EventRow({ e, match, last }: { e: MatchEvent; match: Match; last: boolean }) {
+  const f = useFmt();
+  const { c } = useTheme();
+  const side = eventSide(e, match);
+  const border = { borderBottomWidth: last ? 0 : 1, borderBottomColor: c.line };
+  const minute = e.minute ? `${f.digits(e.minute)}${f.t('match.minute')}` : '';
+  if (e.kind === 'period' || !side) {
+    return (
+      <View style={[{ paddingVertical: 8, alignItems: 'center', backgroundColor: c.bg }, border]}>
+        <Text variant="caption" color="text2">
+          {e.label}
+          {minute ? ` · ${minute}` : ''}
+        </Text>
+      </View>
+    );
+  }
+  const home = side === 'home';
+  const team = home ? match.home : match.away;
+  // `right`/`flex-end` flip in RTL, so the home column always lines up toward the minute.
+  const align = home ? 'right' : 'left';
+  const sub = substitution(e);
+  const detail = [e.player ? e.label : null, e.secondPlayer?.name].filter(Boolean).join(' · ');
+  // Substitution: the player coming on first, larger and in the accent colour; the one going off
+  // below, smaller.
+  const body = sub ? (
+    <View style={{ flexShrink: 1, alignItems: home ? 'flex-end' : 'flex-start' }}>
+      <Text variant="label" size={15} color="accentText" numberOfLines={2} align={align}>{sub.on.name}</Text>
+      <Text variant="caption" color="text2" numberOfLines={2} align={align}>{sub.off.name}</Text>
+    </View>
+  ) : (
+    <View style={{ flexShrink: 1, alignItems: home ? 'flex-end' : 'flex-start' }}>
+      <Text variant="label" numberOfLines={2} align={align}>{e.player?.name ?? e.label}</Text>
+      {detail ? <Text variant="caption" color="text2" numberOfLines={2} align={align}>{detail}</Text> : null}
+    </View>
+  );
+  const linked = sub ? sub.on : e.player;
+  const icon = (
+    <View style={{ width: 24, alignItems: 'center' }}>
+      <EventIcon e={e} />
+    </View>
+  );
+  return (
+    <Pressable
+      disabled={!linked}
+      onPress={() => linked && router.push(paths.player(linked.id))}
+      accessibilityLabel={(sub
+        ? [minute, e.label, `${f.t('match.subOn')} ${sub.on.name}`, `${f.t('match.subOff')} ${sub.off.name}`, teamName(team, f.lang)]
+        : [minute, e.label, e.player?.name, e.secondPlayer?.name, teamName(team, f.lang)]
+      ).filter(Boolean).join(' · ')}
+      style={[{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: 10, paddingVertical: 10 }, border]}
+    >
+      <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 8 }}>
+        {home ? (
+          <>
+            {body}
+            {icon}
+          </>
+        ) : null}
+      </View>
+      <Text variant="num" size={16} align="center" color={e.kind === 'goal' ? 'accentText' : 'text2'} style={{ width: 52 }}>
+        {minute}
+      </Text>
+      <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: 8 }}>
+        {!home ? (
+          <>
+            {icon}
+            {body}
+          </>
+        ) : null}
+      </View>
+    </Pressable>
+  );
+}
+
+type EventView = 'top' | 'all';
+
 export function EventTimeline({ events, match }: { events: MatchEvent[]; match: Match }) {
   const f = useFmt();
   const { c } = useTheme();
+  const [view, setView] = useState<EventView>('top');
   if (!events.length) return <EmptyState message={f.t('match.noEvents')} />;
-  const team = (id: number | null) => (id === match.home.id ? match.home : id === match.away.id ? match.away : null);
+  // After the final whistle: the key moments first, the full timeline one tap away.
+  const finished = match.state === 'finished';
+  const rows = newestFirst(finished && view === 'top' ? topEvents(events) : events);
+  const shootout = finished && match.home.penalties != null && match.away.penalties != null;
   return (
-    <Card>
-      {newestFirst(events).map((e, i) => {
-        const border = { borderBottomWidth: i === events.length - 1 ? 0 : 1, borderBottomColor: c.line };
-        if (e.kind === 'period')
-          return (
-            <View key={i} style={[{ paddingVertical: 8, alignItems: 'center', backgroundColor: c.bg }, border]}>
-              <Text variant="caption" color="text2">
-                {e.label}
-                {e.minute ? ` · ${f.digits(e.minute)}${f.t('match.minute')}` : ''}
-              </Text>
+    <View style={{ gap: 12 }}>
+      {finished ? (
+        <Segmented<EventView>
+          value={view}
+          onChange={setView}
+          options={[
+            { value: 'top', label: f.t('match.topEvents') },
+            { value: 'all', label: f.t('match.allEvents') },
+          ]}
+        />
+      ) : null}
+      {rows.length || shootout ? (
+        <Card>
+          {shootout ? (
+            <View style={{ paddingVertical: 10, alignItems: 'center', backgroundColor: c.bg, borderBottomWidth: rows.length ? 1 : 0, borderBottomColor: c.line }}>
+              <Text variant="label">{`${f.t('match.shootout')} · ${f.n(match.home.penalties)} – ${f.n(match.away.penalties)}`}</Text>
             </View>
-          );
-        const tm = team(e.teamId);
-        return (
-          <Pressable
-            key={i}
-            disabled={!e.player}
-            onPress={() => e.player && router.push(paths.player(e.player.id))}
-            style={[{ flexDirection: 'row', alignItems: 'center', gap: 10, paddingHorizontal: 14, paddingVertical: 10 }, border]}
-          >
-            <Text variant="num" size={17} color={e.kind === 'goal' ? 'accentText' : 'text2'} style={{ width: 44 }}>
-              {e.minute ? `${f.digits(e.minute)}${f.t('match.minute')}` : ''}
-            </Text>
-            <View style={{ width: 26, alignItems: 'center' }}>
-              <EventIcon e={e} />
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text variant="label">
-                {e.label}
-                {e.player ? ` · ${e.player.name}` : ''}
-              </Text>
-              {e.secondPlayer ? <Text variant="small" color="text2">{e.secondPlayer.name}</Text> : null}
-              {tm ? <Text variant="caption" color="text2">{teamName(tm, f.lang)}</Text> : null}
-            </View>
-          </Pressable>
-        );
-      })}
-    </Card>
+          ) : null}
+          {rows.map((e, i) => (
+            <EventRow key={i} e={e} match={match} last={i === rows.length - 1} />
+          ))}
+        </Card>
+      ) : (
+        <EmptyState message={f.t('match.noTopEvents')} />
+      )}
+    </View>
   );
 }
 
@@ -366,7 +435,12 @@ export function Lineups({ lineups }: { lineups: Lineup[] }) {
           <Pressable key={p.id} onPress={() => router.push(paths.player(p.id))} style={{ flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: c.line }}>
             <Text variant="num" style={{ width: 28 }}>{f.n(p.number)}</Text>
             <Avatar name={p.name} image={p.image} size={28} />
-            <Text variant="small" style={{ flex: 1 }}>{p.name}</Text>
+            <View style={{ flex: 1 }}>
+              <Text variant="small">{p.name}</Text>
+              {p.subMinute && p.swapName ? (
+                <Text variant="caption" color="text2">{f.t('match.subFor', { name: p.swapName })}</Text>
+              ) : null}
+            </View>
             {p.subMinute ? (
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
                 <Icon name="sub" size={14} color={c.accentText} />

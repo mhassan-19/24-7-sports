@@ -1,4 +1,4 @@
-import { newestFirst, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchStat } from '@sports247/domain';
+import { eventSide, newestFirst, substitution, topEvents, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchStat } from '@sports247/domain';
 import { useState } from 'react';
 import { Link } from 'react-router';
 import { usePaths, useFmt } from '../../lib/locale';
@@ -77,66 +77,126 @@ function EventIcon({ e }: { e: MatchEvent }) {
   }
 }
 
-export function EventTimeline({ events, match }: { events: MatchEvent[]; match: Match }) {
+/** One event on its team's side (home at the start, away at the end), the minute between. */
+function EventRow({ e, match }: { e: MatchEvent; match: Match }) {
   const f = useFmt();
   const paths = usePaths();
-  if (!events.length) return <EmptyState message={f.t('match.noEvents')} />;
-  const team = (id: number | null) => (id === match.home.id ? match.home : id === match.away.id ? match.away : null);
+  const side = eventSide(e, match);
+  const minute = e.minute ? `${f.digits(e.minute)}${f.t('match.minute')}` : '';
+  if (e.kind === 'period' || !side) {
+    return (
+      <li className={s.period}>
+        <bdi>{e.label}</bdi>
+        {minute && <span className="num">{` · ${minute}`}</span>}
+      </li>
+    );
+  }
+  const team = side === 'home' ? match.home : match.away;
+  const sub = substitution(e);
+  const body = sub ? (
+    // Substitution: the player coming on first, larger and in the accent colour; the one going
+    // off below, smaller.
+    <span className={s.eventBody}>
+      <b className={s.subIn}>
+        <span className="sr-only">{`${e.label} · ${f.t('match.subOn')} `}</span>
+        <Link to={paths.player(sub.on.id)}>
+          <bdi>{sub.on.name}</bdi>
+        </Link>
+      </b>
+      <span className={s.subOut}>
+        <span className="sr-only">{`${f.t('match.subOff')} `}</span>
+        <bdi>{sub.off.name}</bdi>
+        <span className="sr-only">{` · ${teamName(team, f.lang)}`}</span>
+      </span>
+    </span>
+  ) : (
+    <span className={s.eventBody}>
+      <b>
+        {e.player ? (
+          <Link to={paths.player(e.player.id)}>
+            <bdi>{e.player.name}</bdi>
+          </Link>
+        ) : (
+          <bdi>{e.label}</bdi>
+        )}
+      </b>
+      <span className="small muted">
+        {e.player && <bdi>{e.label}</bdi>}
+        {e.secondPlayer && (
+          <>
+            {' · '}
+            <bdi>{e.secondPlayer.name}</bdi>
+          </>
+        )}
+        <span className="sr-only">
+          {' · '}
+          {teamName(team, f.lang)}
+        </span>
+      </span>
+    </span>
+  );
   return (
-    <ol className={s.events} style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-      {newestFirst(events).map((e, i) => {
-        if (e.kind === 'period') {
-          return (
-            <li key={i} className={s.period}>
-              <bdi>{e.label}</bdi>
-              {e.minute && (
-                <span className="num">
-                  {' · '}
-                  {f.digits(e.minute)}
-                  {f.t('match.minute')}
-                </span>
-              )}
-            </li>
-          );
-        }
-        const tm = team(e.teamId);
-        return (
-          <li key={i} className={`${s.event} ${e.kind === 'goal' ? s.goal : ''}`}>
-            <span className={s.minute}>
-              {e.minute ? `${f.digits(e.minute)}${f.t('match.minute')}` : ''}
-            </span>
+    <li className={`${s.event} ${e.kind === 'goal' ? s.goal : ''}`}>
+      <span className={s.sideHome}>
+        {side === 'home' && (
+          <>
+            {body}
             <EventIcon e={e} />
-            <span style={{ minWidth: 0 }}>
-              <b>
-                <bdi>{e.label}</bdi>
-              </b>
-              {e.player && (
-                <>
-                  {' · '}
-                  <Link to={paths.player(e.player.id)}>
-                    <bdi>{e.player.name}</bdi>
-                  </Link>
-                </>
-              )}
-              {e.secondPlayer && (
-                <span className="small muted">
-                  {' ('}
-                  <bdi>{e.secondPlayer.name}</bdi>)
-                </span>
-              )}
-              {tm && (
-                <>
-                  <br />
-                  <span className="small muted">
-                    <bdi>{teamName(tm, f.lang)}</bdi>
-                  </span>
-                </>
-              )}
-            </span>
-          </li>
-        );
-      })}
-    </ol>
+          </>
+        )}
+      </span>
+      <span className={s.minute}>{minute}</span>
+      <span className={s.sideAway}>
+        {side === 'away' && (
+          <>
+            <EventIcon e={e} />
+            {body}
+          </>
+        )}
+      </span>
+    </li>
+  );
+}
+
+type EventView = 'top' | 'all';
+
+export function EventTimeline({ events, match }: { events: MatchEvent[]; match: Match }) {
+  const f = useFmt();
+  const [view, setView] = useState<EventView>('top');
+  if (!events.length) return <EmptyState message={f.t('match.noEvents')} />;
+  // After the final whistle: the key moments first, the full timeline one tap away.
+  const finished = match.state === 'finished';
+  const shown = finished && view === 'top' ? topEvents(events) : events;
+  const shootout = finished && match.home.penalties != null && match.away.penalties != null;
+  return (
+    <>
+      {finished && (
+        <Segmented<EventView>
+          label={f.t('match.tabs.events')}
+          value={view}
+          onChange={setView}
+          options={[
+            { value: 'top', label: f.t('match.topEvents') },
+            { value: 'all', label: f.t('match.allEvents') },
+          ]}
+        />
+      )}
+      {shown.length || shootout ? (
+        <ol className={s.events} style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+          {shootout && (
+            <li className={s.period}>
+              {f.t('match.shootout')}
+              <span className="num">{` · ${f.n(match.home.penalties)} – ${f.n(match.away.penalties)}`}</span>
+            </li>
+          )}
+          {newestFirst(shown).map((e, i) => (
+            <EventRow key={i} e={e} match={match} />
+          ))}
+        </ol>
+      ) : (
+        <EmptyState message={f.t('match.noTopEvents')} />
+      )}
+    </>
   );
 }
 
@@ -274,7 +334,12 @@ export function Lineups({ lineups }: { lineups: Lineup[] }) {
                 </span>
                 <Link to={paths.player(p.id)} className={s.subName}>
                   <Avatar name={p.name} image={p.image} size={28} />
-                  <bdi>{p.name}</bdi>
+                  <span className={s.subWho}>
+                    <bdi>{p.name}</bdi>
+                    {p.subMinute && p.swapName && (
+                      <span className={s.subFor}>{f.t('match.subFor', { name: p.swapName })}</span>
+                    )}
+                  </span>
                 </Link>
                 <span className={`small muted ${s.subName}`}>
                   {p.subMinute && (

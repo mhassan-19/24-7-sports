@@ -50,7 +50,11 @@ export function liveMinute(clock: LiveClock, now: number): string {
   return minute > clock.cap ? `${clock.cap}+${minute - clock.cap}` : String(minute);
 }
 
-/** Event ids seen on TEST: 1–4 periods, 9 VAR, 14 yellow, 22 substitution, 24 goal. */
+/**
+ * Event ids seen on TEST and PROD: 1–4 periods (4 is also "added time"), 9 VAR, 10 missed
+ * penalty, 11 match end, 14 yellow, 15 second yellow then red, 16 red, 22 substitution, 24 goal.
+ * The API's `is_goal` flag is always false, so the id decides.
+ */
 export function eventKindFromId(id: number, hasPlayer: boolean): MatchEventKind {
   if (id === 24) return 'goal';
   if (id === 14) return 'yellow_card';
@@ -72,6 +76,24 @@ export const isLive = (m: Match) => m.state === 'live';
  * is visible without scrolling. The API lists events oldest first.
  */
 export const newestFirst = (events: MatchEvent[]): MatchEvent[] => [...events].reverse();
+
+/** Key moments after the final whistle: goals and red cards (a second yellow counts as red). */
+export const topEvents = (events: MatchEvent[]): MatchEvent[] =>
+  events.filter((e) => e.kind === 'goal' || e.kind === 'red_card');
+
+/**
+ * The two players of a substitution. The API sends the player going off first (`playerOne`) and
+ * the one coming on second (`playerTwo`).
+ */
+export function substitution(e: MatchEvent): { on: { id: number; name: string }; off: { id: number; name: string } } | null {
+  return e.kind === 'substitution' && e.player && e.secondPlayer ? { on: e.secondPlayer, off: e.player } : null;
+}
+
+/** The team an event belongs to; null for period markers and events without a team. */
+export function eventSide(e: MatchEvent, match: Pick<Match, 'home' | 'away'>): 'home' | 'away' | null {
+  if (e.teamId == null) return null;
+  return e.teamId === match.home.id ? 'home' : e.teamId === match.away.id ? 'away' : null;
+}
 
 /** Live matches first, then by kickoff. Stable for equal keys. */
 export function sortMatches(list: Match[]): Match[] {

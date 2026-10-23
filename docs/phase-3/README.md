@@ -139,6 +139,16 @@ the shared packages, so the website and the app both have them.
   the same arrows for players who came on.
 - Player profiles show the photo (shirt number as a badge) when the API has a real one; the big
   number remains for players without a photo.
+- In the substitutes list, each player who came on has a smaller line naming the player he
+  replaced ("بدلاً من …"). (A starter's own `player_exchanged_name` repeats his name in the API;
+  the substitute's entry has the real pair.)
+- Substitution events show the player coming on first, larger and in the accent orange
+  (`accentText`: Pulse Orange in dark, Orange Ink in light), and the player going off below in
+  smaller grey text. The API sends the outgoing player first (`playerOne`).
+- Events sit on their team's side (home at the start, as in the match header; away at the end)
+  with the minute in the middle; period markers stay centred. Finished matches get "Top events"
+  (default: goals, red cards including second yellows, and the shoot-out result when there was
+  one) and "All events".
 
 ## Changes from the plan
 
