@@ -1,4 +1,4 @@
-import type { FormResult, LiveClock, Match, MatchEventKind, MatchPhase, MatchState } from './types';
+import type { FormResult, LiveClock, Match, MatchEvent, MatchEventKind, MatchPhase, MatchState } from './types';
 
 /**
  * `matchStatus` from the API: 1 = not started ("لم تبدأ"), 3 = postponed ("مؤجل"),
@@ -66,6 +66,12 @@ export function isFormResult(v: unknown): v is FormResult {
 }
 
 export const isLive = (m: Match) => m.state === 'live';
+
+/**
+ * Timeline order for display: the latest event on top and kick-off at the bottom, so the newest
+ * is visible without scrolling. The API lists events oldest first.
+ */
+export const newestFirst = (events: MatchEvent[]): MatchEvent[] => [...events].reverse();
 
 /** Live matches first, then by kickoff. Stable for equal keys. */
 export function sortMatches(list: Match[]): Match[] {

@@ -39,7 +39,7 @@ export default function Home() {
             />
           }
         >
-          {(d) => <MatchGroups matches={d[day].slice(0, 12)} />}
+          {(d) => <MatchGroups matches={d[day]} />}
         </QueryView>
       </Section>
 

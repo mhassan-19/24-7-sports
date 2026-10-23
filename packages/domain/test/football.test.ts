@@ -7,6 +7,7 @@ import {
   groupByCompetition,
   liveMinute,
   matchStateFromStatus,
+  newestFirst,
   phaseFromCode,
   sortMatches,
 } from '../src';
@@ -74,6 +75,13 @@ describe('live clock', () => {
 });
 
 describe('events', () => {
+  it('shows the latest event first and kick-off last', () => {
+    const ev = (label: string, minute: string | null) => ({ kind: 'other' as const, label, minute, teamId: null, player: null, secondPlayer: null });
+    const api = [ev('kick-off', null), ev('goal', '5'), ev('half-time', null), ev('card', '59')];
+    expect(newestFirst(api).map((e) => e.label)).toEqual(['card', 'half-time', 'goal', 'kick-off']);
+    expect(api[0]!.label).toBe('kick-off');
+  });
+
   it('treats ids 1–4 without a player as period markers', () => {
     expect(eventKindFromId(1, false)).toBe('period');
     expect(eventKindFromId(4, true)).toBe('other');

@@ -1,4 +1,4 @@
-import type { HeadToHead, Lineup, LineupPlayer, Match, MatchEvent, MatchStat } from '@sports247/domain';
+import { newestFirst, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchStat } from '@sports247/domain';
 import { useState } from 'react';
 import { Link } from 'react-router';
 import { usePaths, useFmt } from '../../lib/locale';
@@ -84,7 +84,7 @@ export function EventTimeline({ events, match }: { events: MatchEvent[]; match: 
   const team = (id: number | null) => (id === match.home.id ? match.home : id === match.away.id ? match.away : null);
   return (
     <ol className={s.events} style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-      {events.map((e, i) => {
+      {newestFirst(events).map((e, i) => {
         if (e.kind === 'period') {
           return (
             <li key={i} className={s.period}>

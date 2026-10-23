@@ -127,6 +127,12 @@ the shared packages, so the website and the app both have them.
 | (Decided 23 Oct) Kick-off times would be 1 h late from 29 Oct | API dates are a fixed UTC+3 all year (`date` is 3 h ahead of the provider's UTC `time` in January, February and November too); Egypt is UTC+2 in winter | Every API date is converted to Cairo time in one place (`egyptDateTime`), using the time zone database, so DST changes need no code. Verified: 5 Nov 23:00 (API) shows 22:00, 29 Oct 17:35 stays 17:35, on the website and on Android (Hermes) |
 | (Found while checking) Postponed matches shown as live | `matchStatus` 3 means postponed ("مؤجل"), not live | New `postponed` state: kick-off time and "مؤجلة", no live dot or polling |
 
+## After approval (23 Oct 2026)
+
+- Match events show newest first (full time on top, kick-off at the bottom) on the website and in
+  the app: `newestFirst` in `packages/domain`.
+- The app's home screen lists every match of the day, like the website (it stopped at 12).
+
 ## Changes from the plan
 
 - Search is a full-screen modal opened from every top bar (the web has an inline combobox and a

@@ -1,5 +1,5 @@
 import { useLiveMinute } from '@sports247/data';
-import { groupByCompetition, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchSide, type MatchStat } from '@sports247/domain';
+import { groupByCompetition, newestFirst, type HeadToHead, type Lineup, type LineupPlayer, type Match, type MatchEvent, type MatchSide, type MatchStat } from '@sports247/domain';
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useState } from 'react';
@@ -204,7 +204,7 @@ export function EventTimeline({ events, match }: { events: MatchEvent[]; match: 
   const team = (id: number | null) => (id === match.home.id ? match.home : id === match.away.id ? match.away : null);
   return (
     <Card>
-      {events.map((e, i) => {
+      {newestFirst(events).map((e, i) => {
         const border = { borderBottomWidth: i === events.length - 1 ? 0 : 1, borderBottomColor: c.line };
         if (e.kind === 'period')
           return (
