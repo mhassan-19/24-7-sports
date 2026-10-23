@@ -94,6 +94,7 @@ function Result({ title, children }: { title: string; children?: ReactNode }) {
 function Guess({ game, gameId }: { game: GuessGame; gameId: Id }) {
   const f = useFmt();
   const [pick, setPick] = useState<Id | null>(null);
+  const [imageFailed, setImageFailed] = useState(false);
   const answer = useAnswerGuess(gameId, game.answerPath);
   const done = answer.isSuccess;
   const right = game.choices.find((c) => c.correct);
@@ -103,8 +104,13 @@ function Guess({ game, gameId }: { game: GuessGame; gameId: Id }) {
   return (
     <>
       <Panel>
-        {game.questionImage ? (
-          <img src={game.questionImage} alt="" style={{ borderRadius: 10, maxBlockSize: 280, objectFit: 'contain', marginInline: 'auto' }} />
+        {game.questionImage && !imageFailed ? (
+          <img
+            src={game.questionImage}
+            alt=""
+            style={{ borderRadius: 10, maxBlockSize: 280, objectFit: 'contain', marginInline: 'auto' }}
+            onError={() => setImageFailed(true)}
+          />
         ) : (
           <span className={p.gameImage}>
             <Icon name="image" />

@@ -24,7 +24,7 @@ export function createSportsApi(client: ApiClient) {
     matchDetail: async (id: Id) => m.mapMatchDetail(await get('matchStatistics', { match_id: id })),
     matchEvents: async (id: Id) => m.mapEvents(await get('match_events', { match_id: id })),
     lineups: async (id: Id) => m.mapLineups(await get(`newLineup/${id}`)),
-    headToHead: async (id: Id) => m.mapHeadToHead(await get('newLatest-matches-for-teams', { match_id: id })),
+    headToHead: async (id: Id) => m.mapHeadToHead(await get('newLatest-matches-for-teams', { match_id: id }), id),
     matchNews: async (id: Id) => m.mapArticleList(await get('matchMedia', { match_id: id })),
 
     // Competitions

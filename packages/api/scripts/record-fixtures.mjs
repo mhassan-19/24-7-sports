@@ -57,6 +57,10 @@ const FIXTURES = {
   'tournament-standing-3': 'tournament/standing?tournament_id=3&season_id=2',
   // Group tables (World Cup 2026): TEST has no group data.
   'standing-groups-23': { base: PROD, path: 'tournament/standing?tournament_id=23&season_id=36' },
+  // Al-Hazm v Al-Feiha, 22 Oct 2026: player photos and placeholders, ratings on unused subs, and a
+  // head to head holding the match itself plus a future fixture.
+  'lineup-18823': { base: PROD, path: 'newLineup/18823' },
+  'h2h-18823': { base: PROD, path: 'newLatest-matches-for-teams?match_id=18823' },
 };
 
 const trim = (v) => {

@@ -15,7 +15,9 @@
     "test": "turbo run test",
     "e2e": "pnpm --filter @sports247/web e2e",
     "format": "prettier --write .",
-    "record-fixtures": "node packages/api/scripts/record-fixtures.mjs"
+    "record-fixtures": "node packages/api/scripts/record-fixtures.mjs",
+    "dev:mobile": "pnpm --filter @sports247/mobile start",
+    "android": "pnpm --filter @sports247/mobile android"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
@@ -31,5 +33,11 @@
     "turbo": "^2.5.6",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.43.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.3.0",
+      "react-dom": "19.3.0"
+    }
   }
 }

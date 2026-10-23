@@ -1,6 +1,7 @@
 // Raw API payload → clean domain types. Every API quirk (typos, envelope styles, string numbers)
 // is absorbed here. Field names were taken from recorded TEST responses (test/fixtures).
 import {
+  clockForPhase,
   eventKindFromId,
   isFormResult,
   matchStateFromStatus,
@@ -24,6 +25,7 @@ import type {
   GameSummary,
   GameType,
   HeadToHead,
+  Id,
   Honours,
   Leader,
   LeaderBoards,
@@ -55,7 +57,7 @@ import type {
   Transfer,
 } from '@sports247/domain';
 import type { Raw } from './read';
-import { arr, bool, data, egyptDateTime, img, num, num0, obj, objs, pos, str, str0 } from './read';
+import { apiInstant, arr, bool, data, egyptDateTime, img, num, num0, obj, objs, pos, str, str0 } from './read';
 
 // ---------- Shared ----------
 
@@ -97,14 +99,16 @@ const side = (r: Raw): MatchSide => ({
 export function mapMatch(r: Raw): Match {
   const round = obj(r.matchRoundInfo);
   const state = matchStateFromStatus(num(r.matchStatus));
+  // `round.time` is the minute the half started at, not the running minute.
+  const phase = state === 'live' ? phaseFromCode(num(round.event_id)) : null;
   return {
     id: num0(r.id),
     sportId: num(r.sport_id) ?? 1,
     kickoff: egyptDateTime(r.date),
     state,
     statusLabel: str0(r.status),
-    phase: state === 'live' ? phaseFromCode(num(round.event_id)) : null,
-    minute: state === 'live' ? str(round.time) : null,
+    phase,
+    clock: clockForPhase(phase, apiInstant(round.created_at)),
     home: side(obj(r.team1)),
     away: side(obj(r.team2)),
     competition: competitionRef(obj(r.tournament)),
@@ -166,13 +170,19 @@ export function mapEvents(body: unknown): MatchEvent[] {
 
 const PITCH_ROWS = ['goal', 'defence', 'midp1', 'midp2', 'midp3', 'attack'];
 
-function lineupPlayer(r: Raw): LineupPlayer {
+/**
+ * Unused substitutes sometimes carry a rating from the data provider (seen on PROD), and players
+ * without one get 0, so a rating shows only for players who played and never as 0.
+ */
+function lineupPlayer(r: Raw, sub: boolean): LineupPlayer {
   const ev = obj(r.playerMatchEvents);
+  const played = !sub || bool(ev.hasexchanged);
   return {
     id: num0(r.player_id),
     name: str0(r.player_name),
     number: num(r.shirt_number),
-    rating: num(r.rating),
+    image: img(r.image),
+    rating: played ? pos(r.rating) : null,
     goals: num0(ev.goalsCount),
     yellowCard: bool(ev.hasYellowCard) || bool(ev.has2YellowCard),
     redCard: bool(ev.hasRedCard),
@@ -190,23 +200,30 @@ export function mapLineups(body: unknown): Lineup[] {
       hasLineup: bool(t.has_lineup),
       formation: str(t.plan),
       manager: str(obj(t.manager).name),
-      rows: PITCH_ROWS.map((k) => objs(pitch[k]).map(lineupPlayer)).filter((row) => row.length > 0),
-      subs: objs(t.subs).map(lineupPlayer),
+      rows: PITCH_ROWS.map((k) => objs(pitch[k]).map((p) => lineupPlayer(p, false))).filter((row) => row.length > 0),
+      subs: objs(t.subs).map((p) => lineupPlayer(p, true)),
     };
   });
 }
 
-export function mapHeadToHead(body: unknown): HeadToHead {
+/**
+ * Past meetings only, newest first. The list can include the match itself and future fixtures
+ * between the two teams (no score yet), which aren't previous meetings.
+ */
+export function mapHeadToHead(body: unknown, matchId?: Id): HeadToHead {
   const b = obj(body);
   return {
-    meetings: objs(b.data).map((m) => ({
-      id: num0(m.id),
-      kickoff: egyptDateTime(m.date),
-      competition: competitionRef(obj(m.tournament)),
-      venue: str(m.stadium),
-      home: side(obj(m.team1)),
-      away: side(obj(m.team2)),
-    })),
+    meetings: objs(b.data)
+      .map((m) => ({
+        id: num0(m.id),
+        kickoff: egyptDateTime(m.date),
+        competition: competitionRef(obj(m.tournament)),
+        venue: str(m.stadium),
+        home: side(obj(m.team1)),
+        away: side(obj(m.team2)),
+      }))
+      .filter((m) => m.id !== matchId && m.home.score != null && m.away.score != null)
+      .sort((x, y) => y.kickoff.localeCompare(x.kickoff)),
     totals: objs(b.stats).map((s) => ({
       teamId: num0(s.team_id),
       teamName: str0(s.team_name),

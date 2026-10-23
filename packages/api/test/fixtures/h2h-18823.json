@@ -1,0 +1,297 @@
+{
+ "data": [
+  {
+   "id": 2207,
+   "tournament": {
+    "id": 8,
+    "title": "الدوري السعودي",
+    "logo": "https://v3.appkora.com/storage/111/saudi-arabia-saudi-professional-league.png"
+   },
+   "stadium": "ملعب مدينة الأمير سلمان بن عبد العزيز الرياضية",
+   "date": "2025-12-25 17:50:00",
+   "team1": {
+    "id": 121,
+    "name": "الفيحاء",
+    "logo": "https://v3.appkora.com/storage/160443/al-fayha.png",
+    "score": 0,
+    "first_color": null,
+    "goals": []
+   },
+   "team2": {
+    "id": 122,
+    "name": "الحزم",
+    "logo": "https://v3.appkora.com/storage/160452/al-hazem.png",
+    "score": 0,
+    "first_color": null,
+    "goals": []
+   }
+  },
+  {
+   "id": 22247,
+   "tournament": {
+    "id": 8,
+    "title": "الدوري السعودي",
+    "logo": "https://v3.appkora.com/storage/111/saudi-arabia-saudi-professional-league.png"
+   },
+   "stadium": null,
+   "date": "2027-04-22 21:00:00",
+   "team1": {
+    "id": 121,
+    "name": "الفيحاء",
+    "logo": "https://v3.appkora.com/storage/160443/al-fayha.png",
+    "score": null,
+    "first_color": null,
+    "goals": []
+   },
+   "team2": {
+    "id": 122,
+    "name": "الحزم",
+    "logo": "https://v3.appkora.com/storage/160452/al-hazem.png",
+    "score": null,
+    "first_color": null,
+    "goals": []
+   }
+  },
+  {
+   "id": 2048,
+   "tournament": {
+    "id": 8,
+    "title": "الدوري السعودي",
+    "logo": "https://v3.appkora.com/storage/111/saudi-arabia-saudi-professional-league.png"
+   },
+   "stadium": "ملعب نادي الحزم",
+   "date": "2026-04-11 19:05:00",
+   "team1": {
+    "id": 122,
+    "name": "الحزم",
+    "logo": "https://v3.appkora.com/storage/160452/al-hazem.png",
+    "score": 2,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://v3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 2048,
+      "playerOne_id": 4489,
+      "playerOne_image": "https://v3.appkora.com/storage/65780/yousef-al-shammari.png",
+      "playerOne_name": "يوسف الشمري",
+      "playerTwo_id": 4509,
+      "playerTwo_image": "https://v3.appkora.com/storage/65845/no-photo.png",
+      "playerTwo_name": "سعود الراشد",
+      "team_id": 122,
+      "team_name": "الحزم",
+      "team_image": "https://v3.appkora.com/storage/160452/al-hazem.png",
+      "time": "8",
+      "event_time": "8",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-04-11 18:19:13"
+     },
+     {
+      "event_id": 24,
+      "event_image": "https://v3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 2048,
+      "playerOne_id": 4521,
+      "playerOne_image": "https://v3.appkora.com/storage/65880/omar-al-soma.png",
+      "playerOne_name": "عمر السومة",
+      "playerTwo_id": null,
+      "playerTwo_image": null,
+      "playerTwo_name": null,
+      "team_id": 122,
+      "team_name": "الحزم",
+      "team_image": "https://v3.appkora.com/storage/160452/al-hazem.png",
+      "time": "90+9",
+      "event_time": "90+9",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-04-11 20:04:09"
+     }
+    ]
+   },
+   "team2": {
+    "id": 121,
+    "name": "الفيحاء",
+    "logo": "https://v3.appkora.com/storage/160443/al-fayha.png",
+    "score": 0,
+    "first_color": null,
+    "goals": []
+   }
+  },
+  {
+   "id": 18823,
+   "tournament": {
+    "id": 8,
+    "title": "الدوري السعودي",
+    "logo": "https://v3.appkora.com/storage/111/saudi-arabia-saudi-professional-league.png"
+   },
+   "stadium": "ملعب نادي الحزم",
+   "date": "2026-10-22 16:40:00",
+   "team1": {
+    "id": 122,
+    "name": "الحزم",
+    "logo": "https://v3.appkora.com/storage/160452/al-hazem.png",
+    "score": 2,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://v3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 18823,
+      "playerOne_id": 141,
+      "playerOne_image": "https://v3.appkora.com/storage/90518/no-photo.png",
+      "playerOne_name": "Bonheur Mugisha",
+      "playerTwo_id": 4519,
+      "playerTwo_image": "https://v3.appkora.com/storage/65874/amir-saayoud.png",
+      "playerTwo_name": "أمير سعيود",
+      "team_id": 122,
+      "team_name": "الحزم",
+      "team_image": "https://v3.appkora.com/storage/160452/al-hazem.png",
+      "time": "5",
+      "event_time": "5",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-10-22 16:45:42"
+     },
+     {
+      "event_id": 24,
+      "event_image": "https://v3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 18823,
+      "playerOne_id": 4519,
+      "playerOne_image": "https://v3.appkora.com/storage/65874/amir-saayoud.png",
+      "playerOne_name": "أمير سعيود",
+      "playerTwo_id": null,
+      "playerTwo_image": null,
+      "playerTwo_name": null,
+      "team_id": 122,
+      "team_name": "الحزم",
+      "team_image": "https://v3.appkora.com/storage/160452/al-hazem.png",
+      "time": "89",
+      "event_time": "89",
+      "match_score": null,
+      "is_home": 1,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-10-22 18:32:43"
+     }
+    ]
+   },
+   "team2": {
+    "id": 121,
+    "name": "الفيحاء",
+    "logo": "https://v3.appkora.com/storage/160443/al-fayha.png",
+    "score": 2,
+    "first_color": null,
+    "goals": [
+     {
+      "event_id": 24,
+      "event_image": "https://v3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 18823,
+      "playerOne_id": 4443,
+      "playerOne_image": "https://v3.appkora.com/storage/107022/fashion-sakala.png",
+      "playerOne_name": "فاشون ساكالا",
+      "playerTwo_id": 4476,
+      "playerTwo_image": "https://v3.appkora.com/storage/117765/jason.png",
+      "playerTwo_name": "جايسون",
+      "team_id": 121,
+      "team_name": "الفيحاء",
+      "team_image": "https://v3.appkora.com/storage/160443/al-fayha.png",
+      "time": "33",
+      "event_time": "33",
+      "match_score": null,
+      "is_home": 0,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-10-22 17:14:02"
+     },
+     {
+      "event_id": 24,
+      "event_image": "https://v3.appkora.com/images/events/goal.png",
+      "event_name": "هدف",
+      "active": 1,
+      "comment": "هدف",
+      "match_id": 18823,
+      "playerOne_id": 4524,
+      "playerOne_image": "https://v3.appkora.com/storage/65885/no-photo.png",
+      "playerOne_name": "سلطان تانكر",
+      "playerTwo_id": null,
+      "playerTwo_image": null,
+      "playerTwo_name": null,
+      "team_id": 121,
+      "team_name": "الفيحاء",
+      "team_image": "https://v3.appkora.com/storage/160443/al-fayha.png",
+      "time": "69",
+      "event_time": "69",
+      "match_score": null,
+      "is_home": 0,
+      "is_goal": false,
+      "link": null,
+      "event_sort": 1,
+      "order": 1,
+      "title": "هدف",
+      "created_at": "2026-10-22 18:13:43"
+     }
+    ]
+   }
+  }
+ ],
+ "stats": [
+  {
+   "team_id": 122,
+   "team_name": "الحزم",
+   "team_logo": "https://v3.appkora.com/storage/160452/al-hazem.png",
+   "total_target_shots": 20,
+   "total_passes": 1713,
+   "total_yellow_cards": 8,
+   "total_red_cards": 0,
+   "average_pass_accuracy": 81.32
+  },
+  {
+   "team_id": 121,
+   "team_name": "الفيحاء",
+   "team_logo": "https://v3.appkora.com/storage/160443/al-fayha.png",
+   "total_target_shots": 13,
+   "total_passes": 1974,
+   "total_yellow_cards": 7,
+   "total_red_cards": 0,
+   "average_pass_accuracy": 85.06
+  }
+ ],
+ "status": 200,
+ "message": "Retrieved Successfully"
+}

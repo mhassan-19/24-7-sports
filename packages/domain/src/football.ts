@@ -1,11 +1,12 @@
-import type { FormResult, Match, MatchEventKind, MatchPhase, MatchState } from './types';
+import type { FormResult, LiveClock, Match, MatchEventKind, MatchPhase, MatchState } from './types';
 
 /**
- * `matchStatus` from the API: 1 = not started, 5 = finished (verified on TEST data).
- * Any other value means the match is under way; the API's own label explains the detail.
+ * `matchStatus` from the API: 1 = not started ("لم تبدأ"), 3 = postponed ("مؤجل"),
+ * 5 = finished ("انتهت"), seen on TEST and PROD. Any other value means the match is under way.
  */
 export function matchStateFromStatus(status: number | null | undefined): MatchState {
   if (status === 1) return 'scheduled';
+  if (status === 3) return 'postponed';
   if (status === 5) return 'finished';
   return 'live';
 }
@@ -26,6 +27,27 @@ const PHASES: Record<number, MatchPhase> = {
 
 export function phaseFromCode(code: number | null | undefined): MatchPhase | null {
   return code == null ? null : (PHASES[code] ?? null);
+}
+
+/** First minute and regular length of each half that has a running clock. */
+const HALVES: Partial<Record<MatchPhase, [base: number, cap: number]>> = {
+  first_half: [0, 45],
+  second_half: [45, 90],
+  extra_time_1: [90, 105],
+  extra_time_2: [105, 120],
+};
+
+/** Clock for a half in play, from the instant it started; null at breaks and penalties. */
+export function clockForPhase(phase: MatchPhase | null, startedAt: string | null): LiveClock | null {
+  const half = phase ? HALVES[phase] : undefined;
+  return half && startedAt ? { startedAt, base: half[0], cap: half[1] } : null;
+}
+
+/** Minute shown while live: "1" at kick-off, "67", "45+2" in added time. */
+export function liveMinute(clock: LiveClock, now: number): string {
+  const elapsed = Math.max(0, Math.floor((now - Date.parse(clock.startedAt)) / 60_000));
+  const minute = clock.base + elapsed + 1;
+  return minute > clock.cap ? `${clock.cap}+${minute - clock.cap}` : String(minute);
 }
 
 /** Event ids seen on TEST: 1–4 periods, 9 VAR, 14 yellow, 22 substitution, 24 goal. */

@@ -112,9 +112,10 @@ No Redux: there is no complex client-side domain state.
   come from `Intl.PluralRules`.
 - Formatting through `Intl` with `ar-EG` (Arabic-Indic digits) / `en-GB` for dates, times and
   numbers; a small converter handles digits inside API strings (formations, minutes, seasons).
-- Time: all times are shown in Egypt time. Match `date` is already Egypt wall-clock time and is
-  shown as-is; ISO UTC timestamps (game fixtures) are formatted with `timeZone: 'Africa/Cairo'`.
-  The `time` field is ignored.
+- Time: all times are shown in Egypt time. API `date` values are a fixed UTC+3 and are converted
+  to Cairo wall time in `packages/api` (changed 23 Oct 2026, see `docs/phase-3/README.md`); ISO
+  UTC timestamps (game fixtures) are formatted with `timeZone: 'Africa/Cairo'`. The `time` field
+  is ignored.
 - Web sets `<html lang dir>` on locale change (runtime switch, no reload). Mobile uses
   `I18nManager` with `supportsRTL`; switching between RTL and LTR at runtime needs an app reload
   (`expo-updates` `reloadAsync`), which the Settings screen explains.

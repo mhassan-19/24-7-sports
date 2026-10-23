@@ -34,20 +34,42 @@ export const str0 = (v: unknown): string => str(v) ?? '';
 
 export const bool = (v: unknown): boolean => v === true || v === 1 || v === '1' || v === 'true';
 
+/** Image URL, or null for none and for the API's shared "no-photo" placeholder. */
 export function img(v: unknown): string | null {
   const s = str(v);
-  if (!s) return null;
+  if (!s || /\/no-photo\.(png|jpe?g)$/i.test(s)) return null;
   if (/^https?:\/\//.test(s)) return s;
   return IMAGE_HOST + s.replace(/^\/+/, '');
 }
 
-/** `2026-01-19 23:00:00` (Egypt wall clock) → `2026-01-19T23:00`. */
+let cairoWall: Intl.DateTimeFormat | undefined;
+
+/**
+ * API date (wall time at a fixed UTC+3, see `apiInstant`) → Cairo wall time, which is UTC+2 in
+ * winter and UTC+3 in summer: `2026-01-19 23:00:00` → `2026-01-19T22:00`. Date-only values keep
+ * their date at `T00:00`.
+ */
 export function egyptDateTime(v: unknown): string {
-  const s = str0(v);
-  const m = s.match(/^(\d{4}-\d{2}-\d{2})[ T](\d{2}):(\d{2})/);
-  if (m) return `${m[1]}T${m[2]}:${m[3]}`;
-  const d = s.match(/^(\d{4}-\d{2}-\d{2})/);
-  return d ? `${d[1]}T00:00` : '';
+  const iso = apiInstant(v);
+  if (iso) {
+    try {
+      cairoWall ??= new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Africa/Cairo',
+        hour12: false,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+      const p = Object.fromEntries(cairoWall.formatToParts(new Date(iso)).map((x) => [x.type, x.value]));
+      return `${p.year}-${p.month}-${p.day}T${String(+p.hour! % 24).padStart(2, '0')}:${p.minute}`;
+    } catch {
+      // No time zone data in this runtime: show the API's wall time unchanged.
+    }
+  }
+  const m = str0(v).match(/^(\d{4}-\d{2}-\d{2})(?:[ T](\d{2}):(\d{2}))?/);
+  return m ? `${m[1]}T${m[2] ?? '00'}:${m[3] ?? '00'}` : '';
 }
 
 /** Unwraps `{ data }` envelopes; returns the input when there is no envelope. */
@@ -55,3 +77,14 @@ export const data = (body: unknown): unknown => {
   const o = obj(body);
   return 'data' in o ? o.data : body;
 };
+
+/**
+ * API timestamps such as `matchRoundInfo.created_at` are wall time at a fixed UTC+3, without an
+ * offset ("2026-10-22 17:48:18"): `date` is 3 h ahead of the provider's UTC `time` in every month
+ * sampled, winter included. Returns the ISO instant, or null when unreadable.
+ */
+export function apiInstant(v: unknown): string | null {
+  const m = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::(\d{2}))?/.exec(str(v) ?? '');
+  if (!m) return null;
+  return new Date(Date.UTC(+m[1]!, +m[2]! - 1, +m[3]!, +m[4]! - 3, +m[5]!, +(m[6] ?? 0))).toISOString();
+}

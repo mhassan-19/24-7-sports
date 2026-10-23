@@ -45,7 +45,7 @@ export interface Season {
 
 // ---------- Matches ----------
 
-export type MatchState = 'scheduled' | 'live' | 'finished';
+export type MatchState = 'scheduled' | 'live' | 'finished' | 'postponed';
 
 export type MatchPhase =
   | 'first_half'
@@ -71,14 +71,25 @@ export interface Match {
   /** Status text as returned by the API (Arabic). Shown when the state needs more detail. */
   statusLabel: string;
   phase: MatchPhase | null;
-  /** Match minute while live, e.g. "67" or "90+3". */
-  minute: string | null;
+  /** Running clock while a half is being played; null at breaks and when not live. */
+  clock: LiveClock | null;
   home: MatchSide;
   away: MatchSide;
   competition: CompetitionRef | null;
   stage: string | null;
   venue: string | null;
   regionIds: Id[];
+}
+
+/**
+ * The API doesn't send the running minute, only when the current half started. The minute is
+ * `base` + whole minutes since `startedAt` + 1, shown as "45+2" once it passes `cap`.
+ */
+export interface LiveClock {
+  /** ISO instant the current half started. */
+  startedAt: string;
+  base: number;
+  cap: number;
 }
 
 export interface DayMatches {
@@ -116,6 +127,9 @@ export interface LineupPlayer {
   id: Id;
   name: string;
   number: number | null;
+  /** Photo URL; null when the API only has its placeholder. */
+  image: string | null;
+  /** Only for players who played (starters, and substitutes who came on); never 0. */
   rating: number | null;
   goals: number;
   yellowCard: boolean;

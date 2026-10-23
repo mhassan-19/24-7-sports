@@ -4,9 +4,9 @@ import { Link } from 'react-router';
 import { usePaths, useFmt } from '../../lib/locale';
 import { Slash } from '../../ui/brand';
 import { Icon } from '../../ui/Icon';
-import { Crest, Eyebrow, Panel, Segmented } from '../../ui/primitives';
+import { Avatar, Crest, Eyebrow, Panel, Segmented } from '../../ui/primitives';
 import { EmptyState } from '../../ui/states';
-import { MatchList, Score, StatusChip, teamName } from './MatchRow';
+import { MatchList, Score, StatusChip, notStarted, teamName } from './MatchRow';
 import s from './match.module.css';
 
 export function MatchHeader({ match }: { match: Match }) {
@@ -34,7 +34,7 @@ export function MatchHeader({ match }: { match: Match }) {
       <div className={s.headerTeams}>
         {side(match.home)}
         <div className={s.mid} aria-live="polite">
-          {match.state === 'scheduled' ? (
+          {notStarted(match) ? (
             <span className={s.kickoff} style={{ fontSize: 40 }}>
               {f.time(match.kickoff)}
             </span>
@@ -188,11 +188,18 @@ export function MatchStats({ stats, match }: { stats: MatchStat[]; match: Match 
 function PitchPlayer({ p, best }: { p: LineupPlayer; best: number }) {
   const f = useFmt();
   const paths = usePaths();
+  const [failed, setFailed] = useState(false);
+  const photo = p.image && !failed ? p.image : null;
   const last = p.name.trim().split(/\s+/).slice(-1)[0] ?? p.name;
   return (
     <Link className={s.player} to={paths.player(p.id)} aria-label={p.name}>
-      <span className={s.disc}>
-        {f.n(p.number)}
+      <span className={`${s.disc} ${photo ? s.discPhoto : ''}`}>
+        {photo ? <img src={photo} alt="" loading="lazy" decoding="async" onError={() => setFailed(true)} /> : f.n(p.number)}
+        {photo && p.number != null && (
+          <span className={s.discNumber} aria-hidden="true">
+            {f.n(p.number)}
+          </span>
+        )}
         {(p.goals > 0 || p.yellowCard || p.redCard) && (
           <span className={s.discEvents} aria-hidden="true">
             {p.goals > 0 && <Icon name="ball" />}
@@ -255,7 +262,8 @@ export function Lineups({ lineups }: { lineups: Lineup[] }) {
                 <span className="num" style={{ fontWeight: 700 }}>
                   {f.n(p.number)}
                 </span>
-                <Link to={paths.player(p.id)}>
+                <Link to={paths.player(p.id)} className={s.subName}>
+                  <Avatar name={p.name} image={p.image} size={28} />
                   <bdi>{p.name}</bdi>
                 </Link>
                 <span className="small muted">
@@ -287,7 +295,7 @@ export function HeadToHeadView({ data }: { data: HeadToHead }) {
     state: 'finished',
     statusLabel: '',
     phase: null,
-    minute: null,
+    clock: null,
     home: m.home,
     away: m.away,
     competition: m.competition,
@@ -297,7 +305,7 @@ export function HeadToHeadView({ data }: { data: HeadToHead }) {
   }));
   return (
     <>
-      <MatchList matches={meetings} />
+      <MatchList matches={meetings} meta={(m) => f.date(m.kickoff)} />
       {a && b && (
         <Panel>
           <b>{f.t('match.totals')}</b>

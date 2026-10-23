@@ -1,7 +1,7 @@
 // TanStack Query hooks shared by web and mobile. Cache times follow
 // docs/phase-1/05-technical-plan.md. Screens never call the API directly.
 import { ApiError, type SeasonQuery, type SportsApi } from '@sports247/api';
-import type { Id, Match, PredictOutcome } from '@sports247/domain';
+import { liveMinute, type DayMatches, type Id, type Match, type MatchDetail, type PredictOutcome } from '@sports247/domain';
 import {
   QueryClient,
   useInfiniteQuery,
@@ -9,7 +9,7 @@ import {
   useQuery,
   useQueryClient,
 } from '@tanstack/react-query';
-import { createContext, useContext, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 
 const SEC = 1000;
 const MIN = 60 * SEC;
@@ -105,24 +105,56 @@ export function useSearch(query: string) {
 
 // ---------- Matches ----------
 
-export function useDayMatches() {
+function useDayMatchesQuery(enabled: boolean) {
   const { api, livePollMs } = useDataConfig();
   return useQuery({
     queryKey: keys.dayMatches,
     queryFn: api.dayMatches,
+    enabled,
     staleTime: MIN,
     refetchInterval: (q) => (anyLive(q.state.data?.today) || anyLive(q.state.data?.yesterday) ? livePollMs : false),
   });
 }
 
+export const useDayMatches = () => useDayMatchesQuery(true);
+
+/**
+ * The match endpoint has no phase or clock. While the match is live, take them from the day list
+ * (homeCalendar), which has them and is polled anyway.
+ */
+export function withDayClock(detail: MatchDetail | undefined, days: DayMatches | undefined): MatchDetail | undefined {
+  if (!detail || detail.match.state !== 'live' || !days) return detail;
+  const id = detail.match.id;
+  const fromDay = [...days.today, ...days.yesterday, ...days.tomorrow].find((m) => m.id === id);
+  return fromDay ? { ...detail, match: { ...detail.match, phase: fromDay.phase, clock: fromDay.clock } } : detail;
+}
+
 export function useMatch(id: Id) {
   const { api, livePollMs } = useDataConfig();
-  return useQuery({
+  const detail = useQuery({
     queryKey: keys.match(id),
     queryFn: () => api.matchDetail(id),
     staleTime: 15 * SEC,
     refetchInterval: (q) => (q.state.data?.match.state === 'live' ? livePollMs : false),
   });
+  const days = useDayMatchesQuery(detail.data?.match.state === 'live').data;
+  const data = useMemo(() => withDayClock(detail.data, days), [detail.data, days]);
+  return { ...detail, data } as typeof detail;
+}
+
+/** The live minute ("67", "45+2"), advancing on its own between polls; null when no clock runs. */
+export function useLiveMinute(match: Pick<Match, 'state' | 'clock'>): string | null {
+  const clock = match.state === 'live' ? match.clock : null;
+  const [now, setNow] = useState(() => Date.now());
+  const running = clock != null;
+  useEffect(() => {
+    if (!running) return;
+    const tick = () => setNow(Date.now());
+    tick();
+    const t = setInterval(tick, 10 * SEC);
+    return () => clearInterval(t);
+  }, [running]);
+  return clock ? liveMinute(clock, now) : null;
 }
 
 /** Match parts refresh with the match while it is live. */

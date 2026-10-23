@@ -52,6 +52,7 @@
   "match": {
     "live": "LIVE",
     "finished": "FT",
+    "postponed": "Postponed",
     "minute": "'",
     "noMatchesDay": "No matches on this day.",
     "noMatchesCompetition": "No matches in this competition on this day.",
@@ -263,7 +264,8 @@
     "about": "About",
     "version": "Version",
     "source": "Data source",
-    "environment": "Environment"
+    "environment": "Environment",
+    "restartToApply": "Reopen the app to apply the layout direction."
   },
   "seo": {
     "home": "Scores and news",

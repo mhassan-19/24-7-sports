@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import type { Match } from '../src';
 import {
+  clockForPhase,
   crestInitials,
   eventKindFromId,
   groupByCompetition,
+  liveMinute,
   matchStateFromStatus,
   phaseFromCode,
   sortMatches,
@@ -16,7 +18,7 @@ const m = (id: number, state: Match['state'], kickoff: string, comp = 3): Match 
   state,
   statusLabel: '',
   phase: null,
-  minute: null,
+  clock: null,
   home: { id: 1, name: 'A', shortName: null, logo: null, score: null, penalties: null },
   away: { id: 2, name: 'B', shortName: null, logo: null, score: null, penalties: null },
   competition: { id: comp, title: `C${comp}`, logo: null },
@@ -26,10 +28,11 @@ const m = (id: number, state: Match['state'], kickoff: string, comp = 3): Match 
 });
 
 describe('match status and phase', () => {
-  it('maps 1 to scheduled, 5 to finished, anything else to live', () => {
+  it('maps 1 to scheduled, 3 to postponed, 5 to finished, anything else to live', () => {
     expect(matchStateFromStatus(1)).toBe('scheduled');
+    expect(matchStateFromStatus(3)).toBe('postponed');
     expect(matchStateFromStatus(5)).toBe('finished');
-    expect(matchStateFromStatus(3)).toBe('live');
+    expect(matchStateFromStatus(2)).toBe('live');
   });
 
   it('maps confirmed phase codes, including both penalty codes', () => {
@@ -39,6 +42,34 @@ describe('match status and phase', () => {
     expect(phaseFromCode(12)).toBe('penalties');
     expect(phaseFromCode(9)).toBeNull();
     expect(phaseFromCode(null)).toBeNull();
+  });
+});
+
+describe('live clock', () => {
+  // Second half of PROD match 18823 started 2026-10-22 17:48:18 Cairo (14:48:18 UTC); a
+  // substitution logged 44 s later is minute 46 in the API's own events.
+  const second = clockForPhase('second_half', '2026-10-22T14:48:18.000Z')!;
+  const at = (iso: string) => Date.parse(iso);
+
+  it('counts from the start of the half, football style', () => {
+    expect(liveMinute(second, at('2026-10-22T14:49:02Z'))).toBe('46');
+    expect(liveMinute(second, at('2026-10-22T15:12:43Z'))).toBe('70');
+  });
+
+  it('shows added time past the end of the half', () => {
+    expect(liveMinute(second, at('2026-10-22T15:35:30Z'))).toBe('90+3');
+    const first = clockForPhase('first_half', '2026-10-22T13:40:00Z')!;
+    expect(liveMinute(first, at('2026-10-22T14:26:10Z'))).toBe('45+2');
+  });
+
+  it('never goes below the first minute of the half (clock skew)', () => {
+    expect(liveMinute(second, at('2026-10-22T14:40:00Z'))).toBe('46');
+  });
+
+  it('has no clock at breaks, penalties or without a start time', () => {
+    expect(clockForPhase('half_time', '2026-10-22T14:48:18Z')).toBeNull();
+    expect(clockForPhase('penalties', '2026-10-22T14:48:18Z')).toBeNull();
+    expect(clockForPhase('first_half', null)).toBeNull();
   });
 });
 

@@ -53,6 +53,7 @@
   "match": {
     "live": "مباشر",
     "finished": "انتهت",
+    "postponed": "مؤجلة",
     "minute": "د",
     "noMatchesDay": "لا توجد مباريات في هذا اليوم.",
     "noMatchesCompetition": "لا توجد مباريات لهذه البطولة في هذا اليوم.",
@@ -269,7 +270,8 @@
     "about": "عن التطبيق",
     "version": "الإصدار",
     "source": "مصدر البيانات",
-    "environment": "البيئة"
+    "environment": "البيئة",
+    "restartToApply": "أعد فتح التطبيق لتطبيق اتجاه الصفحة."
   },
   "seo": {
     "home": "نتائج المباريات والأخبار",

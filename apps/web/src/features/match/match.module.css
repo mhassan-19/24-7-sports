@@ -369,14 +369,51 @@
   position: relative;
   display: grid;
   place-items: center;
-  inline-size: 34px;
-  block-size: 34px;
+  inline-size: 40px;
+  block-size: 40px;
   border-radius: 50%;
   background: var(--disc-bg);
   color: var(--disc-fg);
   font-family: var(--f-num);
   font-weight: 800;
   font-size: 15px;
+}
+
+/* Player photo inside the disc, with the shirt number as a small badge. */
+.discPhoto {
+  background: var(--surface-2);
+  box-shadow: 0 0 0 2px var(--disc-bg);
+}
+
+.discPhoto img {
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.discNumber {
+  position: absolute;
+  inset-block-end: -4px;
+  inset-inline-start: -8px;
+  display: grid;
+  place-items: center;
+  min-inline-size: 18px;
+  block-size: 18px;
+  padding-inline: 3px;
+  border-radius: 9px;
+  background: var(--disc-bg);
+  color: var(--disc-fg);
+  font-size: 10.5px;
+  line-height: 1;
+}
+
+.subName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-inline-size: 0;
 }
 
 .playerName {

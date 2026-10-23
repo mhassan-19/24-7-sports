@@ -1,7 +1,8 @@
 # 24/7 Sports
 
-Football-first sports platform: a React + Vite website (Phase 2, this repo today) and a React
-Native app for Android and iOS (Phases 3–4), on top of the existing appkora backend.
+Football-first sports platform: a React + Vite website (`apps/web`) and a React Native (Expo)
+app for Android and iOS (`apps/mobile`; Android in Phase 3, iOS in Phase 4), on top of the existing
+appkora backend.
 
 ## Quick start
 
@@ -34,6 +35,11 @@ Windows) and drop the `corepack` prefix from every command below.
 | `corepack pnpm test` | Unit and component tests (recorded fixtures, no live API) |
 | `corepack pnpm e2e` | Playwright smoke tests against the dev server and TEST API (uses the installed Edge on Windows, Chrome elsewhere) |
 | `corepack pnpm record-fixtures` | Re-record API fixtures from TEST (GET only) |
+| `corepack pnpm dev:mobile` | Expo dev server for the app (TEST API); `corepack pnpm android` builds and opens it on an emulator or phone |
+| `corepack pnpm --filter @sports247/mobile bundle:android` | Bundle the app's JavaScript for Android (quick check, no SDK needed) |
+
+The app needs the Android SDK (`ANDROID_HOME`) and JDK 17+ for native builds. Release builds,
+environments and signing: [docs/phase-3/README.md](docs/phase-3/README.md).
 
 ## Environments
 
@@ -49,17 +55,21 @@ Switching environments needs no code change; the build mode picks the env file.
 Put local overrides in `apps/web/.env.local` (git-ignored). Non-production builds refuse to send
 writes (game answers) to the production host.
 
+The app uses `apps/mobile/.env.development` (TEST) and `.env.production` (PROD), and the EAS
+profiles in `apps/mobile/eas.json` (`development` and `preview` on TEST, `production` on PROD).
+
 ## Repository
 
 ```
 apps/web/            Website (React 19, Vite, React Router, TanStack Query)
+apps/mobile/         Android/iOS app (Expo SDK 58, React Native 0.88, expo-router)
 packages/domain/     Sport-agnostic domain types and football rules
 packages/api/        Typed API client + mappers (all API quirks live here); fixtures in test/
-packages/data/       TanStack Query hooks shared by web and (later) mobile
+packages/data/       TanStack Query hooks shared by web and mobile
 packages/i18n/       Arabic/English strings, Arabic-Indic digits, Egypt-time formatting
 packages/tokens/     Design tokens and brand assets from the 247-sports-design skill
-docs/                API docs + audit, Phase 1 plan and prototype, Phase 2 notes
+docs/                API docs + audit, Phase 1 plan and prototype, Phase 2 and 3 notes
 ```
 
 See [CLAUDE.md](CLAUDE.md) for conventions and [docs/phase-2/README.md](docs/phase-2/README.md)
-for what Phase 2 delivered.
+for what Phase 2 delivered, [docs/phase-3/README.md](docs/phase-3/README.md) for Phase 3.

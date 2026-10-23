@@ -13,7 +13,7 @@ const match = (id: number, competition: { id: number; title: string }, kickoff: 
   state: 'scheduled',
   statusLabel: '',
   phase: null,
-  minute: null,
+  clock: null,
   home: { id: id * 10, name: `فريق ${id}أ`, shortName: null, logo: null, score: null, penalties: null },
   away: { id: id * 10 + 1, name: `فريق ${id}ب`, shortName: null, logo: null, score: null, penalties: null },
   competition: { ...competition, logo: null },

@@ -13,7 +13,8 @@ describe('matches', () => {
     expect(detail.match).toMatchObject({
       id: 2578,
       state: 'finished',
-      kickoff: '2026-01-19T23:00',
+      // API 23:00 at UTC+3 is 22:00 in Cairo in January (UTC+2).
+      kickoff: '2026-01-19T22:00',
       phase: null,
       home: { id: 26, shortName: 'Brighton', score: 1 },
       away: { id: 22, shortName: 'Bournemouth', score: 1 },
@@ -29,11 +30,6 @@ describe('matches', () => {
 
   it('maps the empty home calendar from TEST', () => {
     expect(m.mapDayMatches(fx('home-calendar'))).toEqual({ yesterday: [], today: [], tomorrow: [] });
-  });
-
-  it('maps a live match with phase and minute', () => {
-    const live = m.mapMatch({ id: 1, matchStatus: 3, date: '2026-10-22 21:00:00', matchRoundInfo: { event_id: 3, time: '67' } });
-    expect(live).toMatchObject({ state: 'live', phase: 'second_half', minute: '67', kickoff: '2026-10-22T21:00' });
   });
 
   it('maps events, keeping period markers and player names', () => {
@@ -54,6 +50,44 @@ describe('matches', () => {
     const h2h = m.mapHeadToHead(fx('h2h-2578'));
     expect(h2h.meetings.length).toBeGreaterThan(0);
     expect(h2h.totals[0]).toHaveProperty('passAccuracy');
+  });
+
+  it('keeps only past meetings, newest first, without the match itself (PROD 18823)', () => {
+    const { meetings } = m.mapHeadToHead(fx('h2h-18823'), 18823);
+    expect(meetings.map((x) => x.id)).toEqual([2048, 2207]);
+    expect(meetings.every((x) => x.home.score != null && x.kickoff)).toBe(true);
+  });
+
+  it('shows photos but not placeholders, and ratings only for players who played (PROD 18823)', () => {
+    const lineups = m.mapLineups(fx('lineup-18823'));
+    const starters = lineups.flatMap((l) => l.rows.flat());
+    const subs = lineups.flatMap((l) => l.subs);
+    expect(starters.some((p) => p.image?.startsWith('https://'))).toBe(true);
+    expect([...starters, ...subs].every((p) => !p.image?.includes('no-photo'))).toBe(true);
+    // Unused substitutes carry provider ratings (Konate 5.8); they must not show.
+    expect(subs.find((p) => p.number === 8 && p.subMinute == null)?.rating).toBeNull();
+    expect(subs.find((p) => p.subMinute === '46')?.rating).toBe(6.9);
+    expect([...starters, ...subs].every((p) => p.rating !== 0)).toBe(true);
+  });
+});
+
+describe('live matches', () => {
+  const row = (round: unknown, matchStatus = 2) => ({ id: 1, date: '2026-10-22 16:40:00', matchStatus, status: 'جارية', matchRoundInfo: round, team1: {}, team2: {} });
+
+  it('builds the clock from when the half started (API wall time is UTC+3)', () => {
+    const match = m.mapMatch(row({ event_id: 3, time: '45', created_at: '2026-10-22 17:48:18' }));
+    expect(match).toMatchObject({ state: 'live', phase: 'second_half' });
+    expect(match.clock).toEqual({ startedAt: '2026-10-22T14:48:18.000Z', base: 45, cap: 90 });
+  });
+
+  it('keeps UTC+3 in winter, like the API dates (not Cairo winter time)', () => {
+    const match = m.mapMatch(row({ event_id: 1, time: '0', created_at: '2026-12-01 20:00:00' }));
+    expect(match.clock?.startedAt).toBe('2026-12-01T17:00:00.000Z');
+  });
+
+  it('has no clock at half-time, and postponed matches are not live', () => {
+    expect(m.mapMatch(row({ event_id: 2, time: '45', created_at: '2026-10-22 17:30:23' })).clock).toBeNull();
+    expect(m.mapMatch(row(null, 3))).toMatchObject({ state: 'postponed', clock: null, phase: null });
   });
 });
 
